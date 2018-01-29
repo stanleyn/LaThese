@@ -23,6 +23,12 @@ Attias, H. (2000).
 \newblock In {\em Advances in neural information processing systems}, pages
   209--215.
 
+\bibitem[Baldassano and Bassett, 2016]{moduleMicrobiome}
+Baldassano, S.~N. and Bassett, D.~S. (2016).
+\newblock Topological distortion and reorganized modular structure of gut
+  microbial co-occurrence networks in inflammatory bowel disease.
+\newblock {\em Scientific reports}, 6:26087.
+
 \bibitem[Bendall et~al., 2012]{cytof}
 Bendall, S.~C., Nolan, G.~P., Roederer, M., and Chattopadhyay, P.~K. (2012).
 \newblock A deep profiler's guide to cytometry.
@@ -92,6 +98,11 @@ Latouche, P., Birmel{\'e}, E., and Ambroise, C. (2011).
   political blogosphere.
 \newblock {\em The Annals of Applied Statistics}, pages 309--336.
 
+\bibitem[Layeghifard et~al., 2017]{networkMicrobiome}
+Layeghifard, M., Hwang, D.~M., and Guttman, D.~S. (2017).
+\newblock Disentangling interactions in the microbiome: a network perspective.
+\newblock {\em Trends in microbiology}, 25(3):217--228.
+
 \bibitem[Lorrain and White, 1971]{structural}
 Lorrain, F. and White, H.~C. (1971).
 \newblock Structural equivalence of individuals in social networks.
@@ -157,6 +168,12 @@ Snijders, T.~A. and Nowicki, K. (1997).
 \newblock Estimation and prediction for stochastic blockmodels for graphs with
   latent block structure.
 \newblock {\em Journal of classification}, 14(1):75--100.
+
+\bibitem[Traud et~al., 2011]{Rand}
+Traud, A.~L., Kelsic, E.~D., Mucha, P.~J., and Porter, M.~A. (2011).
+\newblock Comparing community structure to characteristics in online collegiate
+  social networks.
+\newblock {\em SIAM review}, 53(3):526--543.
 
 \bibitem[Yang and Leskovec, 2012]{affil}
 Yang, J. and Leskovec, J. (2012).

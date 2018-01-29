@@ -3,44 +3,46 @@ Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: diss.aux
 The style file: apalike.bst
 Database file #1: dissBib.bib
-You've used 31 entries,
+Warning--I didn't find a database entry for "girvan"
+You've used 34 entries,
             1935 wiz_defined-function locations,
-            689 strings with 8923 characters,
-and the built_in function-call counts, 13664 in all, are:
-= -- 1370
-> -- 528
-< -- 26
-+ -- 186
-- -- 176
-* -- 1164
-:= -- 2284
-add.period$ -- 98
-call.type$ -- 31
-change.case$ -- 242
-chr.to.int$ -- 31
-cite$ -- 31
-duplicate$ -- 527
-empty$ -- 968
-format.name$ -- 231
-if$ -- 2735
+            712 strings with 9556 characters,
+and the built_in function-call counts, 14921 in all, are:
+= -- 1494
+> -- 582
+< -- 27
++ -- 204
+- -- 194
+* -- 1281
+:= -- 2503
+add.period$ -- 107
+call.type$ -- 34
+change.case$ -- 266
+chr.to.int$ -- 34
+cite$ -- 34
+duplicate$ -- 569
+empty$ -- 1055
+format.name$ -- 254
+if$ -- 2976
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 31
-newline$ -- 158
-num.names$ -- 93
-pop$ -- 202
+missing$ -- 34
+newline$ -- 173
+num.names$ -- 102
+pop$ -- 219
 preamble$ -- 1
-purify$ -- 242
+purify$ -- 266
 quote$ -- 0
-skip$ -- 420
+skip$ -- 451
 stack$ -- 0
-substring$ -- 1064
-swap$ -- 104
+substring$ -- 1165
+swap$ -- 107
 text.length$ -- 9
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 186
+type$ -- 204
 warning$ -- 0
-while$ -- 116
+while$ -- 127
 width$ -- 0
-write$ -- 409
+write$ -- 448
+(There was 1 warning)
