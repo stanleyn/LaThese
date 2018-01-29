@@ -1,0 +1,300 @@
+% citation style
+
+% default: cite with (Name, year)
+\renewcommand{\cite}{\citep}
+
+% common abbreviations
+\newcommand{\eg}{{\it e.g.}\xspace}
+\newcommand{\ie}{{\it i.e.}\xspace}
+\newcommand{\etc}{{\it etc.}\xspace}
+\newcommand{\etal}{\emph{et~al}\mbox{.}\xspace}
+
+\newcommand{\xth}{\ensuremath{^{\text{th}}}\xspace}
+%\newcommand{\fst}{\ensuremath{^{\text{st}}}\xspace}
+
+
+
+\newcommand{\vs}{{vs\mbox{.}}\xspace}
+
+% common Math notation
+\newcommand{\NAT}[0]{\mathbb{N}\xspace}
+\newcommand{\fun}[1]{\mathit{#1}} % typeset as function name
+\newcommand{\setsize}[1]{\left| #1 \right|}
+\newcommand{\setdef}[2]{\left\{ #1 \ \left|\  #2\right.\right\}}
+\newcommand{\dispsum}[0]{\displaystyle\sum}
+
+\newcommand{\defeq}[0]{\triangleq}
+\renewcommand{\mod}{\operatorname{mod}}
+
+% time units
+\newcommand{\mus}[0]{\ensuremath{\mu s}\xspace}
+\newcommand{\us}[0]{\ensuremath{\mu s}}
+\newcommand{\ms}[0]{\ensuremath{\fun{ms}}\xspace}
+
+% algorithm names
+\newcommand{\kwfont}[1]{\textsf{#1}\xspace} %\small
+% variable name
+\newcommand{\var}[1]{\ensuremath{{\fun{#1}}}\xspace} %\small
+
+%http://hstuart.dk/2007/08/03/programming-latex-%E2%80%94-writing-commands/
+\newcommand{\mkkw}[2]{
+	\newcommand{#1}[0]{\kwfont{#2}}
+}
+
+% fancy symbols and functions
+\newcommand{\Alg}[0]{{\mathcal A}}
+\newcommand{\Test}[0]{{\mathcal T}}
+\newcommand{\Mach}[0]{{\mathcal M}}
+
+\newcommand{\usum}[0]{u_{\mathrm{sum}}}
+\newcommand{\umax}[0]{u_{\mathrm{max}}}
+\newcommand{\umin}[0]{u_{\mathrm{min}}}
+\newcommand{\utop}[0]{u_{\mathrm{top}}}
+
+\newcommand{\esum}[0]{e_{\mathrm{sum}}}
+\newcommand{\emax}[0]{e_{\mathrm{max}}}
+\newcommand{\emin}[0]{e_{\mathrm{min}}}
+\newcommand{\etop}[0]{e_{\mathrm{top}}}
+
+\newcommand{\dsum}[0]{\delta_{\mathrm{sum}}}
+\newcommand{\dmax}[0]{\delta_{\mathrm{max}}}
+\newcommand{\dmin}[0]{\delta_{\mathrm{min}}}
+\newcommand{\dtop}[0]{\delta_{\mathrm{top}}}
+
+\newcommand{\prio}[0]{\mathsf Y}
+\newcommand{\eprio}[0]{\mathsf y}
+
+% src code
+\newcommand{\src}[1]{\textsf{\small #1}\xspace}
+
+
+% schedulers
+\mkkw{\cfs}{CFS}
+
+\mkkw{\edf}{EDF}
+\mkkw{\edfwm}{EDF-WM}
+\mkkw{\fp}{FP}
+\mkkw{\fprm}{RM}
+\mkkw{\fpdm}{DM}
+\mkkw{\gedf}{G-EDF}
+\mkkw{\gsnedf}{GSN-EDF}
+\mkkw{\gfp}{G-FP}
+\mkkw{\pedf}{P-EDF}
+\mkkw{\pfp}{P-FP}
+\mkkw{\cedf}{C-EDF}
+\mkkw{\pssched}{PS}
+
+\mkkw{\pfsched}{PF}
+\mkkw{\pd}{PD}
+\mkkw{\pds}{PD$^2$}
+\mkkw{\cpds}{C-PD$^2$}
+
+\mkkw{\jlfp}{JLFP}
+\mkkw{\jldp}{JLDP}
+
+
+% Plugins
+
+\mkkw{\pfpgi}{P-FP-Rm}
+\mkkw{\pfpdi}{P-FP-R1}
+\mkkw{\pedfgi}{P-EDF-Rm}
+\mkkw{\pedfdi}{P-EDF-R1}
+\mkkw{\cedfiigi}{C2-EDF-Rm}
+\mkkw{\cedfiidi}{C2-EDF-R1}
+\mkkw{\cedfiiigi}{C6-EDF-Rm}
+\mkkw{\cedfiiidi}{C6-EDF-R1}
+\mkkw{\gedfgi}{G-EDF-Rm}
+\mkkw{\gedfdi}{G-EDF-R1}
+
+\mkkw{\cedfalldi}{C24-EDF-R1}
+
+\mkkw{\capdsiigi}{C2-aPD$^2$-Rm}
+\mkkw{\capdsiidi}{C2-aPD$^2$-R1}
+
+\mkkw{\capdsiiigi}{C6-aPD$^2$-Rm}
+\mkkw{\capdsiiidi}{C6-aPD$^2$-R1}
+
+\mkkw{\gapdsgi}{G-aPD$^2$-Rm}
+\mkkw{\gapdsdi}{G-aPD$^2$-R1}
+
+\mkkw{\cspdsiigi}{C2-sPD$^2$-Rm}
+\mkkw{\cspdsiidi}{C2-sPD$^2$-R1}
+
+\mkkw{\cspdsiiigi}{C6-sPD$^2$-Rm}
+\mkkw{\cspdsiiidi}{C6-sPD$^2$-R1}
+
+\mkkw{\gspdsgi}{G-sPD$^2$-Rm}
+\mkkw{\gspdsdi}{G-sPD$^2$-R1}
+
+
+% POSIX
+
+\mkkw{\schedfifo}{SCHED\_FIFO}
+\mkkw{\schedrr}{SCHED\_RR}
+\mkkw{\schedother}{SCHED\_OTHER}
+\mkkw{\schedspor}{SCHED\_SPORADIC}
+\mkkw{\prioprot}{PRIO\_PROTECT}
+\mkkw{\scheddl}{SCHED\_DEADLINE}
+
+% locking protocols
+\mkkw{\npcs}{NCP}
+\mkkw{\srp}{SRP}
+\mkkw{\pcp}{PCP}
+\mkkw{\msrp}{MSRP}
+\mkkw{\dpcp}{DPCP}
+\mkkw{\mpcp}{MPCP}
+\mkkw{\mpcpvs}{MPCP-VS}
+\mkkw{\fmlp}{FMLP}
+\mkkw{\fmlpp}{FMLP$^{\mathrm{+}}$}
+\mkkw{\npfmlpp}{NP-FMLP$^{\mathrm{+}}$}
+\mkkw{\omlp}{OMLP}
+\mkkw{\pip}{PIP}
+
+% RW lock implementations
+\mkkw{\pft}{PF-T}   % simple PF RW lock
+\mkkw{\pfc}{PF-C}   % compact PF RW lock 
+\mkkw{\pfq}{PF-Q}  % queue PF RW lock
+\mkkw{\rwlin}{LX-RW}
+\mkkw{\tft}{TF-T}
+\mkkw{\tfq}{TF-Q}
+\mkkw{\mtxt}{MX-T}
+\mkkw{\mtxq}{MX-Q}
+
+% locking protocol details
+\newcommand{\FQ}[1]{FQ$_{#1}$}
+\newcommand{\PQ}[1]{PQ$_{#1}$}
+
+\newcommand{\WQ}[1]{WQ$_{#1}$}
+\newcommand{\RQA}[1]{CQ$_{#1}$}
+\newcommand{\RQP}[1]{DQ$_{#1}$}
+\newcommand{\RQ}[2]{RQ$_{#1}^{#2}$}
+\newcommand{\RQi}[1]{\RQ{#1}{1}}
+\newcommand{\RQii}[1]{\RQ{#1}{2}}
+
+\newcommand{\KQ}[1]{KQ$_{#1}$}
+\newcommand{\KQq}[0]{\KQ{q}\xspace}
+\newcommand{\RS}[1]{RS$_{#1}$}
+\newcommand{\RSq}[0]{\RS{q}\xspace}
+
+\newcommand{\BQ}[1]{BQ$_{#1}$}
+
+\newcommand{\mc}[0]{\frac{m}{c}}
+\newcommand{\nc}[0]{\frac{n}{c}}
+\newcommand{\lmax}{L^{\fun{max}}}
+\newcommand{\kmin}{k^{\fun{min}}}
+
+% references
+\newcommand{\chref}[1]{Chapter~\ref{ch:#1}\xspace}
+\newcommand{\chrefs}[2]{Chapters~\ref{ch:#1} and~\ref{ch:#2}\xspace}
+\newcommand{\secref}[1]{Section~\ref{sec:#1}\xspace}
+\newcommand{\figref}[1]{Figure~\ref{fig:#1}\xspace}
+\newcommand{\figrefi}[2]{Figure~\ref{fig:#1}(#2)\xspace}
+\newcommand{\tabref}[1]{Table~\ref{tab:#1}\xspace}
+\newcommand{\lemref}[1]{Lemma~\ref{lem:#1}\xspace}
+\newcommand{\thmref}[1]{Theorem~\ref{thm:#1}\xspace}
+\newcommand{\defref}[1]{Definition~\ref{def:#1}\xspace}
+\newcommand{\exref}[1]{Example~\ref{ex:#1}\xspace}
+\newcommand{\equref}[1]{Equation~(\ref{eq:#1})\xspace}
+\newcommand{\inequref}[1]{Inequality~(\ref{eq:#1})\xspace}
+\newcommand{\lstref}[1]{Listing~\ref{lst:#1}\xspace}
+\newcommand{\pref}[1]{page~\pageref{p:#1}\xspace}
+% citations
+
+% resource notation
+\newcommand{\res}[0]{\ell}
+\newcommand{\req}[0]{\mathcal{R}}
+\newcommand{\wreq}[0]{\mathcal{R}^{\fun{W}}}
+\newcommand{\rreq}[0]{\mathcal{R}^{\fun{R}}}
+\newcommand{\rlen}[0]{{\mathcal L}}
+\newcommand{\bspin}[0]{s}
+
+% locking proofs
+\newcommand{\tauseq}[0]{\tau^{\fun{seq}}}
+
+% overheads
+\newcommand{\evlat}[0]{\Delta^{\fun{ev}}}
+\newcommand{\ipilat}[0]{\Delta^{\fun{ipi}}}
+\newcommand{\reloh}[0]{\Delta^{\fun{rel}}}
+\newcommand{\schedoh}[0]{\Delta^{\fun{sch}}}
+\newcommand{\cxsoh}[0]{\Delta^{\fun{cxs}}}
+\newcommand{\cpmdoh}[0]{\Delta^{\fun{cpd}}}
+\newcommand{\cidoh}[0]{\Delta^{\fun{cid}}}
+\newcommand{\tickoh}[0]{\Delta^{\fun{tck}}}
+
+\newcommand{\inoh}[0]{\Delta^{\fun{in}}}
+\newcommand{\outoh}[0]{\Delta^{\fun{out}}}
+
+\newcommand{\sysinoh}[0]{\Delta^{\fun{sci}}}
+\newcommand{\sysoutoh}[0]{\Delta^{\fun{sco}}}
+
+
+\newcommand{\numres}[0]{{n_r}}
+
+% complicated names
+\newcommand{\litmus}{LITMUS$^{\mathrm{RT}}$\xspace}
+\newcommand{\aquo}{AQuoSA\xspace}
+\newcommand{\prt}{PREEMPT\_RT\xspace}
+\newcommand{\livlin}{L$^4$Linux\xspace}
+
+% parameters
+
+\newcommand{\pacc}[0]{\var{pacc}}
+\newcommand{\wratio}[0]{\var{wratio}}
+
+% special footnotes
+
+% from http://help-csli.stanford.edu/tex/latex-footnotes.shtml
+\long\def\symbolfootnote[#1]#2{\begingroup%
+\def\thefootnote{\fnsymbol{footnote}}\footnote[#1]{#2}\endgroup}
+
+% Theorems, etc.
+
+\newtheoremstyle{mylemthm}% hnamei 
+        {6pt}% hSpace abovei 
+        {3pt}% hSpace belowi 
+        {\slshape}% hBody fonti 
+        {}% hIndent amounti1
+        {\bfseries}% hTheorem head fonti 
+        {.}% hPunctuation after theorem headi 
+        {.5em}% hSpace after theorem headi2
+        {}% hTheorem head spec (can be left empty, meaning `normal')i
+
+\theoremstyle{mylemthm}
+
+\newtheorem{theorem}{Theorem}[chapter]
+\newtheorem{lemma}{Lemma}[chapter]
+
+%\theoremstyle{definition}
+
+\newtheoremstyle{mydef}% hnamei 
+        {3pt}% hSpace abovei 
+        {3pt}% hSpace belowi 
+        {\normalfont}% hBody fonti 
+        {}% hIndent amounti1
+        {\bfseries}% hTheorem head fonti 
+        {.}% hPunctuation after theorem headi 
+        {.5em}% hSpace after theorem headi2
+        {\thmname{#1} \thmnumber{#2}\thmnote{#3}}% hTheorem head spec (can be left empty, meaning `normal')i
+
+\theoremstyle{mydef}
+
+
+%% Flush words right at end of paragraph.
+%% From: http://tex.stackexchange.com/questions/16330/hfill-after-linebreak
+\newcommand\rightparend[1]{{%
+      \unskip\nobreak\hfil\penalty50
+      \hskip2em\hbox{}\nobreak\hfil\textbf{#1}%
+      \parfillskip=0pt \finalhyphendemerits=0 \par}}
+
+
+\newtheorem{definition}{Definition}[chapter]
+\newtheorem{xxexample}{Example}[chapter]
+
+%% "inherent" from xxexample, but place box at the end of example.
+\newenvironment{example}{
+\begin{xxexample}
+}{
+\rightparend{$\Diamond$}
+\end{xxexample}
+}
+% \qed   \sqbullet \blackdiamond \vartriangleleft

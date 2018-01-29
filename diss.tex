@@ -1,0 +1,326 @@
+\input{common/preamble}
+
+\begin{document}
+
+% Title page, TOC, etc.
+\input{frontmatter/pages}
+
+% chapters
+% \input{intro/chapter}
+% ...
+
+\chapter{Introduction}
+Network data appears widely across fields as a data structure for modeling relational information between a set of entities.  In recent years, networks have become an indispensable data mining tool, as they allow for tasks such as, data visualization, clustering, and predictive modeling.  Motivated by problems in fields, such as, biology, medicine, neuroscience, social science, and epidemiology, the field of network analysis has gained popularity and seeks to develop tools for understanding the associated network data. The development of these tools is rooted in a combination of techniques from statistics, computer science, physics, and mathematics. In this thesis, we will provide a comprehensive overview of networks and analysis techniques and introduce three new models/methods that will expand the types of network data that we asre able to collect and interpret. 
+
+\section{Network Notation}
+
+\subsection{Representing relational information}
+
+Humans frequently benefit from network applications for tasks such as, viewing relevant queries from a google search, enjoying a suggested movie on Netflix, or interacting on a social network platform. The basic building blocks of networks are nodes, representing entities in a systems, and edges, encoding connections their physical or inferred connection or similarity. Figure \ref{fig:social} shows a social network between 7 users and edges between them denoting whether they interact. 
+\begin{figure}
+\begin{center}
+\includegraphics[scale=0.5]{SocialNetwork}
+\caption{{\bf Toy social network.} A small example of a social network, with nodes being users and edges representing connections between users. Image from \url{https://www.phpfox.com}}
+\label{fig:social}
+\end{center}
+\end{figure}
+
+Such a network with edges simply representing whether or not a pair of nodes interact is an example of an \emph{undirected,unweighted} network. We will use an undirected network to introduce two forms of representations for networks. For a set of $N$ nodes, we define the $N \times N$ network adjacency matrix, ${\bf A}=\{a_{ij}\}$. For a pair of nodes $i$ and $j$, its corresponding adjacency matrix entry $a_{ij}$ is defined as follows,
+
+\[ \begin{cases} 
+     a_{ij}=1 & \text{\emph{if node $i$ and node $j$ are connected}} \\
+      a_{ij}=0 & \text{\emph{otherwise}}.
+         \end{cases}
+\].
+
+Undirected networks can also be \emph{weighted}, where the weight of an edge between a node pair encodes their extent of similarity. These edge weights are some real number and are frequently quantities such as correlation or pairwise similarity. A simple extension of ${\bf A}$ to an undirected, weighted network where $w$ is the edge weight between nodes $i$ and $j$ computes the adjacency matrix entry $a_{ij}$ as, 
+
+\[ \begin{cases} 
+     a_{ij}=w & \text{\emph{if node $i$ and node $j$ are connected} with weight $w$} \\
+      a_{ij}=0 & \text{\emph{otherwise}}.
+         \end{cases}
+\]
+
+Alternatively, the assumption of a symmetric relationship between a pair of nodes that node $i$ connects to node $j$ and node $j$ connects to node $i$  may be unrealistic. For example, on twitter, user $i$ can follow user $j$, but user $j$ does not necessarily need to follow user $i$. This type of network is known as a \emph{directed} network. While directed are frequently discussed in the network science literature, we will not introduce them here.  
+
+\subsection{Basic Analysis}
+Given a network, there are fundamental tasks of interest that allow for a more clear interpretation and understanding of the data. Some of these objectives include, quantifying node importance, quantifying edge density, identifying connected components ,clustering nodes, and predicting links. Networks in textbooks often look deceptively clean and well-structure. In reality, most network data is described as being a hairball. This term refers to the difficulty of discerning structure or interpreting meaning from the network based on the connectivity patterns. An example of a typical hairball is shown in figure \ref{fig:Hairball}
+
+\begin{figure}
+\begin{center}
+\includegraphics[scale=0.3]{Hairball}
+\caption{{\bf Hairball network.} Networks are often noisy data structures and lack an immediate straight forward structural interpretation. Image from \url{https://cs.umd.edu}}
+\label{fig:Hairball}
+\end{center}
+\end{figure}
+
+Such a challenging representation of the data requires breaking the network down into smaller pieces that can be further analyzed. The first most basic summary statistic is known as \emph{degree}. Here, we will define a variety of summary statistics and quantities that can be computed on a network that give insight into the network's structure. Given the adjacency matrix for an undirected network, ${\bf A}$, the degree of node $i$, $\text{degree}(i)$ is computed as,
+
+\begin{equation}
+\text{degree}(i)=\sum_{j}a_{ij}
+\end{equation}
+
+In the case of an undirected, unweighted network, the degree of node $i$ counts its number of neighbors, while in the undirected, weighted context, degree encodes the total edge weight incident to node $i$. Collectively examining the distribution of degrees for a network is known as the \emph{degree distribution}. Understanding the degree distribution provides insight into the network type and structural organization. [Add some example maybe]. To concisely summarize this information, one may consider. ... blah blah to add. Finally, clustering on a network or identifying a partition of nodes into groups or `communities' based on structural network patterns is known as community detection. This is a powerful way to segment a network into smaller structures that can be further prioritized for additional analysis. 
+
+\section{Conceptual Overview of Community Detection}
+A community in a network is broadly defined as a set of who share something in common in terms of their connectivity patterns in the network. One can think of a community as a clustering problem on networks, where the objective is to identify a set of nodes that are highly similar. The most basic type of community to understand is a network with assortative community structure. In this case, nodes are tightly connected to each other but more sparsely connected to the rest of the network. An example of a network with assortative community structure is shown in \ref{fig:Assort.} Communities in the network are outlined with pink dotted lines.
+
+ \begin{figure}
+\begin{center}
+\includegraphics[scale=0.4]{AssortativeNet}
+\caption{{\bf Assortative Community Structure.} Nodes are tightly connected to each other and more sparsely connected to the rest of the network. Each community is outlined with a pink dotted line.}
+\label{fig:Assort}
+\end{center}
+\end{figure}
+
+Alternatively, networks can have a dissasortative structure where the between community edge density exceeds the within-community density. Finally, a core periphery structure can arise when there is a central core in the network that connects to the rest of the network and a set of peripheral nodes that connect to the core, but not to each other.  
+
+Community detection is a well-studied sub-domain of network science. The interested reader can refer to one of the comprehensive review articles \cite{fortu1,fortu2,shaicase}
+
+\section{The state of the art methods}
+When performing community detection on a network, the objective is to segment nodes into one of $K$ communities. This $K$ can be known apriori or estimated through some kind of model selection or quality function computations. There are many optimization approaches that can be used to approach network community detection. In this section, we will introduce the current state-of-the-art approaches characterized as quality function maximization, deep learning, higher order clustering, probabilistic, and spectral methods. These methods are discussed based on their ability to handle networks of non-trivial size with diverse structures.
+
+\subsection{Quality function maximization with modularity}
+\indent For quality function optimization, one writes down a quantity to optimize that seeks to identify a partition of the network into nodes that is representative of the network structure. The most common quality function for this task is known as modularity \cite{newman2006modularity}. Intuitively, modularity defines a null model for network that doesn't have prominent organizational structure. In particular, this null model is a random graph model, known as the configuration model \cite{benderCanfield}. To generate an $N$-node network from the configuration model, one first specifies a fixed degree sequence, $D=\{k_{i},k_{2},\dots,k_{N}\}$. From this sequence, nodes are connected with $k_{i}$ stubs that will ultimately be connected together. Finally, the graph is constructed by randomly choosing pairs of the crreated stubs and joining them. Based on how this network was generated, it is easy to specify the probability that an edge exists between a pair of nodes, $i$ and $j$, or $p(a_{ij}=1$.
+
+\begin{equation}
+p(a_{ij}=1)=\frac{k_{i}k_{j}}{2M}.
+\end{equation}
+
+Here, $k_{i}$ and $k_{j}$ represent the number of edges for nodes $i$ and $j$, respectively, and $M$ is the total number of edges in the network. 
+
+\indent Modularity was introduced in 2004 by Newman and Girvan \cite{newmangirvan}. We define the modularity quality function, $Q$ as,
+
+\begin{equation}
+Q=\frac{1}{2M}\sum_{i,j}\left[a_{ij}-\gamma \frac{k_{i}k_{j}}{2M}\right]\delta(z_{i},z_{j})
+\end{equation} 
+
+Here, $\gamma$ is a resolution parameter \cite{resParam} that controls the scale of community size. Large values of $\gamma$ favor more small communities while smaller value enforce for fewer large communities. 
+
+\indent In order to determine ${\bf z}$, the most computationally efficient approach is known as the Louvain algorithm \cite{blondel}. The Louvain algorithm is an agglomerative heuristic, which initially starts with each node in its own community and in the first match merges pairs of nodes if their merge leads to an increase in modularity. Each group of nodes assembled after this first pass becomes a new node in the network and a new weighted network is created between the set of new nodes. The weight on the edges of the new network are the number of edges from the original network that go between the sets of merged nodes. This process is continues iteratively until the modularity no longer increases. The reason that this approach is so computationally tractable is because the gain in modularity, $\Delta Q$ of merging two groups of nodes can be explicitly computed in closed form.
+
+\indent Modularity has shown to be effective in applications from neuroscience \cite{hierarchicalmod} to image segmentation \cite{browet}.
+
+\subsection{Identifying communities with probabilistic approaches}
+
+\indent This approach will be only briefly introduced here, as it will be explored more in depth in subsequent chapters. Probabilistic community detection methods aim to find a partition of the network through likelihood optimization. Intuitively, the goal is to study the generative process of the node edges in terms of inferred community assignments. For example, given nodes $i$ and $j$, one may model $P(a_{ij}=1)$ as $g(z_{i},z_{j})$, where $g(\cdot)$ is some rule based on the node-to-community assignments. Two common probabilistic community detection models are the stochastic block model \cite{originalSBM} and the affiliation model \cite{affil}. The definition and description of these models and inference techniques are described in depth in chapter \ref{probTech}.
+
+\subsection{Deep Learning Approaches}
+\indent In recent years, deep learning has begun to revolutionize many fields, including network analysis. Perozzi \emph{et al.}, pioneered the use of deep learning in community detection with the development of DEEPWALK \cite{deepWalk} to learn a latent space representation of nodes in a lower dimensional space (i.e. an emedding). Once the network is embedded in a lower dimensional space, simple clustering techniques, such as $k$-means \cite{kMean} can be used to partition the network into communities. The approach to learn an embedding for the network is based on random walks on the network \cite{rWalk,gleichpagerank}. A random walk on a network involves choosing a starting node and traversing the network by hopping between adjacent nodes. The DEEPWALK approach seeks to learn an embedding of the nodes that preserves the sets of nodes traversed in a random walk. To do this, the authors used Word2Vec, a tool from natural language understanding that allow for the specification of a node embedding that enable accurate prediction of a word's context, given the word \cite{word2Vec}. To adapt this context to networks, a random walk is treated as a sentence and nodes are treated as a word within the sentence. Moreover, the analogous task to the problem in text data to a network is to accurately assign a probability predict a set of nodes likely to be seen with the node of interest. Moreover, this problem is solved using the same optimization approach as Word2Vec \\
+\indent Based on the success of DEEPWALK, the method was followed up with Node2Vec in 2016 \cite{node2vec}. While node2vec also uses the random walk framework to specify the optimization problem, they modify how the random walk is performed to enable an embedding that captures different aspects of a potential network community. For example, one may describe a community by a set of nodes located close to each other in the network with many common neighbors and connections to common neighbors. This assumption is known as network homohpily \cite{homophily}. Alternatively, perhaps a good definition of a community is a set of networks that have similar roles in the network. This idea is known as structural equivalence \cite{structural}. For example, a grouping of nodes that take into account their degree, with the community assignments being highly related to node degree. To modify the random walk so that it leads to a model that gives flexibility in the nature of retrieved communities, the authors introduced a search bias term, which controls whether the random walk in performed in a breadth-first or depth-first search parameter. If on a random walk, the path is traversed in a depth-first search, favoring the exploration of a larger area of the network far from the source, the resulting community aligns with the homophily hyptohesis. A random walk performed in a breadth first manner that restricts the path to nodes neighboring the source and tends to capture nodes based on structural equivalence (i.e. a hub, or highly connected node). 
+
+\section{Case studies in network community detection}
+ A community approach to network analysis has shown to be fruitful in particular, in the analysis of biological and brain connectivity applications. In this section, we will describe examples of analyses where the identification of communities provided insight and understanding for a scientific problem. 
+\subsection{Network analysis in computational biology}
+Multiple experimental modalities exist that enable the collection and analysis of biological data. Understanding protein expression, gene expression, microbiome composition, metabolomic profiles, genomic mutations, and immune profiling are just a few of examples of biological data that is studied routinely for insight into human health. With most experimental platforms producing high dimensional data, it is crucial to have good tools for interpretation, visualization, and prediction. Machine learning techniques in computational biology have revolutionized prediction in healthcare and medicine. Here, we outline particular examples of how community detection lead to important biological understanding and predictive ability.
+
+{\bf Immunological profiling to establish a pregnancy immune clock}
+A study lead by Aghaeepour \emph{et al.}, demonstrated that there is a typical timing of immunological events in a healthy, term, human pregnancy \cite{immuneClock}. Immunological profiling was performed on a training cohort of 18 women, using a technology called mass cytometry \cite{cytof} was used to quantify various features of the immune system, such as, cell type abundances, signaling activity. From this set of measured immune features, a correlation network from the training cohort to identify which immune features were potentially related or working together. Simultaneously, a regression model was training to identify immune features associated with increased gestational age. When communities were identified in the network of immune features, there were two important observations. First, immune features of the same type (i.e. cell signaling vs. cell frequency) were aligned with community labels. Second, sets of features associated with a particular gestation age often fell in the same community, indicating their synchronous activity during the pregnancy. Finally, after identifying influential nodes in their ability to predict stage in pregnancy, according to the regression model, the communities of these nodes were more closely examined to uncover further insight into the immunological mechanisms occuring throughout the pregnancy time course. 
+
+
+
+\section{Network analysis in neuroscience}
+
+
+
+
+\section{Network analysis software}
+\section{Open problems in community detection}
+
+\section{Probabilistic graphical models for statistical inference}
+\label{pgm}
+Probabilistic network models are one approach to community detection that seek to model edge existence based on the node-to-community assignments. In doing so, the objective is to learn the node-to-community assignments that make the structure of the observed network the most likely. In this section, we will define some useful notation and concepts  To fit a probabilistic network model to data, we will define some useful notation and concepts that help simplify writing down and interpreting the likelihood. 
+
+Probabilistic graphical models enable efficient specification and manipulation of large probability distributions through semantic structures. Given a set of random variables, $\{A,B,C,D,E,F\}$, we seek to compute the joint distribution, $P(A,B,C,D,E,F)$. This joint distribution can be expressed with a directed acyclic graph (DAG), whose structure encodes dependencies between random variables. The DAG allows for the representation of the joint distribution in a factorized way, which is computationally useful. A DAG between the set of random variables, $\{A,B,C,D,E,F\}$ is shown in \ref{fig:DAG}. 
+
+\begin{figure}
+\begin{center}
+\includegraphics[scale=0.3]{DAG}
+\caption{{\bf Directed Acyclic Graph.} A directed acyclic graph (DAG) is formed based on dependency between random variable and allows for a fully factorized probability distribution.}
+\label{fig:DAG}
+\end{center}
+\end{figure}
+
+To translate a DAG between a set of $N$ random variables, ${\bf X}={\bf X}=\{X_{1},X_{2},\dots,X_{N}\}$ to its joint distribution, we rely on the Factorization theorem, which specifies that a DAG factors according to its parent/child relationships with,
+
+\begin{equation}
+P({\bf X})=\prod_{i=1:N}P(X_{i} \mid {\bf X}_{\pi_{i}}).
+\end{equation}
+
+Here, ${\bf \pi}_{i}$ denotes the set of parents for node $i$. Using this information, we can write down the joint distribution for figure \ref{fig:DAG} as,
+
+\begin{equation}
+\begin{split}
+P(A,B,C,D,E,F)&=P(A)P(B\mid A)P(C\mid B)P(D \mid B,G)P(E \mid D,B,C)P(F\mid E).
+\end{split}
+\end{equation}
+
+This introduced idea will help in subsequent sections to expresses a model graphically, write down the model likelihood, and use the likelihood to optimize for the most appropriate model parameters. 
+
+
+\chapter{Probabilistic community detection models and inference techniques}
+\label{probTech}
+In this section, we will present two probabilistic models for community structure, the stochastic block model and the affiliation model. 
+\section{Stochastic block model}
+
+\subsection{Most general stochastic block model}
+For an undirected, unweighted network $\mathcal{G}$ with adjacency matrix, ${\bf A}$, we seek to partition each of the $N$ nodes into one of $K$ communities. We denote the the node-to-community assignments as ${\bf z}$, with $z_{i}$ specifying the community assignment of node $i$. Here, ${\bf z}$ is a latent variable, with each entry taking on 1 of $K$ states, or one of $K$ community assignments. Figure \ref{fig:graphical} shows the dependency relationship between the node-to-community assignments. Here, the node-to-community assignments are treated as a latent variables because we seek to identify the ${\bf z}$ that makes the observed adjacency matrix, ${\bf A}$ the most likely.  The crucial assumption of the stochastic block model is that nodes within a community are connected to nodes within their community and to other communities in a characteristic way. To this end, the model fitting procedure requires learning a set of within and between community connection probabilities. Under this approach, edges are treated as independent and identically distributed and deciding whether or node an edge exists between a pair of nodes is the learned connection probability between the communities to which each of the nodes belong.
+
+\begin{figure}
+\begin{center}
+\includegraphics[scale=0.3]{SBMGraphical}
+\caption{{\bf SBM Graphical Model.} A graphical model is used to model the dependency between the node-to-community assignments, ${\bf z}$ and the observed network adjacency matrix, ${\bf A}$.}
+\label{fig:graphical}
+\end{center}
+\end{figure}
+
+Using the factorization rules described in section \ref{pgm}, we can specify the complete data log likelihood between ${\bf z}$ and ${\bf A}$ as,
+
+\begin{equation}
+\log P({\bf z},{\bf A})=\log(P({\bf A} \mid {\bf z}))+\log(P({\bf z}))
+\end{equation}
+
+To further specify these communities, we will define additional notation. First, let ${\boldsymbol \Pi}_{K \times K}=\{\pi_{ij}\}$ be the matrix that specifies the within and between community edge probabilities. Using this information, we can model the probability of an edge existing between nodes $i$ and $j$ as,
+
+\begin{equation}
+P(A_{ij}=1)\sim \text{Bernoulli}(\Pi_{z_{i},z_{j}})
+\end{equation}
+
+We let $Z_{i}=\{Z_{i1},Z_{i2}, \dots Z_{ik}\}$ be a collection of binary indicators where $Z_{ik}$ is 1 $i$ belongs to community $k$ and 0 otherwise, We also let $\alpha_{k}$ be the probability that a node belongs to community $k$. With all of this information, we can write down each term of the complete data likelihood.
+
+First,
+
+\begin{equation}
+\log(P({\bf Z}))=\sum_{i}\sum_{k}Z_{ik}\log(\alpha_{k}).
+\end{equation}
+
+Next,
+
+\begin{equation}
+\log(P({\bf A} \mid {\bf Z}))=\sum_{i\ne j}\sum_{k< l}Z_{ik}Z_{il}[a_{ij}\log (\Pi_{kl})+(1-a_{ij})\log(1-\Pi_{kl})]
+\end{equation}
+
+Optimizing the parameters of this incomplete data log likelihood requires computing the posterior $P({\bf z} \mid {\bf A})$ but as shown by \cite{dudin} is intractable. To address this issue, the posterior can be recast using a factorized approximation. This is accomplished by optimizing a lower bound of $\mathcal{L}({\bf A})$. We let $\mathcal{R}_{A}$ be an approximation of the posterior, $P({\bf z} \mid {\bf A})$. To optimize the lower bound of $\log \mathcal{A}$, we seek the $\mathcal{R}_{A}$ that is as close as possible to $P({\bf z} \mid {\bf A})$. In other words, we define the lower bound of $\mathcal{L}({\bf A})$ as $\mathcal{T}(\mathcal{R}_{A})$, with,
+
+\begin{equation}
+\mathcal{T}(\mathcal{R}_{A})=\log \mathcal{L}({\bf A})-\text{KL}[\mathcal{R}_{A}(\bf z), P({\bf z} \mid {\bf A})].
+\end{equation}
+
+Here KL denoted the Kullback-Leibler divergence (KL divergence) and the best approximation will be the value that makes the KL divergence the smallest. Jaakkola \emph{et al.}, present a mean field approximation for the posterior distribution \cite{jakk} as,
+
+\begin{equation}
+\mathcal{R}_{A}({\bf z})=\prod_{i}h(Z_{i};{\boldsymbol \tau}_{i}).
+\end{equation}
+
+Here ${\boldsymbol \tau}=(\tau_{i1}, \dots, \tau_{iK})$ and $\tau_{ik}$ is the approximation that node $i$ belongs to community $k$, or $P(Z_{ik}=1 \mid {\bf A})$. Furthermore, $h(\cdot;{\boldsymbol \tau}_{i})$ denotes the multinomial distribution with parameter ${\boldsymbol \tau}$. 
+
+Daudin \cite{dudin} \emph{et al.}, show that the optimal estimate for $\tau_{ik}$ denoted $\hat{\tau}_{ik}$ satisfies
+
+\begin{equation}
+\hat{\tau}_{ik} \propto \alpha_{k}\prod_{j \ne i}\prod_{l}[\theta_{z_{i},z_{j}}^{a_{ij}}(1-\theta_{z_{i},z_{j}})^{1-a_{ij}}]^{\hat{\tau}_{ik}}.
+\end{equation}
+
+Here, $\alpha_{k}$ notes the probability that a node belongs to community $k$. Furthermore, after computing the set of variational parameters, the updates for ${\boldsymbol \alpha}$ and ${\boldsymbol \theta}$ that maximize $\mathcal{T}(\mathcal{R}_{A})$ are also shown by Daudin \emph{et al.,} \cite{dudin} to be,
+
+\begin{equation}
+\hat{\alpha}_{k}=\frac{1}{n}\sum_{i}\hat{\tau}_{ik}  \hspace{.5in}  {\theta}_{ql}=\sum_{i \ne j}\hat{\tau}_{iq}\hat{\tau}_{jl}a_{ij}/\sum_{i \ne j}\hat{\tau}_{iq}\hat{\tau}_{jl}
+\end{equation}
+
+We have presented this variational approach for performing SBM parameter inference and likelihood optimization because this approach was appropriate for the work presented in this thesis. Variational inference is just one approach that can be applied to learn model parameters and was but a study by  Zhang \emph{et al.} \cite{comp} also show that belief propgation is very effective for this task \cite{belief}. Briefly, belief propagation is a message passing algorithm for parameter inference in probabilistic graphical models. Given that parameter learning offer requires computing marginal distributions for a set of variables with a very large number of possible configurations, belief propagation uses the graphical model to reduce the complexity of the problem.  Using the belief propagation to infer latent node-to-community assignments and update the model parameters was shown to perform superperior to the variational appromixation
+
+
+This formulation of the problem and parameter optimization procedure works well and converges quickly for networks that have assortative community structures and a homogenous degree distribution. We will now explore how this classic formulation of the SBM can be modified to enable a broader application for a variety of networks.
+
+\subsection{Variants to the Classic Stochastic Block Model}
+
+The introduced stochastic block model is the most vanilla version in that it makes the assumption that the network is unweighted, each node is assigned to only one community. The introduced model also does not account for issues that may arise from degree heterogeneity (i.e. a large disparity in node degree in sets of nodes).  Here, we will briefly discuss the approaches that adapt the stochastic block model to handle these issues and assumptions. 
+
+{\bf Edge Weights}
+
+\indent The majority of the stochastic block model literature considers unweighted networks simply because describing a probabilistic model to handle both edge existence and edge weight is a challenging task. In the classic stochastic block model, we are simply modeling whether an edge exists based on the inferred community memberships of the edge stubs. Since edge weights can come in a variety of forms (real-valued, count, etc.), it is difficult to immediately decide what distribution the edge weights should follow. In the past few years, this issue has been tackled in two papers \cite{aicher,peix}.
+
+\indent First, Aicher \emph{et al.} developed a model and associated inference technique, for the weighted stochastic block model. Here, edge weights can be modeled by any exponential family distribution. The authors use a mixing parameter that allows for the control of the use of edge existence versus edge weights when learning node-to-community assignments. This method requires having an estimate of the number of communities, $K$, but the paper provides an approach to use Bayes' factors between two competing values of $K$ to determine which model is a better fit.The inference for fitting this model is performed through a variational bayes approach \cite{vBayes}.
+
+\indent To avoid having intuition about $K$, Peixoto \cite{peix} developed a non parametric bayesian approaches that is capable of inferring $K$ with no prior knowledge. The assumption of the model is also slightly different and assumes a hierarchical structure between communities. The inference is achieved through MCMC sampling. 
+
+{\bf Degree Heterogeneity}\\
+\indent Based on the variety of network structures and types, the assumption that the classic stochastic block model is an appropriate model for the data is often invalid. That is, for some networks, the fitted model may not actually be a good fit for the data. Work by Karrer \emph{et al.}, introduced a simple extension to the classic stochastic block model, known as the degree corrected stochastic block model, that is informed by degree distribution as a proxy for the network structure. In networks where there is a high disparity between node degree (i.e. many high degree nodes and many low degree nodes), stochastic block models inference tends to partition the nodes intro communities of high degree and low degree nodes. The approach for adapting the SBM to this setting is to learn a $K \times K$ matrix, ${\boldsymbol \theta}$, describing the number of edges between each pair of communities. these counts are modeled as poisson random variables. The likelihood of the observed network under this poisson assumption takes into account node degrees. 
+
+{\bf The restriction of single community membership}\\
+\indent As it is often observed in social networks, the assumption that every node belongs to only a single community is restrictive. To address this issue, approaches have been developed to  allow nodes to  participate in a mixture of communities \cite{mixMember} or to overlapping groups \cite{LA}. Airoldi \emph{et al.}, pioneered the development of the mixed membership stochastic block model \cite{mixMember}, where instead of modeling a node's membership in each community in a binary manner, the authors allow a node to belong to multiple communities. The generative process for this approach for modeling the existence of an edge between nodes $p$ and $q$ in a network with $K$ possible communities and ${\boldsymbol \theta}$ representing the between community connection probabilities.
+
+\begin{itemize}
+\item For each node $p$, draw a mixed membership vector $\pi_{p}\sim \text{Dirchelet}({\boldsymbol \alpha})$
+\item Then for each pair of nodes $(p,q)$, draw ${\bf z}_{p\rightarrow q} \sim \text{Multinomial}(\pi_{p})$, ${\bf z}_{q\rightarrow p} \sim \text{Multinomial}(\pi_{q})$
+\item Sample the edge between $p$ and $q$ as, $A_{pq}$, where $A_{pq} \sim \text{Bernoulli}({\bf z}_{q\rightarrow p}^{T}{\boldsymbol \theta}{\bf z}_{q\rightarrow p})$
+\end{itemize} 
+
+Following the development of the mixed membership stochastic block model, Latocuhe \emph{et al.} \cite{LA} addressed an important limitation of \cite{mixMember}. Since the probability of an edge between a pair of nodes $p$ and $q$ depends on a single draw of ${\bf z}_{p\rightarrow q}$ and ${\bf z}_{q\rightarrow p}$, the class memberships of nodes $p$ and $q$ towards other nodes in the network are ignored. Moreover, this model adapts the mixed membership stochastic block model to incorporate more structures of the network. 
+
+\section{Affiliation model and inference}
+
+
+Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.   
+
+Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.   
+
+Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer
+
+
+\chapter{Community Detection in multilayer networks}
+
+\chapter{A multilayer stochastic block model}
+
+\section{Fitting a common stochastic block model to all network layers}
+
+\section{Strata multilayer stochastic block model}
+
+\section{Parameter learning}
+
+\section{A clustering-based fitting approach}
+
+\section{Synthetic examples}
+
+\section{Detectability limits}
+
+\section{Human microbiome project example}
+
+\section{Comparison to reducibility}
+
+\chapter{Network compression}
+
+\chapter{Network compression for community detection with super nodes}
+\section{Super pixel pre-processing of images}
+\section{Super node pre-processing for networks}
+\section{2-Core decomposition approach for selecting seeds as community centers}
+\section{Creating a super node network representaion}
+\section{Social network data examples}
+\section{Benefits of a compressed representation: run time, variability, neighborhood smoothing}
+
+\chapter{Attributed networks and community detection}
+\section{Examples of attributed networks}
+\section{Models and inference for attributed networks}
+\section{Alignment of attributes with communities}
+
+\chapter{An attributed stochastic block model}
+\section{Approaches to an attributed stochastic block model}
+\section{A model of conditional independence between attributes and connectivity}
+\section{Learning the model parameters}
+\section{Example on a synthetic attributed network}
+\section{Detectability limits in attributed networks}
+\section{Case studies for attributed networks}
+\section{Attributed SBM in link prediction}
+\section{Attributed SBM in collaborative filtering}
+
+\chapter{Software}
+\section{sMLSBM}
+\section{Super node representations for a network}
+\section{Attributed stochastic block model}
+
+\chapter{Conclusion and future work}
+
+
+% Bibliography
+\input{common/references}
+
+\end{document}

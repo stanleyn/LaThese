@@ -1,0 +1,15 @@
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {1.1}{\ignorespaces {\bf Toy social network.} A small example of a social network, with nodes being users and edges representing connections between users. Image from \url {https://www.phpfox.com}}}{2}{figure.1.1}
+\contentsline {figure}{\numberline {1.2}{\ignorespaces {\bf Hairball network.} Networks are often noisy data structures and lack an immediate straight forward structural interpretation. Image from \url {https://cs.umd.edu}}}{3}{figure.1.2}
+\contentsline {figure}{\numberline {1.3}{\ignorespaces {\bf Assortative Community Structure.} Nodes are tightly connected to each other and more sparsely connected to the rest of the network. Each community is outlined with a pink dotted line.}}{4}{figure.1.3}
+\contentsline {figure}{\numberline {1.4}{\ignorespaces {\bf Directed Acyclic Graph.} A directed acyclic graph (DAG) is formed based on dependency between random variable and allows for a fully factorized probability distribution.}}{10}{figure.1.4}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces {\bf SBM Graphical Model.} A graphical model is used to model the dependency between the node-to-community assignments, ${\bf z}$ and the observed network adjacency matrix, ${\bf A}$.}}{12}{figure.2.1}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
