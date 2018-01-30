@@ -2,59 +2,68 @@
 \BOOKMARK [0][-]{section*.2}{LIST OF FIGURES}{}% 2
 \BOOKMARK [0][-]{section*.3}{LIST OF ABBREVIATIONS}{}% 3
 \BOOKMARK [0][-]{chapter.1}{Introduction}{}% 4
-\BOOKMARK [1][-]{section.1.1}{Network Notation}{chapter.1}% 5
+\BOOKMARK [1][-]{section.1.1}{Network Notation,Representation, and Summarization}{chapter.1}% 5
 \BOOKMARK [2][-]{subsection.1.1.1}{Representing relational information}{section.1.1}% 6
-\BOOKMARK [2][-]{subsection.1.1.2}{Basic Analysis}{section.1.1}% 7
+\BOOKMARK [2][-]{subsection.1.1.2}{Network Summary Statistics}{section.1.1}% 7
 \BOOKMARK [1][-]{section.1.2}{Conceptual Overview of Community Detection}{chapter.1}% 8
-\BOOKMARK [1][-]{section.1.3}{The state of the art methods}{chapter.1}% 9
+\BOOKMARK [1][-]{section.1.3}{Introduction to community detection}{chapter.1}% 9
 \BOOKMARK [2][-]{subsection.1.3.1}{Quality function maximization with modularity}{section.1.3}% 10
 \BOOKMARK [2][-]{subsection.1.3.2}{Identifying communities with probabilistic approaches}{section.1.3}% 11
 \BOOKMARK [2][-]{subsection.1.3.3}{Deep Learning Approaches}{section.1.3}% 12
-\BOOKMARK [1][-]{section.1.4}{Case studies in network community detection}{chapter.1}% 13
-\BOOKMARK [2][-]{subsection.1.4.1}{Network analysis in computational biology}{section.1.4}% 14
-\BOOKMARK [1][-]{section.1.5}{Network analysis in neuroscience}{chapter.1}% 15
-\BOOKMARK [1][-]{section.1.6}{Network analysis software}{chapter.1}% 16
-\BOOKMARK [1][-]{section.1.7}{Open problems in community detection}{chapter.1}% 17
-\BOOKMARK [1][-]{section.1.8}{Probabilistic graphical models for statistical inference}{chapter.1}% 18
-\BOOKMARK [0][-]{chapter.2}{Probabilistic community detection models and inference techniques}{}% 19
-\BOOKMARK [1][-]{section.2.1}{Stochastic block model}{chapter.2}% 20
-\BOOKMARK [2][-]{subsection.2.1.1}{Most general stochastic block model}{section.2.1}% 21
-\BOOKMARK [2][-]{subsection.2.1.2}{Variants to the Classic Stochastic Block Model}{section.2.1}% 22
-\BOOKMARK [1][-]{section.2.2}{Affiliation model and inference}{chapter.2}% 23
-\BOOKMARK [0][-]{chapter.3}{Community Detection in multilayer networks}{}% 24
-\BOOKMARK [0][-]{chapter.4}{A multilayer stochastic block model}{}% 25
-\BOOKMARK [1][-]{section.4.1}{Fitting a common stochastic block model to all network layers}{chapter.4}% 26
-\BOOKMARK [1][-]{section.4.2}{Strata multilayer stochastic block model}{chapter.4}% 27
-\BOOKMARK [1][-]{section.4.3}{Parameter learning}{chapter.4}% 28
-\BOOKMARK [1][-]{section.4.4}{A clustering-based fitting approach}{chapter.4}% 29
-\BOOKMARK [1][-]{section.4.5}{Synthetic examples}{chapter.4}% 30
-\BOOKMARK [1][-]{section.4.6}{Detectability limits}{chapter.4}% 31
-\BOOKMARK [1][-]{section.4.7}{Human microbiome project example}{chapter.4}% 32
-\BOOKMARK [1][-]{section.4.8}{Comparison to reducibility}{chapter.4}% 33
-\BOOKMARK [0][-]{chapter.5}{Network compression}{}% 34
-\BOOKMARK [0][-]{chapter.6}{Network compression for community detection with super nodes}{}% 35
-\BOOKMARK [1][-]{section.6.1}{Super pixel pre-processing of images}{chapter.6}% 36
-\BOOKMARK [1][-]{section.6.2}{Super node pre-processing for networks}{chapter.6}% 37
-\BOOKMARK [1][-]{section.6.3}{2-Core decomposition approach for selecting seeds as community centers}{chapter.6}% 38
-\BOOKMARK [1][-]{section.6.4}{Creating a super node network representaion}{chapter.6}% 39
-\BOOKMARK [1][-]{section.6.5}{Social network data examples}{chapter.6}% 40
-\BOOKMARK [1][-]{section.6.6}{Benefits of a compressed representation: run time, variability, neighborhood smoothing}{chapter.6}% 41
-\BOOKMARK [0][-]{chapter.7}{Attributed networks and community detection}{}% 42
-\BOOKMARK [1][-]{section.7.1}{Examples of attributed networks}{chapter.7}% 43
-\BOOKMARK [1][-]{section.7.2}{Models and inference for attributed networks}{chapter.7}% 44
-\BOOKMARK [1][-]{section.7.3}{Alignment of attributes with communities}{chapter.7}% 45
-\BOOKMARK [0][-]{chapter.8}{An attributed stochastic block model}{}% 46
-\BOOKMARK [1][-]{section.8.1}{Approaches to an attributed stochastic block model}{chapter.8}% 47
-\BOOKMARK [1][-]{section.8.2}{A model of conditional independence between attributes and connectivity}{chapter.8}% 48
-\BOOKMARK [1][-]{section.8.3}{Learning the model parameters}{chapter.8}% 49
-\BOOKMARK [1][-]{section.8.4}{Example on a synthetic attributed network}{chapter.8}% 50
-\BOOKMARK [1][-]{section.8.5}{Detectability limits in attributed networks}{chapter.8}% 51
-\BOOKMARK [1][-]{section.8.6}{Case studies for attributed networks}{chapter.8}% 52
-\BOOKMARK [1][-]{section.8.7}{Attributed SBM in link prediction}{chapter.8}% 53
-\BOOKMARK [1][-]{section.8.8}{Attributed SBM in collaborative filtering}{chapter.8}% 54
-\BOOKMARK [0][-]{chapter.9}{Software}{}% 55
-\BOOKMARK [1][-]{section.9.1}{sMLSBM}{chapter.9}% 56
-\BOOKMARK [1][-]{section.9.2}{Super node representations for a network}{chapter.9}% 57
-\BOOKMARK [1][-]{section.9.3}{Attributed stochastic block model}{chapter.9}% 58
-\BOOKMARK [0][-]{chapter.10}{Conclusion and future work}{}% 59
-\BOOKMARK [0][-]{section*.4}{BIBLIOGRAPHY}{}% 60
+\BOOKMARK [2][-]{subsection.1.3.4}{Spectral community detection methods}{section.1.3}% 13
+\BOOKMARK [2][-]{subsection.1.3.5}{Higher order network analysis}{section.1.3}% 14
+\BOOKMARK [1][-]{section.1.4}{Community detection in computational biology}{chapter.1}% 15
+\BOOKMARK [2][-]{subsection.1.4.1}{Immunological profiling to establish a pregnancy immune clock}{section.1.4}% 16
+\BOOKMARK [2][-]{subsection.1.4.2}{Uncovering differences in microbiome community structure in patients with inflammatory bowel disease}{section.1.4}% 17
+\BOOKMARK [2][-]{subsection.1.4.3}{Community detection for analysis of flow cytometry data}{section.1.4}% 18
+\BOOKMARK [2][-]{subsection.1.4.4}{Understanding genetic diversity of the malaria parasite genes}{section.1.4}% 19
+\BOOKMARK [1][-]{section.1.5}{Challenging problems in community detection}{chapter.1}% 20
+\BOOKMARK [2][-]{subsection.1.5.1}{Temporal Networks}{section.1.5}% 21
+\BOOKMARK [2][-]{subsection.1.5.2}{Multilayer networks}{section.1.5}% 22
+\BOOKMARK [2][-]{subsection.1.5.3}{Network Comparison}{section.1.5}% 23
+\BOOKMARK [2][-]{subsection.1.5.4}{Large Networks}{section.1.5}% 24
+\BOOKMARK [2][-]{subsection.1.5.5}{Attributed Networks}{section.1.5}% 25
+\BOOKMARK [1][-]{section.1.6}{Thesis Contribution and Outline}{chapter.1}% 26
+\BOOKMARK [0][-]{chapter.2}{Probabilistic community detection models and inference techniques}{}% 27
+\BOOKMARK [1][-]{section.2.1}{Probabilistic graphical models for statistical inference}{chapter.2}% 28
+\BOOKMARK [1][-]{section.2.2}{Stochastic block model}{chapter.2}% 29
+\BOOKMARK [2][-]{subsection.2.2.1}{Most general stochastic block model}{section.2.2}% 30
+\BOOKMARK [2][-]{subsection.2.2.2}{Variants to the Classic Stochastic Block Model}{section.2.2}% 31
+\BOOKMARK [1][-]{section.2.3}{Affiliation model and inference}{chapter.2}% 32
+\BOOKMARK [0][-]{chapter.3}{A multilayer stochastic block model}{}% 33
+\BOOKMARK [1][-]{section.3.1}{Introduction to multilayer networks}{chapter.3}% 34
+\BOOKMARK [1][-]{section.3.2}{Comparing network layers based on community structure}{chapter.3}% 35
+\BOOKMARK [1][-]{section.3.3}{Related work in community detection of multilayer networks}{chapter.3}% 36
+\BOOKMARK [1][-]{section.3.4}{A Summary of Novel Contributions of sMLSBM}{chapter.3}% 37
+\BOOKMARK [1][-]{section.3.5}{sMLSBM Model Definition}{chapter.3}% 38
+\BOOKMARK [1][-]{section.3.6}{Inference for learning model parameters of sMLSBM}{chapter.3}% 39
+\BOOKMARK [1][-]{section.3.7}{Synthetic Examples}{chapter.3}% 40
+\BOOKMARK [2][-]{subsection.3.7.1}{Comparison of sMLSBM to other SBM Approaches}{section.3.7}% 41
+\BOOKMARK [2][-]{subsection.3.7.2}{Synthetic Experiment with Two Strata}{section.3.7}% 42
+\BOOKMARK [1][-]{section.3.8}{Human Microbiome Project Example}{chapter.3}% 43
+\BOOKMARK [2][-]{subsection.3.8.1}{Comparison of sMLSBM to multilayer network reducibility}{section.3.8}% 44
+\BOOKMARK [2][-]{subsection.3.8.2}{Generating samples from the fitted sMLSBM}{section.3.8}% 45
+\BOOKMARK [1][-]{section.3.9}{Concluding remarks for sMLSBM}{chapter.3}% 46
+\BOOKMARK [1][-]{section.3.10}{Detectability in a single stratum}{chapter.3}% 47
+\BOOKMARK [0][-]{chapter.4}{Network compression for community detection with super nodes}{}% 48
+\BOOKMARK [1][-]{section.4.1}{Super pixel pre-processing of images}{chapter.4}% 49
+\BOOKMARK [1][-]{section.4.2}{Super node pre-processing for networks}{chapter.4}% 50
+\BOOKMARK [1][-]{section.4.3}{2-Core decomposition approach for selecting seeds as community centers}{chapter.4}% 51
+\BOOKMARK [1][-]{section.4.4}{Creating a super node network representaion}{chapter.4}% 52
+\BOOKMARK [1][-]{section.4.5}{Social network data examples}{chapter.4}% 53
+\BOOKMARK [1][-]{section.4.6}{Benefits of a compressed representation: run time, variability, neighborhood smoothing}{chapter.4}% 54
+\BOOKMARK [0][-]{chapter.5}{An attributed stochastic block model}{}% 55
+\BOOKMARK [1][-]{section.5.1}{Examples of attributed networks}{chapter.5}% 56
+\BOOKMARK [1][-]{section.5.2}{Models and inference for attributed networks}{chapter.5}% 57
+\BOOKMARK [1][-]{section.5.3}{Alignment of attributes with communities}{chapter.5}% 58
+\BOOKMARK [1][-]{section.5.4}{Approaches to an attributed stochastic block model}{chapter.5}% 59
+\BOOKMARK [1][-]{section.5.5}{A model of conditional independence between attributes and connectivity}{chapter.5}% 60
+\BOOKMARK [1][-]{section.5.6}{Learning the model parameters}{chapter.5}% 61
+\BOOKMARK [1][-]{section.5.7}{Example on a synthetic attributed network}{chapter.5}% 62
+\BOOKMARK [1][-]{section.5.8}{Detectability limits in attributed networks}{chapter.5}% 63
+\BOOKMARK [1][-]{section.5.9}{Case studies for attributed networks}{chapter.5}% 64
+\BOOKMARK [1][-]{section.5.10}{Attributed SBM in link prediction}{chapter.5}% 65
+\BOOKMARK [1][-]{section.5.11}{Attributed SBM in collaborative filtering}{chapter.5}% 66
+\BOOKMARK [0][-]{chapter.6}{Community detection for understanding burn inhalation injury}{}% 67
+\BOOKMARK [0][-]{chapter.7}{Conclusion and future work}{}% 68
+\BOOKMARK [0][-]{section*.4}{BIBLIOGRAPHY}{}% 69
