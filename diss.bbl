@@ -1,5 +1,10 @@
 \begin{thebibliography}{}
 
+\bibitem[Abbe et~al., 2016]{detect25}
+Abbe, E., Bandeira, A.~S., and Hall, G. (2016).
+\newblock Exact recovery in the stochastic block model.
+\newblock {\em IEEE Transactions on Information Theory}, 62(1):471--487.
+
 \bibitem[Aghaeepour et~al., 2013]{nimaFlow}
 Aghaeepour, N., Finak, G., Hoos, H., Mosmann, T.~R., Brinkman, R., Gottardo,
   R., Scheuermann, R.~H., Consortium, F., Consortium, D., et~al. (2013).
@@ -59,6 +64,12 @@ Barry, A.~E., Leliwa-Sytek, A., Tavul, L., Imrie, H., Migot-Nabias, F., Brown,
   falciparum.
 \newblock {\em PLoS pathogens}, 3(3):e34.
 
+\bibitem[Benaych-Georges and Nadakuditi, 2011]{detect38}
+Benaych-Georges, F. and Nadakuditi, R.~R. (2011).
+\newblock The eigenvalues and eigenvectors of finite, low rank perturbations of
+  large random matrices.
+\newblock {\em Advances in Mathematics}, 227(1):494--521.
+
 \bibitem[Bendall et~al., 2012]{cytof}
 Bendall, S.~C., Nolan, G.~P., Roederer, M., and Chattopadhyay, P.~K. (2012).
 \newblock A deep profiler's guide to cytometry.
@@ -96,6 +107,13 @@ Brandes, U., Lerner, J., Nagel, U., and Nick, B. (2009).
 Browet, A., Absil, P.-A., and Van~Dooren, P. (2011).
 \newblock Community detection for hierarchical image segmentation.
 \newblock In {\em IWCIA}, volume~11, pages 358--371. Springer.
+
+\bibitem[Chen et~al., 2016]{cytofkit}
+Chen, H., Lau, M.~C., Wong, M.~T., Newell, E.~W., Poidinger, M., and Chen, J.
+  (2016).
+\newblock Cytofkit: a bioconductor package for an integrated mass cytometry
+  data analysis pipeline.
+\newblock {\em PLoS computational biology}, 12(9):e1005112.
 
 \bibitem[Clauset et~al., 2007]{clausethierarchy}
 Clauset, A., Moore, C., and Newman, M.~E. (2007).
@@ -137,8 +155,14 @@ De~Domenico, M., Sol{\'e}-Ribalta, A., Cozzo, E., Kivel{\"a}, M., Moreno, Y.,
 \newblock Mathematical formulation of multilayer networks.
 \newblock {\em Physical Review X}, 3(4):041022.
 
-\bibitem[Decelle et~al., 2011]{decelle2011inference}
-Decelle, A., Krzakala, F., Moore, C., and Zdeborov{\'a}, L. (2011).
+\bibitem[Decelle et~al., 2011a]{decelle2011inference}
+Decelle, A., Krzakala, F., Moore, C., and Zdeborov{\'a}, L. (2011a).
+\newblock Inference and phase transitions in the detection of modules in sparse
+  networks.
+\newblock {\em Physical Review Letters}, 107(6):065701.
+
+\bibitem[Decelle et~al., 2011b]{detect23}
+Decelle, A., Krzakala, F., Moore, C., and Zdeborov{\'a}, L. (2011b).
 \newblock Inference and phase transitions in the detection of modules in sparse
   networks.
 \newblock {\em Physical Review Letters}, 107(6):065701.
@@ -183,6 +207,12 @@ Friedman, J. and Alm, E.~J. (2012).
 \newblock Inferring correlation networks from genomic survey data.
 \newblock {\em PLoS computational biology}, 8(9):e1002687.
 
+\bibitem[Ghasemian et~al., 2016]{detectTemporal}
+Ghasemian, A., Zhang, P., Clauset, A., Moore, C., and Peel, L. (2016).
+\newblock Detectability thresholds and optimal algorithms for community
+  structure in dynamic networks.
+\newblock {\em Physical Review X}, 6(3):031005.
+
 \bibitem[Girvan and Newman, 2002]{girvancommunity}
 Girvan, M. and Newman, M.~E. (2002).
 \newblock Community structure in social and biological networks.
@@ -225,6 +255,12 @@ Hartigan, J.~A. and Wong, M.~A. (1979).
 \newblock Algorithm as 136: A k-means clustering algorithm.
 \newblock {\em Journal of the Royal Statistical Society. Series C (Applied
   Statistics)}, 28(1):100--108.
+
+\bibitem[Hu et~al., 2012]{detect22}
+Hu, D., Ronhovde, P., and Nussinov, Z. (2012).
+\newblock Phase transitions in random potts systems and the community detection
+  problem: spin-glass type and dynamic perspectives.
+\newblock {\em Philosophical Magazine}, 92(4):406--445.
 
 \bibitem[Iacovacci et~al., 2015]{confusingMesoscopic}
 Iacovacci, J., Wu, Z., and Bianconi, G. (2015).
@@ -269,6 +305,11 @@ Lancichinetti, A. and Fortunato, S. (2009).
 \newblock Community detection algorithms: a comparative analysis.
 \newblock {\em Physical review E}, 80(5):056117.
 
+\bibitem[Lancichinetti and Fortunato, 2011]{detect20}
+Lancichinetti, A. and Fortunato, S. (2011).
+\newblock Limits of modularity maximization in community detection.
+\newblock {\em Physical review E}, 84(6):066122.
+
 \bibitem[Larremore et~al., 2013]{larremoreparasite}
 Larremore, D.~B., Clauset, A., and Buckee, C.~O. (2013).
 \newblock A network approach to analyzing highly recombinant malaria parasite
@@ -292,6 +333,14 @@ Leskovec, J., Lang, K.~J., Dasgupta, A., and Mahoney, M.~W. (2009).
   absence of large well-defined clusters.
 \newblock {\em Internet Mathematics}, 6(1):29--123.
 
+\bibitem[Levine et~al., 2015]{phenoGraph}
+Levine, J.~H., Simonds, E.~F., Bendall, S.~C., Davis, K.~L., El-ad, D.~A.,
+  Tadmor, M.~D., Litvin, O., Fienberg, H.~G., Jager, A., Zunder, E.~R., et~al.
+  (2015).
+\newblock Data-driven phenotypic dissection of aml reveals progenitor-like
+  cells that correlate with prognosis.
+\newblock {\em Cell}, 162(1):184--197.
+
 \bibitem[Lorrain and White, 1971]{structural}
 Lorrain, F. and White, H.~C. (1971).
 \newblock Structural equivalence of individuals in social networks.
@@ -302,6 +351,11 @@ Madeira, S.~C. and Oliveira, A.~L. (2004).
 \newblock Biclustering algorithms for biological data analysis: a survey.
 \newblock {\em IEEE/ACM Transactions on Computational Biology and
   Bioinformatics (TCBB)}, 1(1):24--45.
+
+\bibitem[Marusyk et~al., 2012]{intraTumor}
+Marusyk, A., Almendro, V., and Polyak, K. (2012).
+\newblock Intra-tumour heterogeneity: a looking glass for cancer?
+\newblock {\em Nature Reviews Cancer}, 12(5):323.
 
 \bibitem[Meunier et~al., 2009]{hierarchicalmod}
 Meunier, D., Lambiotte, R., Fornito, A., Ersche, K.~D., and Bullmore, E.~T.
@@ -327,6 +381,17 @@ Murphy, K.~P., Weiss, Y., and Jordan, M.~I. (1999).
   study.
 \newblock In {\em Proceedings of the Fifteenth conference on Uncertainty in
   artificial intelligence}, pages 467--475. Morgan Kaufmann Publishers Inc.
+
+\bibitem[Nadakuditi and Newman, 2012]{detect24}
+Nadakuditi, R.~R. and Newman, M.~E. (2012).
+\newblock Graph spectra and the detectability of community structure in
+  networks.
+\newblock {\em Physical review letters}, 108(18):188701.
+
+\bibitem[Nadakuditi and Newman, 2013]{detect39}
+Nadakuditi, R.~R. and Newman, M.~E. (2013).
+\newblock Spectra of random graphs with arbitrary expected degrees.
+\newblock {\em Physical Review E}, 87(1):012803.
 
 \bibitem[Newman, 2002]{newmanAssort}
 Newman, M.~E. (2002).
@@ -379,6 +444,11 @@ Paul, S. and Chen, Y. (2015).
   multi-layer stochastic blockmodel.
 \newblock {\em arXiv preprint arXiv:1506.02699}.
 
+\bibitem[Peixoto, 2013]{peixotoHierarchAttribute}
+Peixoto, T.~P. (2013).
+\newblock Eigenvalue spectra of modular networks.
+\newblock {\em Physical review letters}, 111(9):098701.
+
 \bibitem[Peixoto, 2015]{thiagomlsbm}
 Peixoto, T.~P. (2015).
 \newblock Inferring the mesoscale structure of layered, edge-valued, and
@@ -406,10 +476,20 @@ Porter, M.~A., Onnela, J.-P., and Mucha, P.~J. (2009b).
 \newblock Communities in networks.
 \newblock {\em Notices of the AMS}, 56(9):1082--1097.
 
+\bibitem[Radicchi, 2013]{detectDegreeHetero}
+Radicchi, F. (2013).
+\newblock Detectability of communities in heterogeneous networks.
+\newblock {\em Physical Review E}, 88(1):010801.
+
 \bibitem[Reichardt and Bornholdt, 2006]{resParam}
 Reichardt, J. and Bornholdt, S. (2006).
 \newblock Statistical mechanics of community detection.
 \newblock {\em Physical Review E}, 74(1):016110.
+
+\bibitem[Reichardt and Leone, 2008]{detect21}
+Reichardt, J. and Leone, M. (2008).
+\newblock (un) detectable cluster structure in sparse networks.
+\newblock {\em Physical review letters}, 101(7):078701.
 
 \bibitem[Rombach et~al., 2014]{rombach2014core}
 Rombach, M.~P., Porter, M.~A., Fowler, J.~H., and Mucha, P.~J. (2014).
@@ -423,6 +503,12 @@ Rosenberg, A. and Hirschberg, J. (2007).
 \newblock In {\em Proceedings of the 2007 joint conference on empirical methods
   in natural language processing and computational natural language learning
   (EMNLP-CoNLL)}.
+
+\bibitem[Sarkar et~al., 2013]{HierarchAttl}
+Sarkar, S., Henderson, J.~A., and Robinson, P.~A. (2013).
+\newblock Spectral characterization of hierarchical network modularity and
+  limits of modularity detection.
+\newblock {\em PloS one}, 8(1):e54383.
 
 \bibitem[Shai et~al., 2017]{shaicase}
 Shai, S., Stanley, N., Granell, C., Taylor, D., and Mucha, P.~J. (2017).
@@ -460,6 +546,11 @@ Tibshirani, R., Walther, G., and Hastie, T. (2001).
   statistic.
 \newblock {\em Journal of the Royal Statistical Society: Series B (Statistical
   Methodology)}, 63(2):411--423.
+
+\bibitem[Tong et~al., 2008]{RWR}
+Tong, H., Faloutsos, C., and Pan, J.-Y. (2008).
+\newblock Random walk with restart: fast solutions and applications.
+\newblock {\em Knowledge and Information Systems}, 14(3):327--346.
 
 \bibitem[Traud et~al., 2011]{Rand}
 Traud, A.~L., Kelsic, E.~D., Mucha, P.~J., and Porter, M.~A. (2011).
@@ -521,6 +612,12 @@ Zapi{\'e}n-Campos, R., Olmedo-{\'A}lvarez, G., and Santill{\'a}n, M. (2015).
   of bacterial communities in a homogeneous environment: a computational
   modeling approach.
 \newblock {\em Frontiers in Microbiology}, 6:489.
+
+\bibitem[Zare et~al., 2010]{FlowSpectral}
+Zare, H., Shooshtari, P., Gupta, A., and Brinkman, R.~R. (2010).
+\newblock Data reduction for spectral clustering to analyze high throughput
+  flow cytometry data.
+\newblock {\em BMC bioinformatics}, 11(1):403.
 
 \bibitem[Zhang et~al., 2012]{comp}
 Zhang, P., Krzakala, F., Reichardt, J., and Zdeborov{\'a}, L. (2012).

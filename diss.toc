@@ -1,69 +1,77 @@
-\contentsline {chapter}{LIST OF TABLES}{ix}{section*.1}
-\contentsline {chapter}{LIST OF FIGURES}{x}{section*.2}
-\contentsline {chapter}{LIST OF ABBREVIATIONS}{xiii}{section*.3}
+\contentsline {chapter}{LIST OF TABLES}{x}{section*.1}
+\contentsline {chapter}{LIST OF FIGURES}{xi}{section*.2}
+\contentsline {chapter}{LIST OF ABBREVIATIONS}{xiv}{section*.3}
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Network Notation,Representation, and Summarization}{1}{section.1.1}
 \contentsline {subsection}{\numberline {1.1.1}Representing relational information}{1}{subsection.1.1.1}
 \contentsline {subsection}{\numberline {1.1.2}Network Summary Statistics}{3}{subsection.1.1.2}
-\contentsline {section}{\numberline {1.2}Conceptual Overview of Community Detection}{4}{section.1.2}
-\contentsline {section}{\numberline {1.3}Introduction to community detection}{5}{section.1.3}
-\contentsline {subsection}{\numberline {1.3.1}Quality function maximization with modularity}{5}{subsection.1.3.1}
-\contentsline {subsection}{\numberline {1.3.2}Identifying communities with probabilistic approaches}{6}{subsection.1.3.2}
-\contentsline {subsection}{\numberline {1.3.3}Deep Learning Approaches}{7}{subsection.1.3.3}
-\contentsline {subsection}{\numberline {1.3.4}Spectral community detection methods}{8}{subsection.1.3.4}
-\contentsline {subsection}{\numberline {1.3.5}Higher order network analysis}{8}{subsection.1.3.5}
-\contentsline {section}{\numberline {1.4}Community detection in computational biology}{8}{section.1.4}
-\contentsline {subsection}{\numberline {1.4.1}Immunological profiling to establish a pregnancy immune clock}{8}{subsection.1.4.1}
-\contentsline {subsection}{\numberline {1.4.2}Uncovering differences in microbiome community structure in patients with inflammatory bowel disease}{9}{subsection.1.4.2}
-\contentsline {subsection}{\numberline {1.4.3}Community detection for analysis of flow cytometry data}{10}{subsection.1.4.3}
-\contentsline {subsection}{\numberline {1.4.4}Understanding genetic diversity of the malaria parasite genes}{11}{subsection.1.4.4}
-\contentsline {section}{\numberline {1.5}Challenging problems in community detection}{13}{section.1.5}
-\contentsline {subsection}{\numberline {1.5.1}Temporal Networks}{13}{subsection.1.5.1}
-\contentsline {subsection}{\numberline {1.5.2}Multilayer networks}{13}{subsection.1.5.2}
-\contentsline {subsection}{\numberline {1.5.3}Network Comparison}{13}{subsection.1.5.3}
-\contentsline {subsection}{\numberline {1.5.4}Large Networks}{13}{subsection.1.5.4}
-\contentsline {subsection}{\numberline {1.5.5}Attributed Networks}{13}{subsection.1.5.5}
-\contentsline {section}{\numberline {1.6}Thesis Contribution and Outline}{13}{section.1.6}
-\contentsline {chapter}{\numberline {2}Probabilistic community detection models and inference techniques}{15}{chapter.2}
-\contentsline {section}{\numberline {2.1}Probabilistic graphical models for statistical inference}{15}{section.2.1}
-\contentsline {section}{\numberline {2.2}Stochastic block model}{16}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Most general stochastic block model}{16}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}Variants to the Classic Stochastic Block Model}{19}{subsection.2.2.2}
-\contentsline {section}{\numberline {2.3}Affiliation model and inference}{21}{section.2.3}
-\contentsline {chapter}{\numberline {3}A multilayer stochastic block model}{22}{chapter.3}
-\contentsline {section}{\numberline {3.1}Introduction to multilayer networks}{22}{section.3.1}
-\contentsline {section}{\numberline {3.2}Comparing network layers based on community structure}{23}{section.3.2}
-\contentsline {section}{\numberline {3.3}Related work in community detection of multilayer networks}{25}{section.3.3}
-\contentsline {section}{\numberline {3.4}A Summary of Novel Contributions of sMLSBM}{27}{section.3.4}
-\contentsline {section}{\numberline {3.5}sMLSBM Model Definition}{28}{section.3.5}
-\contentsline {section}{\numberline {3.6}Inference for learning model parameters of sMLSBM}{29}{section.3.6}
-\contentsline {section}{\numberline {3.7}Synthetic Examples}{35}{section.3.7}
-\contentsline {subsection}{\numberline {3.7.1}Comparison of sMLSBM to other SBM Approaches}{35}{subsection.3.7.1}
-\contentsline {subsection}{\numberline {3.7.2}Synthetic Experiment with Two Strata}{37}{subsection.3.7.2}
-\contentsline {section}{\numberline {3.8}Human Microbiome Project Example}{38}{section.3.8}
-\contentsline {subsection}{\numberline {3.8.1}Comparison of sMLSBM to multilayer network reducibility}{41}{subsection.3.8.1}
-\contentsline {subsection}{\numberline {3.8.2}Generating samples from the fitted sMLSBM}{42}{subsection.3.8.2}
-\contentsline {section}{\numberline {3.9}Concluding remarks for sMLSBM}{43}{section.3.9}
-\contentsline {section}{\numberline {3.10}Detectability in a single stratum}{45}{section.3.10}
-\contentsline {chapter}{\numberline {4}Network compression for community detection with super nodes}{47}{chapter.4}
-\contentsline {section}{\numberline {4.1}Super pixel pre-processing of images}{47}{section.4.1}
-\contentsline {section}{\numberline {4.2}Super node pre-processing for networks}{47}{section.4.2}
-\contentsline {section}{\numberline {4.3}2-Core decomposition approach for selecting seeds as community centers}{47}{section.4.3}
-\contentsline {section}{\numberline {4.4}Creating a super node network representaion}{47}{section.4.4}
-\contentsline {section}{\numberline {4.5}Social network data examples}{47}{section.4.5}
-\contentsline {section}{\numberline {4.6}Benefits of a compressed representation: run time, variability, neighborhood smoothing}{47}{section.4.6}
-\contentsline {chapter}{\numberline {5}An attributed stochastic block model}{48}{chapter.5}
-\contentsline {section}{\numberline {5.1}Examples of attributed networks}{48}{section.5.1}
-\contentsline {section}{\numberline {5.2}Models and inference for attributed networks}{48}{section.5.2}
-\contentsline {section}{\numberline {5.3}Alignment of attributes with communities}{48}{section.5.3}
-\contentsline {section}{\numberline {5.4}Approaches to an attributed stochastic block model}{48}{section.5.4}
-\contentsline {section}{\numberline {5.5}A model of conditional independence between attributes and connectivity}{48}{section.5.5}
-\contentsline {section}{\numberline {5.6}Learning the model parameters}{48}{section.5.6}
-\contentsline {section}{\numberline {5.7}Example on a synthetic attributed network}{48}{section.5.7}
-\contentsline {section}{\numberline {5.8}Detectability limits in attributed networks}{48}{section.5.8}
-\contentsline {section}{\numberline {5.9}Case studies for attributed networks}{48}{section.5.9}
-\contentsline {section}{\numberline {5.10}Attributed SBM in link prediction}{48}{section.5.10}
-\contentsline {section}{\numberline {5.11}Attributed SBM in collaborative filtering}{48}{section.5.11}
-\contentsline {chapter}{\numberline {6}Community detection for understanding burn inhalation injury}{49}{chapter.6}
-\contentsline {chapter}{\numberline {7}Conclusion and future work}{50}{chapter.7}
-\contentsline {chapter}{BIBLIOGRAPHY}{51}{section*.4}
+\contentsline {subsubsection}{\numberline {1.1.2.1}Building a network to illustrate summary statistics}{3}{subsubsection.1.1.2.1}
+\contentsline {subsubsection}{\numberline {1.1.2.2}Degree Distribution}{4}{subsubsection.1.1.2.2}
+\contentsline {subsubsection}{\numberline {1.1.2.3}Centrality and network hubs}{5}{subsubsection.1.1.2.3}
+\contentsline {section}{\numberline {1.2}Conceptual Overview of Community Detection}{7}{section.1.2}
+\contentsline {section}{\numberline {1.3}Introduction to community detection}{8}{section.1.3}
+\contentsline {subsection}{\numberline {1.3.1}Quality function maximization with modularity}{8}{subsection.1.3.1}
+\contentsline {subsection}{\numberline {1.3.2}Identifying communities with probabilistic approaches}{10}{subsection.1.3.2}
+\contentsline {subsection}{\numberline {1.3.3}Deep Learning Approaches}{11}{subsection.1.3.3}
+\contentsline {subsection}{\numberline {1.3.4}Spectral community detection methods}{12}{subsection.1.3.4}
+\contentsline {subsection}{\numberline {1.3.5}Higher order network analysis}{12}{subsection.1.3.5}
+\contentsline {section}{\numberline {1.4}Community detection in computational biology}{12}{section.1.4}
+\contentsline {subsection}{\numberline {1.4.1}Immunological profiling to establish a pregnancy immune clock}{12}{subsection.1.4.1}
+\contentsline {subsection}{\numberline {1.4.2}Uncovering differences in microbiome community structure in patients with inflammatory bowel disease}{13}{subsection.1.4.2}
+\contentsline {subsection}{\numberline {1.4.3}Community detection for analysis of flow cytometry data}{14}{subsection.1.4.3}
+\contentsline {subsection}{\numberline {1.4.4}Understanding genetic diversity of the malaria parasite genes}{15}{subsection.1.4.4}
+\contentsline {subsection}{\numberline {1.4.5}Analysis of high dimensional single cell data for tumor heterogenity}{17}{subsection.1.4.5}
+\contentsline {subsection}{\numberline {1.4.6}Identification of virulence factor genes related to antibiotic resistance of uropathogenic \emph {E. coli}}{19}{subsection.1.4.6}
+\contentsline {section}{\numberline {1.5}Challenging problems in community detection}{20}{section.1.5}
+\contentsline {subsection}{\numberline {1.5.1}Temporal Networks}{20}{subsection.1.5.1}
+\contentsline {subsection}{\numberline {1.5.2}Multilayer networks}{20}{subsection.1.5.2}
+\contentsline {subsection}{\numberline {1.5.3}Network Comparison}{20}{subsection.1.5.3}
+\contentsline {subsection}{\numberline {1.5.4}Large Networks}{20}{subsection.1.5.4}
+\contentsline {subsection}{\numberline {1.5.5}Attributed Networks}{20}{subsection.1.5.5}
+\contentsline {section}{\numberline {1.6}Thesis Contribution and Outline}{20}{section.1.6}
+\contentsline {chapter}{\numberline {2}Probabilistic community detection models and inference techniques}{21}{chapter.2}
+\contentsline {section}{\numberline {2.1}Probabilistic graphical models for statistical inference}{21}{section.2.1}
+\contentsline {section}{\numberline {2.2}Stochastic block model}{22}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Most general stochastic block model}{22}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Variants to the Classic Stochastic Block Model}{25}{subsection.2.2.2}
+\contentsline {section}{\numberline {2.3}Affiliation model and inference}{27}{section.2.3}
+\contentsline {chapter}{\numberline {3}A multilayer stochastic block model}{28}{chapter.3}
+\contentsline {section}{\numberline {3.1}Introduction to multilayer networks}{28}{section.3.1}
+\contentsline {section}{\numberline {3.2}Comparing network layers based on community structure}{29}{section.3.2}
+\contentsline {section}{\numberline {3.3}Related work in community detection of multilayer networks}{31}{section.3.3}
+\contentsline {section}{\numberline {3.4}A Summary of Novel Contributions of sMLSBM}{33}{section.3.4}
+\contentsline {section}{\numberline {3.5}sMLSBM Model Definition}{34}{section.3.5}
+\contentsline {section}{\numberline {3.6}Inference for learning model parameters of sMLSBM}{35}{section.3.6}
+\contentsline {section}{\numberline {3.7}Synthetic Examples}{41}{section.3.7}
+\contentsline {subsection}{\numberline {3.7.1}Comparison of sMLSBM to other SBM Approaches}{41}{subsection.3.7.1}
+\contentsline {subsection}{\numberline {3.7.2}Synthetic Experiment with Two Strata}{43}{subsection.3.7.2}
+\contentsline {section}{\numberline {3.8}Human Microbiome Project Example}{44}{section.3.8}
+\contentsline {subsection}{\numberline {3.8.1}Comparison of sMLSBM to multilayer network reducibility}{47}{subsection.3.8.1}
+\contentsline {subsection}{\numberline {3.8.2}Generating samples from the fitted sMLSBM}{48}{subsection.3.8.2}
+\contentsline {section}{\numberline {3.9}Concluding remarks for sMLSBM}{49}{section.3.9}
+\contentsline {section}{\numberline {3.10}Detectability in a single stratum}{51}{section.3.10}
+\contentsline {subsection}{\numberline {3.10.1}Investigating detectability in a multilayer network}{52}{subsection.3.10.1}
+\contentsline {subsection}{\numberline {3.10.2}Studying detectability in two block networks}{53}{subsection.3.10.2}
+\contentsline {subsection}{\numberline {3.10.3}Using random matrix theory to study detectability}{53}{subsection.3.10.3}
+\contentsline {chapter}{\numberline {4}Network compression for community detection with super nodes}{55}{chapter.4}
+\contentsline {section}{\numberline {4.1}Super pixel pre-processing of images}{55}{section.4.1}
+\contentsline {section}{\numberline {4.2}Super node pre-processing for networks}{55}{section.4.2}
+\contentsline {section}{\numberline {4.3}2-Core decomposition approach for selecting seeds as community centers}{55}{section.4.3}
+\contentsline {section}{\numberline {4.4}Creating a super node network representaion}{55}{section.4.4}
+\contentsline {section}{\numberline {4.5}Social network data examples}{55}{section.4.5}
+\contentsline {section}{\numberline {4.6}Benefits of a compressed representation: run time, variability, neighborhood smoothing}{55}{section.4.6}
+\contentsline {chapter}{\numberline {5}An attributed stochastic block model}{56}{chapter.5}
+\contentsline {section}{\numberline {5.1}Examples of attributed networks}{56}{section.5.1}
+\contentsline {section}{\numberline {5.2}Models and inference for attributed networks}{56}{section.5.2}
+\contentsline {section}{\numberline {5.3}Alignment of attributes with communities}{56}{section.5.3}
+\contentsline {section}{\numberline {5.4}Approaches to an attributed stochastic block model}{56}{section.5.4}
+\contentsline {section}{\numberline {5.5}A model of conditional independence between attributes and connectivity}{56}{section.5.5}
+\contentsline {section}{\numberline {5.6}Learning the model parameters}{56}{section.5.6}
+\contentsline {section}{\numberline {5.7}Example on a synthetic attributed network}{56}{section.5.7}
+\contentsline {section}{\numberline {5.8}Detectability limits in attributed networks}{56}{section.5.8}
+\contentsline {section}{\numberline {5.9}Case studies for attributed networks}{56}{section.5.9}
+\contentsline {section}{\numberline {5.10}Attributed SBM in link prediction}{56}{section.5.10}
+\contentsline {section}{\numberline {5.11}Attributed SBM in collaborative filtering}{56}{section.5.11}
+\contentsline {chapter}{\numberline {6}Community detection for understanding burn inhalation injury}{57}{chapter.6}
+\contentsline {chapter}{\numberline {7}Conclusion and future work}{58}{chapter.7}
+\contentsline {chapter}{BIBLIOGRAPHY}{59}{section*.4}

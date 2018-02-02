@@ -2,17 +2,17 @@ This is BibTeX, Version 0.99d (TeX Live 2017)
 Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: diss.aux
 Case mismatch error between cite keys Dudin and dudin
----line 152 of file diss.aux
- : \citation{Dudin
- :                }
-I'm skipping whatever remains of this command
-Case mismatch error between cite keys Dudin and dudin
 ---line 170 of file diss.aux
  : \citation{Dudin
  :                }
 I'm skipping whatever remains of this command
 Case mismatch error between cite keys Dudin and dudin
----line 180 of file diss.aux
+---line 188 of file diss.aux
+ : \citation{Dudin
+ :                }
+I'm skipping whatever remains of this command
+Case mismatch error between cite keys Dudin and dudin
+---line 198 of file diss.aux
  : \citation{Dudin
  :                }
 I'm skipping whatever remains of this command
@@ -35,45 +35,45 @@ Repeated entry---line 951 of file dissBib.bib
  : @article{fortunato
  :                   ,
 I'm skipping whatever remains of this entry
-You've used 92 entries,
+You've used 109 entries,
             1935 wiz_defined-function locations,
-            1005 strings with 19453 characters,
-and the built_in function-call counts, 40769 in all, are:
-= -- 4018
-> -- 1770
-< -- 59
-+ -- 628
-- -- 602
-* -- 3598
-:= -- 6935
-add.period$ -- 288
-call.type$ -- 92
-change.case$ -- 758
-chr.to.int$ -- 86
-cite$ -- 92
-duplicate$ -- 1485
-empty$ -- 2803
-format.name$ -- 754
-if$ -- 8027
-int.to.chr$ -- 7
+            1093 strings with 22080 characters,
+and the built_in function-call counts, 47971 in all, are:
+= -- 4700
+> -- 2104
+< -- 66
++ -- 745
+- -- 716
+* -- 4286
+:= -- 8201
+add.period$ -- 339
+call.type$ -- 109
+change.case$ -- 899
+chr.to.int$ -- 102
+cite$ -- 109
+duplicate$ -- 1723
+empty$ -- 3297
+format.name$ -- 895
+if$ -- 9403
+int.to.chr$ -- 8
 int.to.str$ -- 0
-missing$ -- 92
-newline$ -- 463
-num.names$ -- 276
-pop$ -- 634
+missing$ -- 109
+newline$ -- 548
+num.names$ -- 327
+pop$ -- 734
 preamble$ -- 1
-purify$ -- 758
+purify$ -- 899
 quote$ -- 0
-skip$ -- 1141
+skip$ -- 1318
 stack$ -- 0
-substring$ -- 3054
-swap$ -- 240
+substring$ -- 3589
+swap$ -- 257
 text.length$ -- 18
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 552
+type$ -- 654
 warning$ -- 0
-while$ -- 336
+while$ -- 392
 width$ -- 0
-write$ -- 1202
+write$ -- 1423
 (There were 7 error messages)

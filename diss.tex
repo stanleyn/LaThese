@@ -44,7 +44,8 @@ Undirected networks can also be \emph{weighted}, where the weight of an edge bet
 Alternatively, the assumption of a symmetric relationship between a pair of nodes that node $i$ connects to node $j$ and node $j$ connects to node $i$  may be unrealistic. For example, on twitter, user $i$ can follow user $j$, but user $j$ does not necessarily need to follow user $i$. This type of network is known as a \emph{directed} network. While directed are frequently discussed in the network science literature, we will not introduce them here.  
 
 \subsection{Network Summary Statistics}
-Given a network, there are fundamental tasks of interest that allow for a more clear interpretation and understanding of the data. Some of these objectives include, quantifying node importance, quantifying edge density, identifying connected components ,clustering nodes, and predicting links. Networks in textbooks often look deceptively clean and well-structure. In reality, most network data is described as being a hairball. This term refers to the difficulty of discerning structure or interpreting meaning from the network based on the connectivity patterns. An example of a typical hairball is shown in figure \ref{fig:Hairball}
+
+\indent Given a network, there are fundamental tasks of interest that allow for a more clear interpretation and understanding of the data. Some of these objectives include, quantifying node importance, quantifying edge density, identifying connected components ,clustering nodes, and predicting links. Networks in textbooks often look deceptively clean and well-structure. In reality, most network data is described as being a hairball. This term refers to the difficulty of discerning structure or interpreting meaning from the network based on the connectivity patterns. An example of a typical hairball is shown in figure \ref{fig:Hairball}
 
 \begin{figure}
 \begin{center}
@@ -54,13 +55,77 @@ Given a network, there are fundamental tasks of interest that allow for a more c
 \end{center}
 \end{figure}
 
-Such a challenging representation of the data requires breaking the network down into smaller pieces that can be further analyzed. The first most basic summary statistic is known as \emph{degree}. Here, we will define a variety of summary statistics and quantities that can be computed on a network that give insight into the network's structure. Given the adjacency matrix for an undirected network, ${\bf A}$, the degree of node $i$, $\text{degree}(i)$ is computed as,
+\subsubsection{Building a network to illustrate summary statistics}
+
+Such a challenging representation of the data requires breaking the network down into smaller pieces that can be further analyzed. In this section, we will describe several summary statistics and analyses that can be performed and will be seen throughout the rest of this thesis.\\
+\indent To illustrate these quantities, we will compute them on the network shown in Figure \ref{fig:Cytometry}. This network is constructed from a single cell mass cytometry dataset released publicly in the Cytofkit R package \cite{cytofkit}. Each node represents a single cell and is represented with 50 features profiled with mass cytometry. We created a network from this dataset by selecting 500 cells and building a $k$-nearest neighbor network with $k=5$. This means that for a node $i$, we found its $5$ nearest neighbors according to Euclidean distance, and connected them all to node $i$. 
+
+\begin{figure}
+\begin{center}
+\includegraphics[scale=0.5]{CytometryNet}
+\caption{{\bf Network of single cells.} We constructed a network from mass cytometry profiling in single cell data. Each node is a single cell and is connected to its 5 nearest neighbors.}
+\label{fig:Cytometry}
+\end{center}
+\end{figure}
+
+\subsubsection{Degree Distribution}
+
+The first most basic summary statistic is known as \emph{degree}. Here, we will define a variety of summary statistics and quantities that can be computed on a network that give insight into the network's structure. Given the adjacency matrix for an undirected network, ${\bf A}$, the degree of node $i$, $\text{degree}(i)$ is computed as,
 
 \begin{equation}
 \text{degree}(i)=\sum_{j}a_{ij}
 \end{equation}
 
-In the case of an undirected, unweighted network, the degree of node $i$ counts its number of neighbors, while in the undirected, weighted context, degree encodes the total edge weight incident to node $i$. Collectively examining the distribution of degrees for a network is known as the \emph{degree distribution}. Understanding the degree distribution provides insight into the network type and structural organization. [Add some example maybe]. To concisely summarize this information, one may consider. ... blah blah to add. Finally, clustering on a network or identifying a partition of nodes into groups or `communities' based on structural network patterns is known as community detection. This is a powerful way to segment a network into smaller structures that can be further prioritized for additional analysis. 
+We visualize degree distribution in \ref{fig:DegDist} using a cumulative distribution plot (A.) and a simple histogram (B.). Since this network was constructed with a $5$-nearest neighbor rule, we see this reflected in the degree distribution, with all nodes having degree 5 or more. A few nodes have significantly higher degree (> 10) and represent single cells who is a nearest neighbor to many of the other cells in the original 50 dimensional space. 
+
+\begin{figure}
+\begin{center}
+\includegraphics[scale=0.5]{DegDist}
+\caption{{\bf Degree distribution for single cell network.} We visualize the trends in node degree in the single cell network presented in Figure \ref{fig:Cytometry}. {\bf A.} We compute a cumulative distribution plot for degree. {\bf B.} Node degrees can also be visualized with a simple histogram.}
+\label{fig:DegDist}
+\end{center}
+\end{figure}
+
+In the case of an undirected, unweighted network, the degree of node $i$ counts its number of neighbors, while in the undirected, weighted context, degree encodes the total edge weight incident to node $i$. Collectively examining the distribution of degrees for a network is known as the \emph{degree distribution}. Understanding the degree distribution provides insight into the network type and structural organization. A node's degree is often highly related to its importance in the network, which provides a nice transition to the next set of summary statistics: centrality and hub scores.
+
+\subsubsection{Centrality and network hubs}
+\indent To compute the importance of a node in the network it is common to compute a centrality score. There are many definitions of centrality, and we will only present a small subsets of these definitions here. We all benefit from the idea of high centrality nodes, when we do a Google search and have a relevant page of returned search results. In this section, we introduce, degree centrality, betweenness centrality, and eigenvector centrality. Given that each of these measures is computed in a different way, each is measured so capture something different about the network. 
+
+ \begin{figure}
+\begin{center}
+\includegraphics[scale=0.4]{Centrality}
+\caption{{\bf Centralities on single cell network.} The second order ego network for the highest centrality nodes in the single cell network according to degree, betweenness, and eigenvector in the left, right, and center, respectively.}
+\label{fig:Centrality}
+\end{center}
+\end{figure}
+
+{\bf Degree centrality}\\
+Degree centrality is the most simple centrality measure because it is just simply a node's degree. This means that under this measure, the most important nodes in the network are nodes with high degree. This centrality is attractive because it is easy to compute, having complexity in a sparse network of $O(E)$ (where $E$ is the number of edges). We define degree centrality of node $i$, $\mathcal{D}(i)$ as,
+
+\begin{equation}
+\mathcal{D}(i)=\sum_{j}a_{ij}
+\end{equation}
+
+{\bf Betweenness centrality}\\
+Betweenness centrality quantifies node importance, based on how many shortest paths go through a node. So, if a node appears on many of the shortest paths between node pairs, then it is considered to be an important node. We define betweenness centrality for a node $i$, $\mathcal{B}(i)$ as,
+
+\begin{equation}
+\mathcal{B}(i)=\sum_{i\ne j\ne t} \frac{\sigma_{jt}(i)}{\sigma_{jt}},
+\end{equation}
+
+where $\sigma_{jt}$ is the total number of shortest paths between a pair of nodes, $s$ and $t$ that pass through $i$. \\
+
+{\bf Eigenvector centrality}\\
+The idea behind eigenvector centrality is that a node should be prioritized not only based on its degree, but the degree of the nodes it connects to. That is, a node connected to other `important' or high degree nodes should be ranked higher than one connected to many low degree nodes. The eigenvector centrality for node $i$, can be computed using the spectra of the adjacency matrix, ${\boldsymbol A}$. In particular, the vector of centralities, ${\bf x}$ is the one satisfying the eigenvector equation,
+
+\begin{equation}
+{\bf A}{\bf x}=\lambda{\bf x}.
+\end{equation}
+
+Because centralities are non-zero, the solution must be an eigenvector with all positive entries. Since multiple eigenvalues ($\lambda$) correspond to non-zero eigenvectors, the eigenvector corresponding to the largest eigenvector is used and the centrality scores for each node reflect its relative importance in comparison to the rest of the nodes. Moreover, the $i$-th entry of ${\bf x}$ gives the eigenvector centrality for node $i$. \\
+
+\indent We visualized the results of each of these three presented centralities on the single cell network data in figure \ref{fig:Centrality}. We selected the highest centrality nodes, according to degree, betweenness, and eigenvector in the left, middle, and right panels respectively. From these highest centrality nodes, we visualized the order 2 ego graph for these nodes. An ego network for node $i$ is simple the subgraph of all nodes within a path length of 2 from node $i$. This visualization gives a sense of what kinds of connectivity patterns each centrality measure favors. For example, we see that degree and eigenvector centrality have similar ego networks, as they are capturing nodes with a lot of connections. However, the ego network of the high betweenness centrality node is serving as more as a bridge between densely connected parts of the network. 
+
 
 \section{Conceptual Overview of Community Detection}
 A community in a network is broadly defined as a set of who share something in common in terms of their connectivity patterns in the network. One can think of a community as a clustering problem on networks, where the objective is to identify a set of nodes that are highly similar. The most basic type of community to understand is a network with assortative community structure. In this case, nodes are tightly connected to each other but more sparsely connected to the rest of the network. An example of a network with assortative community structure is shown in \ref{fig:Assort.} Communities in the network are outlined with pink dotted lines.
@@ -99,7 +164,16 @@ Here, $\gamma$ is a resolution parameter \cite{resParam} that controls the scale
 
 \indent In order to determine ${\bf z}$, the most computationally efficient approach is known as the Louvain algorithm \cite{blondel}. The Louvain algorithm is an agglomerative heuristic, which initially starts with each node in its own community and in the first match merges pairs of nodes if their merge leads to an increase in modularity. Each group of nodes assembled after this first pass becomes a new node in the network and a new weighted network is created between the set of new nodes. The weight on the edges of the new network are the number of edges from the original network that go between the sets of merged nodes. This process is continues iteratively until the modularity no longer increases. The reason that this approach is so computationally tractable is because the gain in modularity, $\Delta Q$ of merging two groups of nodes can be explicitly computed in closed form.
 
-\indent Modularity has shown to be effective in applications from neuroscience \cite{hierarchicalmod} to image segmentation \cite{browet}.
+\indent Modularity has shown to be effective in applications from neuroscience \cite{hierarchicalmod} to image segmentation \cite{browet}. It has also shown to be effective in clustering high dimensional data that has been used to create a network. In \ref{fig:clustering}, we used tSNE \ref{tsne} to project the 50-dimensional single cell data into 2 dimensions. Points are colored by their cluster assignment according to $k$- We first performed $k$-means on the original 50 dimensional data (left) and Louvain community detection on the 5 nearest neighbor network representation (right). One benefit of the Louvain algorithm is that it does not require specifying the number of cluster. Moreover, in this example, the Louvain algorithm maximized modularity by partitioning the network into 10 clusters. Moreover, we also clustered the original data with 10 clusters. From these two partitions, we observe that creating a network representation of the data before clustering assists in identifying smaller, less prominent clusters.
+
+
+ \begin{figure}
+\begin{center}
+\includegraphics[scale=0.5]{clustering}
+\caption{{\bf A comparison of $k$-means and the Louvain algorithm} A comparison of the results of clustering the single cell dataset by visualizing the original 50 dimensional data with a 2-dimensional projection with tSNE. Points are colored by their cluster membership under $k$-means on the original data (left) and Louvain community detection (right) on the constructed 5 nearest neighbor network.}
+\label{fig:clustering}
+\end{center}
+\end{figure}
 
 \subsection{Identifying communities with probabilistic approaches}
 
@@ -128,7 +202,7 @@ A study lead by Aghaeepour \emph{et al.}, demonstrated that there is a typical t
 \indent Overall, the partitioning of each network into communities allowed for a systematic comparison between the healthy and disease network and to prioritize specific species (nodes) and co-occurence patterns for further investigation. 
 
 \subsection{Community detection for analysis of flow cytometry data}
-\indent Flow cytometry allows for the the simultaneous quantitative analysis of a large population of cells within a biological sample. Typically, cells are strained with fluorochrome-conjugated antibodies which emit light upon encountering laser beams in the flow cytometry machine. This emitted light is measured and reported as a quantitative measurement of the cell. An important analysis of flow cytometry data is the ability to automatically group cells based on their similarities in light emission and quantification. While this process was historically performed manually, there has been a significant amount of work to develop computational methods that can successfully segment cell populations, automatically \cite{nimaFlow}. A network-based approach to this problem, known as SamSPECTRAL was introduced in 2010 by Zare \emph{et al.}. In this approach, the authors seek to segment a population of cells into distinct populations of cells, through the construction of a similarity network and identification of communities. In this network, the nodes are comprised of the cell types in a sample, and edges between nodes indicate the similarity between a pair of cells, based on the quantification of their emitted light. Because a high throughput biological sample could contain as many as biological points, this approach seeks to first create a smaller representation of the data, build a network on this smaller version, and ultimately segment the data this way. \\
+\indent Flow cytometry allows for the the simultaneous quantitative analysis of a large population of cells within a biological sample. Typically, cells are strained with fluorochrome-conjugated antibodies which emit light upon encountering laser beams in the flow cytometry machine. This emitted light is measured and reported as a quantitative measurement of the cell. An important analysis of flow cytometry data is the ability to automatically group cells based on their similarities in light emission and quantification. While this process was historically performed manually, there has been a significant amount of work to develop computational methods that can successfully segment cell populations, automatically \cite{nimaFlow}. A network-based approach to this problem, known as SamSPECTRAL was introduced in 2010 by Zare \emph{et al.} \cite{FlowSpectral}. In this approach, the authors seek to segment a population of cells into distinct populations of cells, through the construction of a similarity network and identification of communities. In this network, the nodes are comprised of the cell types in a sample, and edges between nodes indicate the similarity between a pair of cells, based on the quantification of their emitted light. Because a high throughput biological sample could contain as many as biological points, this approach seeks to first create a smaller representation of the data, build a network on this smaller version, and ultimately segment the data this way. \\
 \indent To create a network of the flow cytometry data, a large subset of data points (cells) are first sampled and denoted as `registered' nodes. The next step is to look at the collection of `unregistered nodes' and ultimately assign them to their closed registered node neighbor. Iteratively, for each registered node, denoting one of these registered nodes as $P$ the set of unregistered nodes within some defined distance $h$ become registered to $p$.  The set of unregistered nodes that were newly assigned to be registered are removed from the set of unregistered nodes. This process is repeated until there are no more unregistered nodes. Each set of nodes registered with the same label are denoted as a community (an inconvenient label, given a network will be constructed and communities will be identified). A weighted network is constructed between these registered communities with edge weights quantifying the similarity in the quantitative features (as measured with the flow cytometry machine) between a pair of a communities. Once this weighted graph is created, a spectral community detection method \cite{spectral1} is applied to segment the network into 1 of $K$ network communities. These is one final post-processing step, motivated by previous work in computational flow cytometry methods,  to combine the agglomerate a pair of network communities if members if the community show similarity greater than a predefined threshold (in terms, again, of their measured flow cytometry properties). The usefulness of this approach is that it exhibited outstanding performance on datasets containing clusters of challenging shapes. For example, overlapping clusters, non-elliptical shaped clusters, or low-density clusters. To summarize, the SamSPECTRAL method shows how network communities can be used to automate a challenging computational task and enables biologists to better study and characterize their data.  
 
 \subsection{Understanding genetic diversity of the malaria parasite genes}
@@ -137,6 +211,14 @@ A study lead by Aghaeepour \emph{et al.}, demonstrated that there is a typical t
 
 \indent Given the ability to find communities within each HVR network and the lack of similarity in community structure between HVR networks, \cite{larremoreparasite} were able to formulate and test hypotheses for the diversity-generating mechanisms of \emph{var} genes, and this would have been difficult using standard phylogenetic approaches or without adopting a community-based perspective. The application of the stochastic block model to this task provided a statistically grounded approach for testing the plausibility of the model.
 
+\subsection{Analysis of high dimensional single cell data for tumor heterogenity}
+\indent A very beautiful application of community detection is the development of a network and community detection based method, called PhenoGraph for the analysis of single cell data, presented by Levin \emph{et al.,} in 2015 \cite{phenoGraph}. Single cell technologies allow for the profiling of cells individually within a sample. Recent attention and methods development have focused on the use of RNA sequencing and mass cytometry to give a high dimensional profile for a single cell. Single cell technologies have enabled for an advancement in the understanding of the pathobiology of cancer in that cells within a tumor have been shown to exhibit a large amount of heterogeneity at the single cell level. Furthermore, this heterogeneity has important functional and clinical significance \cite{intraTumor}. The data produced by these single cell technologies profiles millions of cells, based on multiple features (whether those be genetic, immunological, or signaling response). Moreover, a key challenge is to accurately separate individual cells into biologically meaningful subpopulations or cell phenotypes. While we will mostly profile the community detection based method used for this task, the implications of this work lead to the identification of a cellular phenotype and a corresponding gene expression signature which was highly correlated with accurate prediction of patient survival rates. \\
+\indent Unsupervised analysis of cell types is a challenging problem as there are millions of cells, with each cell being a point in $d$-dimensional space. Traditional clustering algorithms are too slow, or require assumptions about the number of clusters, or the shape of the data in high-dimensional space. One benefit of community detection on networks is that many methods do not require specification of the number of clusters and are agnostic to the shape of the data in high dimensions. The first step of PhenoGraph is to build a $k$-nearest neighbor network between pairs of cells. To do this, each cell is connected to its $k$-nearest neighbors. The second step of the algorithm refined the $k$-nearest neighbor network to prioritize keeping the most similar pairs of nodes connected in the network and removing extraneous connections. This is done by creating a new weighted network between the cells based on the Jaccard similarity measure. In this context, the Jaccard similarity between a pair of nodes reflects the similarity of their neighbors in the network. With this refined network, modularity based community detection was applied and each of the resulting communities corresponds to a distinct cellular phenotype. When this method was applied to a manually gated (i.e. cells were manually separated dataset),  PhenoGraph showed very strong performance for multiple values of $k$. The authors specifically tried, $k=\{15,30,45,60\}$. 
+\indent The authors also provide an approach to add supervision to the problem, which uses partially labeled data set. In this context, this means that some of the cells have a classification. Moreover, given that the network contains $N$ nodes, with $T$ labeled nodes ($T<L$), the objective is to label the remaining $N-T$ nodes. Based on a concern that network-based classification methods operating on a majority vote rule for a node's neighbors, the authors sought to develop an approach that would not suffer in circumstances where a node's closest neighbors were a small subset of the available labeled data. This issue is mediated through the use of label information on the whole network through a random walk. Conceptually, starting from an unlabeled node, the random walker can move through the network, taking into account edge weight information at each step. The random walk classification scheme from an unlabeled node is therefore the probability of its random walk ultimately arriving at a node from each of the classes.  The probability of an unlabeled node reaching a node in each of the labeled classes can be computed in a straightforward way, using the graph laplacian \cite{RWR}.
+\indent Overall, the findings of this paper use community detection to allow for the analysis and understanding of tumor heterogeneity data that was not possible with standard high dimensional data analysis techniques.  The authors suggest that this method is useful in characterizing primitive cancer cells and for the identification of cell biology features that define particular biological states and clinical outcomes. 
+
+\subsection{Identification of virulence factor genes related to antibiotic resistance of uropathogenic \emph{E. coli}}
+\indent Urinary tract infections are primarily caused by uropathogenic \emph{E. coli} (UPEC). In their study Parker \emph{et al.,} seek to better understand UPEC antibiotic resistance, which prevents patients from being treated for urinary tract infections. Using a cohort of 337 \emph{E. coli} patient isolates, the authors looked closely at the virulence factor genes of these patients. Virulence factors are non conserved or are carried on mobile genetic elements and elicit biological functions that relate to uropathogenesis (i.e. the onset of a patient getting at UTI). The biological function of virulence factors are known and allow for the development of therapeutic agents. In the analysis, the presence or absence for each of 16 virulence factors was determined. A network was constructed between the 337 patient isolates, with each edge reflecting the pairwise similarity in their virulence factor profiles. Modularity based community detection was then applied to this network and partitioned it into 4 different communities. Most remarkably, each of the 4 communities was characterized by clinical isolated described by either a single or pair of virulence factor markers. These pairs of related virulence factors were then probed further to investigate their role in antibiotic resistance. This approach offers a n ew way to integrate genomic and individual patient information to determine which types of antibiotics might be most effective.  
 \section{Challenging problems in community detection}
 \subsection{Temporal Networks}
 \subsection{Multilayer networks}
@@ -647,9 +729,41 @@ Additionally, the Human Microbiome example reveals some interesting biological q
 \indent The rise of a greater number of multilayer network datasets is providing the need for additional tools for the construction and analysis of such networks. The sMLSBM provides a new method to find signal in inherently noisy and complex network data. 
 
 \section{Detectability in a single stratum}
-The development of sMLSBM motivated the analysis for how multiple layers can be collectively used to more accurately learn SBM model parameters in the single stratum case. That is, given a collection of sparse networks from a multilayer stochastic block model with one stratum, where the community assignment in individual network layers is difficult to infer, is there a benefit to combining the entire set of layers to more accurately detect communities? This work is presented in \emph{Enhanced detectability of community structure in multilayer networks through layer aggregation}. 
+The development of sMLSBM motivated the analysis for how multiple layers can be collectively used to more accurately learn SBM model parameters in the single stratum case. That is, given a collection of sparse networks from a multilayer stochastic block model with one stratum, how can the layers most accurately be combined to give the most accurate definition of community structure. We investigate these questions in \emph{Enhanced detectability of community structure in multilayer networks through layer aggregation} \cite{taylor2015enhanced}. In particular, we studied the detectability limitations of the stochastic block model for a multilayer network with 1 stratum using random matrix theory techniques. 
+
+\subsection{Investigating detectability in a multilayer network}
+Community structure detectability has gained considerable attention \cite{detect20,detect21,detect22,detect23,detect24,detect25} with a hope of being able to identify properties of networks and their corresponding adjacency matrices that reveal how prominent or easy-to-find the community structure is. A network with detectable community structure is thought to be one where multiple community detection algorithms would agree on common groups, and that nodes are not just being assigned to communities randomly, but instead exhibit straight-forward clustering patterns. Applying a community detection algorithm to a network with undetectable community structure might be dramatically different between algorithms, or may assign nodes to the biggest community or even all to the same community. It is particularly interesting to investigate this question in relation to a multilayer stochastic block model because we can generate samples from various models with different parameters and see if the community partition of the network agrees with the specified model. Previous work has previously been explored in networks with degree heterogeneity \cite{detectDegreeHetero}, hierarchical structure \cite{peixotoHierarchAttribute,HierarchAttl}, and in temporal networks \cite{detectTemporal}, but not characterized in multilayer networks. \\
+\indent To study this in multilayer networks, we use random matrix theory to study a multilayer network generated from a stochastic block model, and enumerate ways that these layers can be \emph{aggregated} or combined to most improve community structure. We show that the detectability limit vanishes with an increasing number of layers, $L$, and decays as $O(L^{-1/2})$ when we aggregate the the network layers, by taking the sum of their adjacency matrices. Further, we also explore the detectability limits of this aggregated summation of adjacency matrices  that are thresholded to a binary adjacency matrix according to some value, $\tilde{L}$.  
+
+\subsection{Studying detectability in two block networks}
+In this work, we study a 2 block multilayer stochastic block model. As seen in previous sections, each network layer has the same set of $N$ nodes and parameterized by an $N$-length vector, ${\bf z}$ specifying the node-to-community assignments and a $2 \times 2$ community probability connectivity matrix, ${\boldsymbol \theta}$. Further, we assume that the between probability connection probability is denoted by $p_{out}$, and that $\pi_{1,2}-\pi_{2,1}=p_{out}$. Similarly, we denote the within-community probability as $p_{in}$, so that $\pi_{1,1}-\pi_{2,2}=p_{in}$ Previous work has shown that for the large network limit, as $N \rightarrow \infty$, there is a solution to the detectability limit \cite{detect23,detect24}, characterized by the solution curve $(\Delta^{*},\rho)$ to 
+
+\begin{equation}
+\label{detectEquation}
+N\Delta=\sqrt{4N\rho},
+\end{equation} 
+
+where $\Delta=p_{in}-p_{out}$ is the difference in probability and $\rho=(p_{in}+p_{out}/2$ is the mean edge probability. For a given value of $\rho$, the communities are only detectable (or correctly characterized) if $\Delta > \Delta^{*}$. Equation \ref{detectEquation} was derived for sparse networks (i.e. constant $\rho N$ so that $\rho=O(N^{-1})$) and was obtained using both a Bayesian analysis \cite{detect23} and random matrix theory \cite{detect24}.\\
+\indent In this work , we study the behavior of $\Delta^{*}$ for two methods of aggregating layers within a multilayer network of $L$ layers, which we denote $\mathcal{L}$. We define the \emph{summation} network, $\bar{\bf A}=\sum_{l \in \mathcal{L}} {\bf A}^{l}$. Note that, ${\bf A}^{l}$ gives the adjacency matrix for network layer, $l$. We also define a family of \emph{thresholded} networks, with unweighted adjacency matrices $\{\hat{{\bf A}}^{\tilde{L}}\}$ that are obtained by applying a threshold $\tilde{L}=\{1, \dots, L\}$ to the entries of $\bar{\bf A}$. Under this thresholding rule, $\hat{A}_{ij}^{\tilde{L}}=1$ if $\bar{A}_{ij} \ge \tilde{L}$ and is 0 otherwise. We are particularly interested in the limiting cases when $\tilde{L}=L$ and when $\tilde{L}=1$, which correspond to applying logical AND and OR operations to the original multilayer data $\{A_{ij}\}$, for a fixed pair of nodes $(i,j)$. We refer to these thresholded networks as the AND and OR networks, respectively. 
+
+\subsection{Using random matrix theory to study detectability}
+\indent Since node-to-community assignments, ${\bf z}$ can be inferred with spectral method, random matrix theory \cite{detect38,detect39} is a useful approach for studying partitioning and phase transitions in detectability (i.e. node-to-community assignment accuracy) \cite{detect24,peixotoHierarchAttribute,HierarchAttl}. Using this approach, phase transition in detectability correspond to the disappearance of  gaps between eigenvalues (whose corresponding eigenvectors reflect community structure) and bulk eigenvalues [which arise due to stochasticity and whose $N \rightarrow \infty$ limiting distribution is given by a spectral density $P(\lambda)$. The theory we develop in this work is based on the modularity matrix, $\bar{B_{ij}}=\bar{A}_{ij}-\rho L$ \cite{newmangirvan}. \\
+\indent We first study $\Delta^{*}$ for the summation network. We analyze the distribution of real eigenvalues $\{\lambda_{i}\}$ of ${\bf \bar{B}}$ (in descending order). First, we describe the statistical properties of entries $\{\bar{A_{ij}}\}$, which are independent random variables following a binomial distribution with $P(\bar{A_{ij}}=A)=f(a;L,\pi_{z_{i},z_{j}})$, where
+
+\begin{equation}
+f(a;L,p)={L \choose a}p^{a}(1-p)^{L-a}
+\end{equation}
+
+has mean $Lp$ and variance $Lp(1-p)$. With sufficiently large variance in the edge probabilities, we find that the limiting $N\rightarrow \infty$ distribution of bulk eigenvalues for ${\bf \bar{B}}$ is given by a semicircle distribution,
+
+\begin{equation}
+P(\lambda)=\frac{\sqrt{\lambda^2_{2}-\lambda^{2}}}{\pi \lambda_{2}^{2}/2}
+\end{equation}
 
 \chapter{Network compression for community detection with super nodes}
+
+
+
 \section{Super pixel pre-processing of images}
 \section{Super node pre-processing for networks}
 \section{2-Core decomposition approach for selecting seeds as community centers}

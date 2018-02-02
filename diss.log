@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  30 JAN 2018 16:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  2 FEB 2018 17:14
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -849,15 +849,15 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 ) [6
 
 ]
-[7])
+[7] [8])
 \tf@toc=\write4
 \openout4 = `diss.toc'.
 
- [8]) (./frontmatter/tables.tex (./diss.lot)
+ [9]) (./frontmatter/tables.tex (./diss.lot)
 \tf@lot=\write5
 \openout5 = `diss.lot'.
 
- [9
+ [10
 
 ])
 (./frontmatter/figures.tex (./diss.lof
@@ -873,18 +873,18 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-Overfull \hbox (3.54439pt too wide) in paragraph at lines 9--9
+Overfull \hbox (3.54439pt too wide) in paragraph at lines 13--13
  [][] [][]\OT1/ptm/b/n/10.95 Objective of strata mul-ti-layer stochas-tic block
  model (sMLSBM)\OT1/ptm/m/n/10.95 (-20) . Each 
  []
 
-[10
+[11
 
-])
+] [12])
 \tf@lof=\write6
 \openout6 = `diss.lof'.
 
- [11] [12]) (./frontmatter/abbreviations.tex [13
+ [13]) (./frontmatter/abbreviations.tex [14
 
 ]))
 Chapter 1.
@@ -892,7 +892,7 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <20.74> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 12.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 17.
-<./figures/SocialNetwork.png, id=520, 361.35pt x 281.05pt>
+<./figures/SocialNetwork.png, id=587, 361.35pt x 281.05pt>
 File: ./figures/SocialNetwork.png Graphic file (type png)
 
 <use ./figures/SocialNetwork.png>
@@ -902,169 +902,225 @@ Package pdftex.def Info: ./figures/SocialNetwork.png used on input line 22.
 
 
 ] [2 <./figures/SocialNetwork.png>]
-<./figures/Hairball.png, id=536, 378.41376pt x 353.32pt>
+<./figures/Hairball.png, id=602, 378.41376pt x 353.32pt>
 File: ./figures/Hairball.png Graphic file (type png)
 
 <use ./figures/Hairball.png>
-Package pdftex.def Info: ./figures/Hairball.png used on input line 51.
+Package pdftex.def Info: ./figures/Hairball.png used on input line 52.
 (pdftex.def)             Requested size: 113.525pt x 105.99681pt.
+
+<./figures/CytometryNet.pdf, id=608, 409.56664pt x 408.9892pt>
+File: ./figures/CytometryNet.pdf Graphic file (type pdf)
+
+<use ./figures/CytometryNet.pdf>
+Package pdftex.def Info: ./figures/CytometryNet.pdf used on input line 65.
+(pdftex.def)             Requested size: 204.7828pt x 204.4941pt.
  [3 <./figures/Hairball.png>]
+<./figures/DegDist.pdf, id=617, 650.87637pt x 380.26236pt>
+File: ./figures/DegDist.pdf Graphic file (type pdf)
 
-LaTeX Warning: Reference `fig:Assort.' on page 4 undefined on input line 66.
+<use ./figures/DegDist.pdf>
+Package pdftex.def Info: ./figures/DegDist.pdf used on input line 83.
+(pdftex.def)             Requested size: 325.4374pt x 190.1307pt.
+ [4 <./figures/CytometryNet.pdf>]
+<./figures/Centrality.pdf, id=633, 890.57982pt x 321.72166pt>
+File: ./figures/Centrality.pdf Graphic file (type pdf)
 
-<./figures/AssortativeNet.pdf, id=545, 452.83559pt x 447.2744pt>
+<use ./figures/Centrality.pdf>
+Package pdftex.def Info: ./figures/Centrality.pdf used on input line 96.
+(pdftex.def)             Requested size: 356.22562pt x 128.68637pt.
+ [5 <./figures/DegDist.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 116--117
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 125--126
+
+ []
+
+[6 <./figures/Centrality.pdf>]
+
+LaTeX Warning: Reference `fig:Assort.' on page 7 undefined on input line 131.
+
+<./figures/AssortativeNet.pdf, id=773, 452.83559pt x 447.2744pt>
 File: ./figures/AssortativeNet.pdf Graphic file (type pdf)
 
 <use ./figures/AssortativeNet.pdf>
-Package pdftex.def Info: ./figures/AssortativeNet.pdf used on input line 70.
+Package pdftex.def Info: ./figures/AssortativeNet.pdf used on input line 135.
 (pdftex.def)             Requested size: 181.13101pt x 178.90659pt.
- [4 <./figures/AssortativeNet.pdf>] [5]
-[6] [7] [8] [9] [10]
-Underfull \hbox (badness 10000) in paragraph at lines 135--137
+ [7] [8 <./figures/AssortativeNet.pdf>]
+
+LaTeX Warning: Reference `tsne' on page 9 undefined on input line 167.
+
+[9] <./figures/clustering.pdf, id=834, 484.58853pt x 336.01695pt>
+File: ./figures/clustering.pdf Graphic file (type pdf)
+
+<use ./figures/clustering.pdf>
+Package pdftex.def Info: ./figures/clustering.pdf used on input line 172.
+(pdftex.def)             Requested size: 242.29367pt x 168.00806pt.
+ [10 <./figures/clustering.pdf, page is rotated 90 degrees>] [11] [12] [13] [14
+]
+Underfull \hbox (badness 10000) in paragraph at lines 209--211
 
  []
 
-[11] [12] [13] [14]
+[15] [16] [17]
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 220.
+
+Overfull \hbox (38.47952pt too wide) in paragraph at lines 220--220
+|[]\OT1/ptm/b/n/12 Identification of vir-u-lence fac-tor genes re-lated to an-t
+ibi-otic re-sis-tance of uropathogenic
+ []
+
+[18] [19] [20]
 Chapter 2.
-<./figures/DAG.png, id=721, 501.875pt x 301.125pt>
+<./figures/DAG.png, id=1003, 501.875pt x 301.125pt>
 File: ./figures/DAG.png Graphic file (type png)
  <use ./figures/DAG.png>
-Package pdftex.def Info: ./figures/DAG.png used on input line 169.
+Package pdftex.def Info: ./figures/DAG.png used on input line 251.
 (pdftex.def)             Requested size: 150.56366pt x 90.33818pt.
 
-[15
+[21
 
-] [16 <./figures/DAG.png>]
-<./figures/SBMGraphical.pdf, id=735, 127.90616pt x 295.53088pt>
+] [22 <./figures/DAG.png>]
+<./figures/SBMGraphical.pdf, id=1017, 127.90616pt x 295.53088pt>
 File: ./figures/SBMGraphical.pdf Graphic file (type pdf)
 
 <use ./figures/SBMGraphical.pdf>
-Package pdftex.def Info: ./figures/SBMGraphical.pdf used on input line 199.
+Package pdftex.def Info: ./figures/SBMGraphical.pdf used on input line 281.
 (pdftex.def)             Requested size: 38.37213pt x 88.65994pt.
- [17 <./figures/SBMGraphical.pdf>] [18]
-[19] [20] [21]
+ [23 <./figures/SBMGraphical.pdf>] [24]
+[25] [26] [27]
 Chapter 3.
-[22
+[28
 
-] [23] [24]
+] [29] [30]
 
-Package natbib Warning: Citation `Dudin' on page 25 undefined on input line 335
+Package natbib Warning: Citation `Dudin' on page 31 undefined on input line 417
 .
 
-[25] [26] [27] <./figures/Figure_1.pdf, id=1007, 591.14969pt x 516.32516pt>
+[31] [32] [33] <./figures/Figure_1.pdf, id=1288, 591.14969pt x 516.32516pt>
 File: ./figures/Figure_1.pdf Graphic file (type pdf)
 
 <use ./figures/Figure_1.pdf>
-Package pdftex.def Info: ./figures/Figure_1.pdf used on input line 355.
+Package pdftex.def Info: ./figures/Figure_1.pdf used on input line 437.
 (pdftex.def)             Requested size: 216.81pt x 189.36708pt.
- [28 <./figures/Figure_1.pdf>] [29]
+ [34 <./figures/Figure_1.pdf>] [35]
 
-Package natbib Warning: Citation `Dudin' on page 30 undefined on input line 382
+Package natbib Warning: Citation `Dudin' on page 36 undefined on input line 464
 .
 
-[30] <./figures/Figure_2.pdf, id=1082, 499.85454pt x 522.40414pt>
+[36] <./figures/Figure_2.pdf, id=1363, 499.85454pt x 522.40414pt>
 File: ./figures/Figure_2.pdf Graphic file (type pdf)
 
 <use ./figures/Figure_2.pdf>
-Package pdftex.def Info: ./figures/Figure_2.pdf used on input line 390.
+Package pdftex.def Info: ./figures/Figure_2.pdf used on input line 472.
 (pdftex.def)             Requested size: 216.81pt x 226.59032pt.
- [31 <./figures/Figure_2.pdf>] [32]
+ [37 <./figures/Figure_2.pdf>] [38]
 
-Package natbib Warning: Citation `Dudin' on page 33 undefined on input line 440
+Package natbib Warning: Citation `Dudin' on page 39 undefined on input line 522
 .
 
-[33] [34] [35] <./figures/Figure3.pdf, id=1238, 881.69911pt x 755.43613pt>
+[39] [40] [41] <./figures/Figure3.pdf, id=1520, 881.69911pt x 755.43613pt>
 File: ./figures/Figure3.pdf Graphic file (type pdf)
 
 <use ./figures/Figure3.pdf>
-Package pdftex.def Info: ./figures/Figure3.pdf used on input line 510.
+Package pdftex.def Info: ./figures/Figure3.pdf used on input line 592.
 (pdftex.def)             Requested size: 260.17465pt x 222.90936pt.
- [36 <./figures/Figure3.pdf>]
+ [42 <./figures/Figure3.pdf>]
 
-LaTeX Warning: Reference `sec:Algorithm' on page 37 undefined on input line 541
+LaTeX Warning: Reference `sec:Algorithm' on page 43 undefined on input line 623
 .
 
-[37]
-Underfull \hbox (badness 10000) in paragraph at lines 556--561
+[43]
+Underfull \hbox (badness 10000) in paragraph at lines 638--643
 
  []
 
-<./figures/Figure4.pdf, id=1305, 614.295pt x 544.0325pt>
+<./figures/Figure4.pdf, id=1586, 614.295pt x 544.0325pt>
 File: ./figures/Figure4.pdf Graphic file (type pdf)
 
 <use ./figures/Figure4.pdf>
-Package pdftex.def Info: ./figures/Figure4.pdf used on input line 567.
+Package pdftex.def Info: ./figures/Figure4.pdf used on input line 649.
 (pdftex.def)             Requested size: 216.81pt x 192.00807pt.
- [38] [39 <./figures/Figure4.pdf>] [40] [41]
-<./figures/Fig5.pdf, id=1370, 434.24594pt x 383.1373pt>
+ [44] [45 <./figures/Figure4.pdf>] [46] [47]
+<./figures/Fig5.pdf, id=1652, 434.24594pt x 383.1373pt>
 File: ./figures/Fig5.pdf Graphic file (type pdf)
 
 <use ./figures/Fig5.pdf>
-Package pdftex.def Info: ./figures/Fig5.pdf used on input line 604.
+Package pdftex.def Info: ./figures/Fig5.pdf used on input line 686.
 (pdftex.def)             Requested size: 216.81pt x 191.2934pt.
- [42 <./figures/Fig5.pdf>]
-<./figures/Fig6_Dec15.pdf, id=1454, 588.41847pt x 839.44243pt>
+ [48 <./figures/Fig5.pdf>]
+<./figures/Fig6_Dec15.pdf, id=1735, 588.41847pt x 839.44243pt>
 File: ./figures/Fig6_Dec15.pdf Graphic file (type pdf)
 
 <use ./figures/Fig6_Dec15.pdf>
-Package pdftex.def Info: ./figures/Fig6_Dec15.pdf used on input line 619.
+Package pdftex.def Info: ./figures/Fig6_Dec15.pdf used on input line 701.
 (pdftex.def)             Requested size: 260.17465pt x 371.16187pt.
- [43] [44 <./figures/Fig6_Dec15.pdf>] [45]
-[46]
+ [49] [50 <./figures/Fig6_Dec15.pdf>] [51]
+[52] [53]
+
+Package amsmath Warning: Foreign command \atopwithdelims;
+(amsmath)                \frac or \genfrac should be used instead
+(amsmath)                 on input line 754.
+
+[54]
 Chapter 4.
 
-Overfull \hbox (19.29605pt too wide) in paragraph at lines 652--652
+Overfull \hbox (19.29605pt too wide) in paragraph at lines 763--763
  |\OT1/ptm/b/n/20.74 Network com-pres-sion for com-mu-nity de-tec-tion with 
  []
 
 
-Overfull \hbox (11.76753pt too wide) in paragraph at lines 658--658
+Overfull \hbox (11.76753pt too wide) in paragraph at lines 772--772
 |[]\OT1/ptm/b/n/14.4 Benefits of a com-pressed rep-re-sen-ta-tion: run time, va
 ri-abil-ity, neigh-
  []
 
-[47
+[55
 
 ]
 Chapter 5.
-[48
+[56
 
 ]
 Chapter 6.
-[49
+[57
 
 ]
 Chapter 7.
-(./common/references.tex [50
+(./common/references.tex [58
 
-] (./diss.bbl [51
+] (./diss.bbl [59
 
-] [52] [53] [54] [55]))
+] [60] [61] [62] [63] [64]))
 
 Package natbib Warning: There were undefined citations.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 682.
-[56]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 682.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 796.
+[65]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 796.
  (./diss.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 682.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 682.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 796.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 796.
 Package rerunfilecheck Info: File `diss.out' has not changed.
-(rerunfilecheck)             Checksum: EDE1D835519AB4D1199C4C412BF78303;5985.
+(rerunfilecheck)             Checksum: F8AD5F95AE43D767EC78935DA14EEA2C;6860.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 682.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 796.
  ) 
 Here is how much of TeX's memory you used:
- 12290 strings out of 492995
- 181909 string characters out of 6132704
- 345553 words of memory out of 5000000
- 15112 multiletter control sequences out of 15000+600000
- 36867 words of font info for 202 fonts, out of 8000000 for 9000
+ 12457 strings out of 492995
+ 184742 string characters out of 6132704
+ 353537 words of memory out of 5000000
+ 15219 multiletter control sequences out of 15000+600000
+ 39099 words of font info for 210 fonts, out of 8000000 for 9000
  1142 hyphenation exceptions out of 8191
- 37i,17n,38p,2035b,631s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 37i,17n,38p,2035b,665s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2017/texmf-dist/fonts/type1/public/stix/STIXGeneral-Regular.pfb></usr/lo
 cal/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/loc
@@ -1082,12 +1138,13 @@ xmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2017/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2017/texmf
 -dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2017/texmf-dist/fo
 nts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/
-urw/times/utmr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/
-utmri8a.pfb>
-Output written on diss.pdf (69 pages, 2653052 bytes).
+urw/times/utmbi8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/times
+/utmr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/utmri8a.p
+fb>
+Output written on diss.pdf (79 pages, 3204628 bytes).
 PDF statistics:
- 1762 PDF objects out of 2073 (max. 8388607)
- 1509 compressed objects within 16 object streams
- 273 named destinations out of 1000 (max. 500000)
- 22624 words of extra memory for PDF output out of 24883 (max. 10000000)
+ 2128 PDF objects out of 2487 (max. 8388607)
+ 1819 compressed objects within 19 object streams
+ 318 named destinations out of 1000 (max. 500000)
+ 23220 words of extra memory for PDF output out of 24883 (max. 10000000)
 
