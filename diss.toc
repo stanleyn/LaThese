@@ -33,9 +33,9 @@
 \contentsline {subsection}{\numberline {1.5.4}Large Networks}{26}{subsection.1.5.4}
 \contentsline {subsection}{\numberline {1.5.5}Attributed Networks}{26}{subsection.1.5.5}
 \contentsline {section}{\numberline {1.6}Thesis Contribution}{26}{section.1.6}
-\contentsline {subsection}{\numberline {1.6.1}Relevant Publications}{26}{subsection.1.6.1}
-\contentsline {subsection}{\numberline {1.6.2}Software}{27}{subsection.1.6.2}
-\contentsline {subsection}{\numberline {1.6.3}Thesis Statement}{28}{subsection.1.6.3}
+\contentsline {subsection}{\numberline {1.6.1}Thesis Statement}{26}{subsection.1.6.1}
+\contentsline {subsection}{\numberline {1.6.2}Relevant Publications}{27}{subsection.1.6.2}
+\contentsline {subsection}{\numberline {1.6.3}Software}{28}{subsection.1.6.3}
 \contentsline {chapter}{\numberline {2}A multilayer stochastic block model}{29}{chapter.2}
 \contentsline {section}{\numberline {2.1}Introduction to multilayer networks}{29}{section.2.1}
 \contentsline {section}{\numberline {2.2}Comparing network layers based on community structure}{30}{section.2.2}
