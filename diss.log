@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  7 FEB 2018 16:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  7 FEB 2018 16:22
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -580,7 +580,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 \c@xxexample=\count145
 )) (./diss.aux
 
-./diss.aux:545: Package natbib Error: Bibliography not compatible with author-y
+./diss.aux:536: Package natbib Error: Bibliography not compatible with author-y
 ear citations.
 (natbib)                Press <return> to continue in numerical citation style.
 
@@ -589,9 +589,11 @@ See the natbib package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.545 ...and\NAT@force@numbers{}\NAT@force@numbers
+l.536 ...and\NAT@force@numbers{}\NAT@force@numbers
                                                   
-? 
+Check the bibliography entries for non-compliant syntax,
+or select author-year BibTeX style, e.g. plainnat
+
 )
 \openout1 = `diss.aux'.
 
@@ -909,35 +911,35 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <20.74> not available
 ]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 18.
- <./figures/SocialNetwork.png, id=988, 361.35pt x 281.05pt>
+ <./figures/SocialNetwork.png, id=943, 361.35pt x 281.05pt>
 File: ./figures/SocialNetwork.png Graphic file (type png)
 
 <use ./figures/SocialNetwork.png>
 Package pdftex.def Info: ./figures/SocialNetwork.png used on input line 23.
 (pdftex.def)             Requested size: 180.67456pt x 140.52464pt.
  [2 <./figures/SocialNetwork.png>]
-<./figures/Hairball.png, id=999, 378.41376pt x 353.32pt>
+<./figures/Hairball.png, id=954, 378.41376pt x 353.32pt>
 File: ./figures/Hairball.png Graphic file (type png)
 
 <use ./figures/Hairball.png>
 Package pdftex.def Info: ./figures/Hairball.png used on input line 53.
 (pdftex.def)             Requested size: 113.525pt x 105.99681pt.
  [3]
-<./figures/CytometryNet.pdf, id=1008, 409.56664pt x 408.9892pt>
+<./figures/CytometryNet.pdf, id=963, 409.56664pt x 408.9892pt>
 File: ./figures/CytometryNet.pdf Graphic file (type pdf)
 
 <use ./figures/CytometryNet.pdf>
 Package pdftex.def Info: ./figures/CytometryNet.pdf used on input line 66.
 (pdftex.def)             Requested size: 204.7828pt x 204.4941pt.
  [4 <./figures/Hairball.png> <./figures/CytometryNet.pdf>] <./figures/DegDist.p
-df, id=1025, 650.87637pt x 380.26236pt>
+df, id=979, 650.87637pt x 380.26236pt>
 File: ./figures/DegDist.pdf Graphic file (type pdf)
 
 <use ./figures/DegDist.pdf>
 Package pdftex.def Info: ./figures/DegDist.pdf used on input line 84.
 (pdftex.def)             Requested size: 325.4374pt x 190.1307pt.
  [5 <./figures/DegDist.pdf>]
-<./figures/Centrality.pdf, id=1139, 890.57982pt x 321.72166pt>
+<./figures/Centrality.pdf, id=1093, 890.57982pt x 321.72166pt>
 File: ./figures/Centrality.pdf Graphic file (type pdf)
 
 <use ./figures/Centrality.pdf>
@@ -956,7 +958,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 126--127
 
 LaTeX Warning: Reference `fig:Assort.' on page 7 undefined on input line 132.
 
-[7] <./figures/AssortativeNet.pdf, id=1173, 452.83559pt x 447.2744pt>
+[7] <./figures/AssortativeNet.pdf, id=1127, 452.83559pt x 447.2744pt>
 File: ./figures/AssortativeNet.pdf Graphic file (type pdf)
 
 <use ./figures/AssortativeNet.pdf>
@@ -966,7 +968,7 @@ Package pdftex.def Info: ./figures/AssortativeNet.pdf used on input line 136.
 
 LaTeX Warning: Reference `tsne' on page 10 undefined on input line 168.
 
-<./figures/clustering.pdf, id=1214, 484.58853pt x 336.01695pt>
+<./figures/clustering.pdf, id=1169, 484.58853pt x 336.01695pt>
 File: ./figures/clustering.pdf Graphic file (type pdf)
 
 <use ./figures/clustering.pdf>
@@ -976,7 +978,7 @@ Package pdftex.def Info: ./figures/clustering.pdf used on input line 173.
 
 LaTeX Warning: Reference `probTech' on page 10 undefined on input line 181.
 
-[10] <./figures/DAG.png, id=1227, 501.875pt x 301.125pt>
+[10] <./figures/DAG.png, id=1182, 501.875pt x 301.125pt>
 File: ./figures/DAG.png Graphic file (type png)
 
 <use ./figures/DAG.png>
@@ -984,7 +986,7 @@ Package pdftex.def Info: ./figures/DAG.png used on input line 191.
 (pdftex.def)             Requested size: 150.56366pt x 90.33818pt.
  [11 <./figures/clustering.pdf, page is rotated 90 degrees>] [12 <./figures/DAG
 .png>]
-<./figures/SBMGraphical.pdf, id=1271, 127.90616pt x 295.53088pt>
+<./figures/SBMGraphical.pdf, id=1225, 127.90616pt x 295.53088pt>
 File: ./figures/SBMGraphical.pdf Graphic file (type pdf)
 
 <use ./figures/SBMGraphical.pdf>
@@ -1032,7 +1034,7 @@ Chapter 2.
 Package natbib Warning: Citation `Dudin' on page 32 undefined on input line 448
 .
 
-[32] [33] <./figures/Figure_1.pdf, id=1575, 591.14969pt x 516.32516pt>
+[32] [33] <./figures/Figure_1.pdf, id=1530, 591.14969pt x 516.32516pt>
 File: ./figures/Figure_1.pdf Graphic file (type pdf)
 
 <use ./figures/Figure_1.pdf>
@@ -1043,7 +1045,7 @@ Package pdftex.def Info: ./figures/Figure_1.pdf used on input line 468.
 Package natbib Warning: Citation `Dudin' on page 37 undefined on input line 495
 .
 
-<./figures/Figure_2.pdf, id=1648, 499.85454pt x 522.40414pt>
+<./figures/Figure_2.pdf, id=1603, 499.85454pt x 522.40414pt>
 File: ./figures/Figure_2.pdf Graphic file (type pdf)
 
 <use ./figures/Figure_2.pdf>
@@ -1054,7 +1056,7 @@ Package pdftex.def Info: ./figures/Figure_2.pdf used on input line 503.
 Package natbib Warning: Citation `Dudin' on page 39 undefined on input line 553
 .
 
-[39] [40] [41] <./figures/Figure3.pdf, id=1794, 881.69911pt x 755.43613pt>
+[39] [40] [41] <./figures/Figure3.pdf, id=1749, 881.69911pt x 755.43613pt>
 File: ./figures/Figure3.pdf Graphic file (type pdf)
 
 <use ./figures/Figure3.pdf>
@@ -1070,21 +1072,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 669--674
 
  []
 
-<./figures/Figure4.pdf, id=1863, 614.295pt x 544.0325pt>
+<./figures/Figure4.pdf, id=1818, 614.295pt x 544.0325pt>
 File: ./figures/Figure4.pdf Graphic file (type pdf)
 
 <use ./figures/Figure4.pdf>
 Package pdftex.def Info: ./figures/Figure4.pdf used on input line 680.
 (pdftex.def)             Requested size: 216.81pt x 192.00807pt.
  [45] [46 <./figures/Figure4.pdf>] [47] [48]
-<./figures/Fig5.pdf, id=1919, 434.24594pt x 383.1373pt>
+<./figures/Fig5.pdf, id=1874, 434.24594pt x 383.1373pt>
 File: ./figures/Fig5.pdf Graphic file (type pdf)
 
 <use ./figures/Fig5.pdf>
 Package pdftex.def Info: ./figures/Fig5.pdf used on input line 717.
 (pdftex.def)             Requested size: 216.81pt x 191.2934pt.
  [49 <./figures/Fig5.pdf>]
-<./figures/Fig6_Dec15.pdf, id=2000, 588.41847pt x 839.44243pt>
+<./figures/Fig6_Dec15.pdf, id=1955, 588.41847pt x 839.44243pt>
 File: ./figures/Fig6_Dec15.pdf Graphic file (type pdf)
 
 <use ./figures/Fig6_Dec15.pdf>
@@ -1110,7 +1112,7 @@ ndefined on input line 795.
 
 [56
 
-] <./figures/hamilton.png, id=2202, 815.6874pt x 365.2044pt>
+] <./figures/hamilton.png, id=2157, 815.6874pt x 365.2044pt>
 File: ./figures/hamilton.png Graphic file (type png)
 
 <use ./figures/hamilton.png>
@@ -1170,7 +1172,7 @@ LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <0.5> not available
 (Font)              size <5> substituted on input line 823.
 
 [58] [59] [60]
-<./figures/Schematic_smaller.pdf, id=2251, 807.8912pt x 287.69781pt>
+<./figures/Schematic_smaller.pdf, id=2205, 807.8912pt x 287.69781pt>
 File: ./figures/Schematic_smaller.pdf Graphic file (type pdf)
 
 <use ./figures/Schematic_smaller.pdf>
@@ -1178,21 +1180,21 @@ Package pdftex.def Info: ./figures/Schematic_smaller.pdf used on input line 850
 .
 (pdftex.def)             Requested size: 323.15076pt x 115.07709pt.
  [61] [62 <./figures/Schematic_smaller.pdf>] [63] <./figures/Synthetic.pdf, id=
-2305, 405.72491pt x 402.57712pt>
+2260, 405.72491pt x 402.57712pt>
 File: ./figures/Synthetic.pdf Graphic file (type pdf)
 
 <use ./figures/Synthetic.pdf>
 Package pdftex.def Info: ./figures/Synthetic.pdf used on input line 874.
 (pdftex.def)             Requested size: 108.405pt x 107.56084pt.
  [64 <./figures/Synthetic.pdf>] [65] [66]
-<./figures/Conceptual.pdf, id=2345, 925.73367pt x 373.2098pt>
+<./figures/Conceptual.pdf, id=2300, 925.73367pt x 373.2098pt>
 File: ./figures/Conceptual.pdf Graphic file (type pdf)
 
 <use ./figures/Conceptual.pdf>
 Package pdftex.def Info: ./figures/Conceptual.pdf used on input line 929.
 (pdftex.def)             Requested size: 324.01164pt x 130.62538pt.
 
-<./figures/NMI_UnderSeg.pdf, id=2354, 898.48154pt x 410.8104pt>
+<./figures/NMI_UnderSeg.pdf, id=2309, 898.48154pt x 410.8104pt>
 File: ./figures/NMI_UnderSeg.pdf Graphic file (type pdf)
 
 <use ./figures/NMI_UnderSeg.pdf>
@@ -1204,7 +1206,7 @@ Overfull \hbox (15.61966pt too wide) in paragraph at lines 940--941
  []
 
 [67 <./figures/Conceptual.pdf>] [68] [69 <./figures/NMI_UnderSeg.pdf>]
-<./figures/RunTime.pdf, id=2438, 725.34018pt x 244.7301pt>
+<./figures/RunTime.pdf, id=2393, 725.34018pt x 244.7301pt>
 File: ./figures/RunTime.pdf Graphic file (type pdf)
 
 <use ./figures/RunTime.pdf>
@@ -1216,7 +1218,7 @@ Overfull \hbox (1.58745pt too wide) in paragraph at lines 954--955
  []
 
 [70 <./figures/RunTime.pdf>]
-<./figures/VariabilityFigBoth.pdf, id=2471, 903.76053pt x 378.87718pt>
+<./figures/VariabilityFigBoth.pdf, id=2426, 903.76053pt x 378.87718pt>
 File: ./figures/VariabilityFigBoth.pdf Graphic file (type pdf)
 
 <use ./figures/VariabilityFigBoth.pdf>
@@ -1229,7 +1231,7 @@ Overfull \hbox (18.25914pt too wide) in paragraph at lines 965--966
  []
 
 [71 <./figures/VariabilityFigBoth.pdf>]
-<./figures/FinalAUC.pdf, id=2506, 865.84134pt x 403.0766pt>
+<./figures/FinalAUC.pdf, id=2460, 865.84134pt x 403.0766pt>
 File: ./figures/FinalAUC.pdf Graphic file (type pdf)
 
 <use ./figures/FinalAUC.pdf>
@@ -1239,7 +1241,7 @@ Package pdftex.def Info: ./figures/FinalAUC.pdf used on input line 979.
 Chapter 4.
 [75
 
-] [76] [77] <./figures/GraphModel.pdf, id=2606, 311.1625pt x 125.46875pt>
+] [76] [77] <./figures/GraphModel.pdf, id=2561, 311.1625pt x 125.46875pt>
 File: ./figures/GraphModel.pdf Graphic file (type pdf)
 
 <use ./figures/GraphModel.pdf>
@@ -1250,14 +1252,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 1075--1076
 
  []
 
-[80] <./figures/SyntheticFig.pdf, id=2676, 470.75874pt x 274.02374pt>
+[80] <./figures/SyntheticFig.pdf, id=2631, 470.75874pt x 274.02374pt>
 File: ./figures/SyntheticFig.pdf Graphic file (type pdf)
 
 <use ./figures/SyntheticFig.pdf>
 Package pdftex.def Info: ./figures/SyntheticFig.pdf used on input line 1129.
 (pdftex.def)             Requested size: 216.81pt x 126.20297pt.
  [81] [82 <./figures/SyntheticFig.pdf>]
-<./figures/DetectExp.pdf, id=2723, 433.62pt x 361.35pt>
+<./figures/DetectExp.pdf, id=2678, 433.62pt x 361.35pt>
 File: ./figures/DetectExp.pdf Graphic file (type pdf)
 
 <use ./figures/DetectExp.pdf>
@@ -1278,7 +1280,7 @@ Overfull \hbox (15.65791pt too wide) in paragraph at lines 1188--1189
 ttp : / / datadryad . org / resource / doi : 10 . 5061 / dryad .
  []
 
-[87] <./figures/MicrobiomeNets_Dec12.pdf, id=2771, 576.1525pt x 269.005pt>
+[87] <./figures/MicrobiomeNets_Dec12.pdf, id=2726, 576.1525pt x 269.005pt>
 File: ./figures/MicrobiomeNets_Dec12.pdf Graphic file (type pdf)
 
 <use ./figures/MicrobiomeNets_Dec12.pdf>
@@ -1289,14 +1291,14 @@ Package pdftex.def Info: ./figures/MicrobiomeNets_Dec12.pdf used on input line
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<./figures/ROC_Microbiome.pdf, id=2772, 433.62pt x 433.62pt>
+<./figures/ROC_Microbiome.pdf, id=2727, 433.62pt x 433.62pt>
 File: ./figures/ROC_Microbiome.pdf Graphic file (type pdf)
 
 <use ./figures/ROC_Microbiome.pdf>
 Package pdftex.def Info: ./figures/ROC_Microbiome.pdf used on input line 1207.
 (pdftex.def)             Requested size: 260.17465pt x 260.18724pt.
 
-<./figures/CollabFilterMicro.pdf, id=2773, 433.62pt x 433.62pt>
+<./figures/CollabFilterMicro.pdf, id=2728, 433.62pt x 433.62pt>
 File: ./figures/CollabFilterMicro.pdf Graphic file (type pdf)
 
 <use ./figures/CollabFilterMicro.pdf>
@@ -1307,7 +1309,7 @@ Package pdftex.def Info: ./figures/CollabFilterMicro.pdf used on input line 121
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<./figures/ProteinNet_Dec12.pdf, id=2779, 740.7675pt x 342.27875pt>
+<./figures/ProteinNet_Dec12.pdf, id=2734, 740.7675pt x 342.27875pt>
 File: ./figures/ProteinNet_Dec12.pdf Graphic file (type pdf)
 
 <use ./figures/ProteinNet_Dec12.pdf>
@@ -1320,7 +1322,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [89 <./figures/MicrobiomeNets_Dec12.pdf>] [90 <./figures/ROC_Microbiome.pdf>]
 [91 <./figures/CollabFilterMicro.pdf> <./figures/ProteinNet_Dec12.pdf>]
-<./figures/EntropyCalc_6Classleft_2classright.pdf, id=2878, 578.16pt x 361.35pt
+<./figures/EntropyCalc_6Classleft_2classright.pdf, id=2832, 578.16pt x 361.35pt
 >
 File: ./figures/EntropyCalc_6Classleft_2classright.pdf Graphic file (type pdf)
  <use ./figures/EntropyCalc_6Classleft_2classright.pdf>
@@ -1332,14 +1334,14 @@ on input line 1239.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [92] [93 <./figures/EntropyCalc_6Classleft_2classright.pdf>]
-<./figures/ROC_Protein.pdf, id=2916, 433.62pt x 433.62pt>
+<./figures/ROC_Protein.pdf, id=2871, 433.62pt x 433.62pt>
 File: ./figures/ROC_Protein.pdf Graphic file (type pdf)
 
 <use ./figures/ROC_Protein.pdf>
 Package pdftex.def Info: ./figures/ROC_Protein.pdf used on input line 1258.
 (pdftex.def)             Requested size: 260.17465pt x 260.18724pt.
 
-<./figures/CollabProtein.pdf, id=2918, 433.62pt x 433.62pt>
+<./figures/CollabProtein.pdf, id=2873, 433.62pt x 433.62pt>
 File: ./figures/CollabProtein.pdf Graphic file (type pdf)
 
 <use ./figures/CollabProtein.pdf>
@@ -1364,22 +1366,16 @@ Chapter 6.
 
 Package natbib Warning: There were undefined citations.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1294.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1290.
 [107]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1294.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1290.
  (./diss.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1294.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1294.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1290.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1290.
 
+Package rerunfilecheck Info: File `diss.out' has not changed.
+(rerunfilecheck)             Checksum: 7895923E315F6C666948C146E0A1697A;9041.
 
-
-Package rerunfilecheck Warning: File `diss.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `diss.out':
-(rerunfilecheck)             Before: 0C601C460C35044819EEAB7D297A59F5;9857
-(rerunfilecheck)             After:  EA678264764476FA10F9450437E784CE;9865.
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 4.5pt have occurred.
@@ -1387,13 +1383,13 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1294.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1290.
  ) 
 Here is how much of TeX's memory you used:
- 12956 strings out of 492995
- 193413 string characters out of 6132704
- 395559 words of memory out of 5000000
- 15523 multiletter control sequences out of 15000+600000
+ 12938 strings out of 492995
+ 193185 string characters out of 6132704
+ 394556 words of memory out of 5000000
+ 15514 multiletter control sequences out of 15000+600000
  46210 words of font info for 239 fonts, out of 8000000 for 9000
  1142 hyphenation exceptions out of 8191
  37i,17n,38p,3720b,735s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1422,10 +1418,10 @@ s/type1/urw/times/utmb8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/ur
 w/times/utmbi8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/u
 tmr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/utmri8a.pfb
 >
-Output written on diss.pdf (126 pages, 9154143 bytes).
+Output written on diss.pdf (126 pages, 9154684 bytes).
 PDF statistics:
- 3181 PDF objects out of 3580 (max. 8388607)
- 2691 compressed objects within 27 object streams
- 475 named destinations out of 1000 (max. 500000)
- 29750 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 3133 PDF objects out of 3580 (max. 8388607)
+ 2643 compressed objects within 27 object streams
+ 466 named destinations out of 1000 (max. 500000)
+ 29678 words of extra memory for PDF output out of 29859 (max. 10000000)
 

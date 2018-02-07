@@ -982,7 +982,7 @@ We sweep the probability parameter, $p$, representing the required threshold pro
 \end{figure}
 To qualitatively evaluate how the super node representation is able to ultimately partition the network into communities that are locally relevant, we visualize the As22 network, with nodes colored by communities identified under the full network (E,G) and super node representation (F,H) under Louvain (E,F) and SBM (G,H). Consistent with the quantitative results in Figure \ref{Viz}A-D, we observe that the super node representation leads to an effective coarse-graining, with the community labels appearing to be qualitatively consistent across large regions of the network.
 
-\section{Discussion}
+\section{Conclusion and Future Work}
 \indent We developed an approach for compressing a network into a super node representation that can be used in standard community detection algorithms. Using the smaller super node network reduces runtime and the variability between multiple runs of the same community detection algorithm. Our results also demonstrate that the communities in the super node network are better aligned with local network neighborhoods in a predictive sense, while still being in relatively good alignment with the partitions obtained using the full network. \\
 \indent Super nodes may be useful in a variety of contexts where large datasets are otherwise difficult to mine and interpret. For example, one might visualize the super node version of the network rather than the entire network, or use the members of a super node to identify redundant information in the network. Future work on super node representations could include the extension of this method to directed, signed, attributed, or bipartite networks. Additionally, one might consider a probabilistic model framework, attempting to infer latent super node assignments. 
 Future work could also examine graph theoretic properties of super node representations in terms of how it aligns with the original network. 
@@ -1271,16 +1271,12 @@ Collaborative filtering was performed using the method described in section 4.2.
 \end{center}
 \end{figure}
 
-\section{Models and inference for attributed networks}
-\section{Alignment of attributes with communities}
-\section{Approaches to an attributed stochastic block model}
-\section{A model of conditional independence between attributes and connectivity}
-\section{Learning the model parameters}
-\section{Example on a synthetic attributed network}
-\section{Detectability limits in attributed networks}
-\section{Case studies for attributed networks}
-\section{Attributed SBM in link prediction}
-\section{Attributed SBM in collaborative filtering}
+\section{Conclusion and Future Work}
+In this paper, we defined an attributed stochastic block model, where a node's community assignment determines its connectivity and its attribute vector. Our model builds on previous work with attributed stochastic block models because it can handle multiple continuous attributes. The continuous attributes are modeled by a Gaussian mixture model, where the assumption is that the attributes for members for each community are parameterized by a unique multivariate Gaussian. Since community detection results are often difficult to validate due to the lack of unlabeled network data, or definition of what a correct partition means, we quantified the ability of the fitted attributed stochastic block model to represent a particular network by performing link prediction and collaborative filtering tasks. Applying link prediction and collaborative filtering to two biological networks, we observed that the attributed SBM is useful for these applications.
+
+Future work could extend the model to handle a combination of multiple discrete and continuous attributes. Further, while the inference or understanding of fitting a stochastic block model to weighted networks is not well understood, figuring out how to integrate edge weights and attributes in determining community structure could be useful. Finally, we briefly discussed a detectability problem in figure 3. Interesting future work could aim to characterize the properties of the attributes and connectivity and how they relate to effective identification of community structure.
+
+Networks used across fields are becoming increasingly complex, often with multiple sources of information to integrate in order to make a conclusion for the data. Our approach to an attributed SBM advances the understanding of how to jointly consider attribute and connectivity information in a probabilistic framework.  
 
 \chapter{Community detection for understanding burn inhalation injury}
 
