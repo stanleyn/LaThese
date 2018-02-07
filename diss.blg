@@ -2,17 +2,17 @@ This is BibTeX, Version 0.99d (TeX Live 2017)
 Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: diss.aux
 Case mismatch error between cite keys Dudin and dudin
----line 170 of file diss.aux
+---line 168 of file diss.aux
  : \citation{Dudin
  :                }
 I'm skipping whatever remains of this command
 Case mismatch error between cite keys Dudin and dudin
----line 188 of file diss.aux
+---line 187 of file diss.aux
  : \citation{Dudin
  :                }
 I'm skipping whatever remains of this command
 Case mismatch error between cite keys Dudin and dudin
----line 198 of file diss.aux
+---line 196 of file diss.aux
  : \citation{Dudin
  :                }
 I'm skipping whatever remains of this command
@@ -35,45 +35,70 @@ Repeated entry---line 951 of file dissBib.bib
  : @article{fortunato
  :                   ,
 I'm skipping whatever remains of this entry
-You've used 109 entries,
+Repeated entry---line 1376 of file dissBib.bib
+ : @article{newmanmodularity
+ :                          ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1405 of file dissBib.bib
+ : @inproceedings{browet
+ :                      ,
+I'm skipping whatever remains of this entry
+Warning--entry type for "snapdata" isn't style-file defined
+--line 1470 of file dissBib.bib
+Warning--entry type for "newmandata" isn't style-file defined
+--line 1473 of file dissBib.bib
+Warning--entry type for "traaglouvain" isn't style-file defined
+--line 1476 of file dissBib.bib
+Warning--entry type for "tiagoskewed" isn't style-file defined
+--line 1479 of file dissBib.bib
+Warning--I didn't find a database entry for "https://snap.stanford.edu/data/"
+Warning--to sort, need author or key in snapdata
+Warning--to sort, need author or key in newmandata
+Warning--to sort, need author or key in traaglouvain
+Warning--to sort, need author or key in tiagoskewed
+Warning--empty year in snapdata
+Warning--empty year in newmandata
+Warning--empty year in traaglouvain
+Warning--empty year in tiagoskewed
+You've used 136 entries,
             1935 wiz_defined-function locations,
-            1093 strings with 22080 characters,
-and the built_in function-call counts, 47971 in all, are:
-= -- 4700
-> -- 2104
-< -- 66
-+ -- 745
-- -- 716
-* -- 4286
-:= -- 8201
-add.period$ -- 339
-call.type$ -- 109
-change.case$ -- 899
-chr.to.int$ -- 102
-cite$ -- 109
-duplicate$ -- 1723
-empty$ -- 3297
-format.name$ -- 895
-if$ -- 9403
-int.to.chr$ -- 8
+            1213 strings with 26521 characters,
+and the built_in function-call counts, 59315 in all, are:
+= -- 5803
+> -- 2637
+< -- 77
++ -- 934
+- -- 902
+* -- 5267
+:= -- 10125
+add.period$ -- 417
+call.type$ -- 136
+change.case$ -- 1121
+chr.to.int$ -- 128
+cite$ -- 148
+duplicate$ -- 2151
+empty$ -- 4059
+format.name$ -- 1112
+if$ -- 11640
+int.to.chr$ -- 9
 int.to.str$ -- 0
-missing$ -- 109
-newline$ -- 548
-num.names$ -- 327
-pop$ -- 734
+missing$ -- 132
+newline$ -- 675
+num.names$ -- 396
+pop$ -- 962
 preamble$ -- 1
-purify$ -- 899
+purify$ -- 1125
 quote$ -- 0
-skip$ -- 1318
+skip$ -- 1637
 stack$ -- 0
-substring$ -- 3589
-swap$ -- 257
-text.length$ -- 18
+substring$ -- 4323
+swap$ -- 328
+text.length$ -- 24
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 654
-warning$ -- 0
-while$ -- 392
+type$ -- 816
+warning$ -- 8
+while$ -- 470
 width$ -- 0
-write$ -- 1423
-(There were 7 error messages)
+write$ -- 1752
+(There were 9 error messages)
