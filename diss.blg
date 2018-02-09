@@ -2,55 +2,55 @@ This is BibTeX, Version 0.99d (TeX Live 2017)
 Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: diss.aux
 Case mismatch error between cite keys Dudin and dudin
----line 166 of file diss.aux
+---line 174 of file diss.aux
  : \citation{Dudin
  :                }
 I'm skipping whatever remains of this command
 Case mismatch error between cite keys Dudin and dudin
----line 185 of file diss.aux
+---line 193 of file diss.aux
  : \citation{Dudin
  :                }
 I'm skipping whatever remains of this command
 Case mismatch error between cite keys Dudin and dudin
----line 194 of file diss.aux
+---line 202 of file diss.aux
  : \citation{Dudin
  :                }
 I'm skipping whatever remains of this command
 The style file: apalike.bst
 Database file #1: dissBib.bib
-Repeated entry---line 689 of file dissBib.bib
+Repeated entry---line 693 of file dissBib.bib
  : @article{Dudin
  :               ,
 I'm skipping whatever remains of this entry
-You're missing a field name---line 783 of file dissBib.bib
+You're missing a field name---line 787 of file dissBib.bib
  : 
  : %  title={Spectral methods for community detection and graph partitioning},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-Repeated entry---line 824 of file dissBib.bib
+Repeated entry---line 828 of file dissBib.bib
  : %@article{thiagomlsbm
  :                      ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 951 of file dissBib.bib
+Repeated entry---line 955 of file dissBib.bib
  : @article{fortunato
  :                   ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1376 of file dissBib.bib
+Repeated entry---line 1380 of file dissBib.bib
  : @article{newmanmodularity
  :                          ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1405 of file dissBib.bib
+Repeated entry---line 1409 of file dissBib.bib
  : @inproceedings{browet
  :                      ,
 I'm skipping whatever remains of this entry
 Warning--entry type for "snapdata" isn't style-file defined
---line 1470 of file dissBib.bib
+--line 1474 of file dissBib.bib
 Warning--entry type for "newmandata" isn't style-file defined
---line 1473 of file dissBib.bib
+--line 1477 of file dissBib.bib
 Warning--entry type for "traaglouvain" isn't style-file defined
---line 1476 of file dissBib.bib
+--line 1480 of file dissBib.bib
 Warning--entry type for "tiagoskewed" isn't style-file defined
---line 1479 of file dissBib.bib
+--line 1483 of file dissBib.bib
 Warning--I didn't find a database entry for "https://snap.stanford.edu/data/"
 Warning--to sort, need author or key in snapdata
 Warning--to sort, need author or key in newmandata
@@ -60,45 +60,45 @@ Warning--empty year in snapdata
 Warning--empty year in newmandata
 Warning--empty year in traaglouvain
 Warning--empty year in tiagoskewed
-You've used 136 entries,
+You've used 143 entries,
             1935 wiz_defined-function locations,
-            1213 strings with 26521 characters,
-and the built_in function-call counts, 59315 in all, are:
-= -- 5803
-> -- 2637
-< -- 77
-+ -- 934
-- -- 902
-* -- 5267
-:= -- 10125
-add.period$ -- 417
-call.type$ -- 136
-change.case$ -- 1121
-chr.to.int$ -- 128
-cite$ -- 148
-duplicate$ -- 2151
-empty$ -- 4059
-format.name$ -- 1112
-if$ -- 11640
+            1248 strings with 28297 characters,
+and the built_in function-call counts, 63012 in all, are:
+= -- 6125
+> -- 2903
+< -- 78
++ -- 1034
+- -- 1000
+* -- 5651
+:= -- 10794
+add.period$ -- 438
+call.type$ -- 143
+change.case$ -- 1203
+chr.to.int$ -- 135
+cite$ -- 155
+duplicate$ -- 2250
+empty$ -- 4259
+format.name$ -- 1219
+if$ -- 12322
 int.to.chr$ -- 9
 int.to.str$ -- 0
-missing$ -- 132
-newline$ -- 675
-num.names$ -- 396
-pop$ -- 962
+missing$ -- 139
+newline$ -- 710
+num.names$ -- 417
+pop$ -- 1027
 preamble$ -- 1
-purify$ -- 1125
+purify$ -- 1207
 quote$ -- 0
-skip$ -- 1637
+skip$ -- 1710
 stack$ -- 0
-substring$ -- 4323
-swap$ -- 328
+substring$ -- 4521
+swap$ -- 335
 text.length$ -- 24
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 816
+type$ -- 858
 warning$ -- 8
-while$ -- 470
+while$ -- 493
 width$ -- 0
-write$ -- 1752
+write$ -- 1844
 (There were 9 error messages)

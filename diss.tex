@@ -13,26 +13,26 @@
 Network data appears widely across fields as a data structure for modeling relational information between a set of entities.  In recent years, networks have become an indispensable data mining tool, as they allow for tasks such as, data visualization, clustering, and predictive modeling.  Motivated by problems in fields, such as, biology, medicine, neuroscience, social science, and epidemiology, the field of network analysis has gained popularity and seeks to develop tools for understanding the associated network data. The main objectives in creating tools for the analysis of network data is to enable effective modeling, prediction, and date interpretation. In this thesis, we present three new methods that enable a more thorough understanding of the structural organization patterns in network through community detection. The objective of community detection is to partition the network nodes into \emph{communities}, such that members of a community have similar connectivity patterns. With an increasing amount of more challenging types of network data, such as those containing multiple relational definitions between a set of nodes can not always be properly addressed using standard community detection approaches. In this thesis, we will look in depth at how to handle communities in networks that are \emph{multilayer}, \emph{large}, and \emph{attributed}. We then present several case studies in each of the developed methods in applications such as, microbiome analysis, protein interaction network understanding, and mining in social networks. We show that the successful identification of communities in these types of networks allows the network to be used for tasks such as, visualization, prediction, and classification. \\
 \indent In this introduction, we first present notation, terminology, and useful concepts for talking about networks. We then provide a detailed discussion about community detection, highlighting not only the main methods studied in this thesis, but also novel and state-of-the-art approaches. Next, we provide several examples of how community detection is used as an important tool in computational biology, as it assists in tasks such as, clustering and biological interpretation. Finally, we put the work in this thesis in the context of important open problems in community detection. 
 
-\section{Network Notation,Representation, and Summarization}
+\section{Network Notation and Basic Summarization}
 
 \subsection{Representing relational information}
 
-Humans frequently benefit from network applications for tasks such as, viewing relevant queries from a google search, enjoying a suggested movie on Netflix, or interacting on a social network platform. The basic building blocks of networks are nodes, representing entities in a systems, and edges, encoding connections their physical or inferred connection or similarity. Figure \ref{fig:social} shows a social network between 7 users and edges between them denoting whether they interact. 
-\begin{figure}
+Humans frequently benefit from network applications for tasks such as, viewing relevant queries from a google search, enjoying a suggested movie on Netflix, or interacting on a social network platform. The basic building blocks of networks are nodes, representing entities in a systems, and edges, encoding connections their physical or inferred connection or similarity. Figure \ref{fig:social} shows a collaboration network between the 6 people that made the work in this thesis possible. An edge between a pair of people indicates if they have written a paper together. 
+\begin{figure}[h!]
 \begin{center}
-\includegraphics[scale=0.5]{SocialNetwork}
-\caption{{\bf Toy social network.} A small example of a social network, with nodes being users and edges representing connections between users. Image from \url{https://www.phpfox.com}}
+\includegraphics[scale=0.5]{CoAuthor}
+\caption{{\bf A simple network example (coauthorship).} A co-authorship network with an edge between a pair of people if they have written a paper together.}
 \label{fig:social}
 \end{center}
 \end{figure}
 
-Such a network with edges simply representing whether or not a pair of nodes interact is an example of an \emph{undirected,unweighted} network. We will use an undirected network to introduce two forms of representations for networks. For a set of $N$ nodes, we define the $N \times N$ network adjacency matrix, ${\bf A}=\{a_{ij}\}$. For a pair of nodes $i$ and $j$, its corresponding adjacency matrix entry $a_{ij}$ is defined as follows,
+Such a network with edges simply representing whether or not a pair of nodes interact scientifically is an example of an \emph{undirected,unweighted} network. We will use an undirected network to introduce two forms of representations for networks. For a set of $N$ nodes, we define the $N \times N$ network adjacency matrix, ${\bf A}=\{a_{ij}\}$. For a pair of nodes $i$ and $j$, its corresponding adjacency matrix entry $a_{ij}$ is defined as follows,
 
 \[ \begin{cases} 
      a_{ij}=1 & \text{\emph{if node $i$ and node $j$ are connected}} \\
       a_{ij}=0 & \text{\emph{otherwise}}.
          \end{cases}
-\].
+\]
 
 Undirected networks can also be \emph{weighted}, where the weight of an edge between a node pair encodes their extent of similarity. These edge weights are some real number and are frequently quantities such as correlation or pairwise similarity. A simple extension of ${\bf A}$ to an undirected, weighted network where $w$ is the edge weight between nodes $i$ and $j$ computes the adjacency matrix entry $a_{ij}$ as, 
 
@@ -42,28 +42,28 @@ Undirected networks can also be \emph{weighted}, where the weight of an edge bet
          \end{cases}
 \]
 
-Alternatively, the assumption of a symmetric relationship between a pair of nodes that node $i$ connects to node $j$ and node $j$ connects to node $i$  may be unrealistic. For example, on twitter, user $i$ can follow user $j$, but user $j$ does not necessarily need to follow user $i$. This type of network is known as a \emph{directed} network. While directed are frequently discussed in the network science literature, we will not introduce them here.  
+Alternatively, the assumption of a symmetric relationship between a pair of nodes that node $i$ connects to node $j$ and node $j$ connects to node $i$  may be unrealistic. For example, on twitter, user $i$ can follow user $j$, but user $j$ does not necessarily need to follow user $i$. This type of network is known as a \emph{directed} network. While directed are frequently discussed in the network science literature, we will not introduce them here because they are not involved in any work in this thesis. 
 
 \subsection{Network Summary Statistics}
 
-\indent Given a network, there are fundamental tasks of interest that allow for a more clear interpretation and understanding of the data. Some of these objectives include, quantifying node importance, quantifying edge density, identifying connected components ,clustering nodes, and predicting links. Networks in textbooks often look deceptively clean and well-structure. In reality, most network data is described as being a hairball. This term refers to the difficulty of discerning structure or interpreting meaning from the network based on the connectivity patterns. An example of a typical hairball is shown in figure \ref{fig:Hairball}
+\indent Given a network, there are fundamental tasks of interest that allow for a more clear interpretation and understanding of the data. Some of these objectives include, ranking the node by their importance or \emph{centrality} in the network, clustering nodes, and predicting the existence of a link between a node pair. Toy networks, such as the one presented in \ref{fig:social} or in a textbook often look deceptively clean and well-structured. In reality, most network data is large, messy, and often referred to as a hairball. This term alludes to the difficulty of immediately discerning structure or interpreting meaning from the network due to the large amount of presented information. An example of a typical hairball is shown in figure \ref{fig:Hairball}
 
 \begin{figure}
 \begin{center}
-\includegraphics[scale=0.3]{Hairball}
-\caption{{\bf Hairball network.} Networks are often noisy data structures and lack an immediate straight forward structural interpretation. Image from \url{https://cs.umd.edu}}
+\includegraphics[scale=0.4]{Hairball}
+\caption{{\bf Hairball network.} Networks are often noisy data structures and lack an immediate straight forward structural interpretation. [Image from \url{https://cs.umd.edu}.]}
 \label{fig:Hairball}
 \end{center}
 \end{figure}
 
-\subsubsection{Case Study: Computing network summary statistics on a network built from single cell data}
+\subsubsection{A network representation of single cell data and simple summary statistics}
 
-Such a challenging representation of the data requires breaking the network down into smaller pieces that can be further analyzed. In this section, we will describe several summary statistics and analyses that can be performed and will be seen throughout the rest of this thesis.\\
+\indent An initially overwhelming network structure can be mediated by tools to break down,quantify, and describe structural patterns. In this section, we will describe several summary statistics and analyses that can be performed and will be seen throughout the rest of this thesis.\\
 \indent To illustrate these quantities, we will compute them on the network shown in Figure \ref{fig:Cytometry}. This network is constructed from a single cell mass cytometry dataset released publicly in the Cytofkit R package \cite{cytofkit}. Each node represents a single cell and is represented with 50 features profiled with mass cytometry. We created a network from this dataset by selecting 500 cells and building a $k$-nearest neighbor network with $k=5$. This means that for a node $i$, we found its $5$ nearest neighbors according to Euclidean distance, and connected them all to node $i$. 
 
 \begin{figure}
 \begin{center}
-\includegraphics[scale=0.5]{CytometryNet}
+\includegraphics[scale=0.4]{CytometryNet}
 \caption{{\bf Network of single cells.} We constructed a network from mass cytometry profiling in single cell data. Each node is a single cell and is connected to its 5 nearest neighbors.}
 \label{fig:Cytometry}
 \end{center}
@@ -77,7 +77,7 @@ The first most basic summary statistic is known as \emph{degree}. Here, we will 
 \text{degree}(i)=\sum_{j}a_{ij}
 \end{equation}
 
-We visualize degree distribution in \ref{fig:DegDist} using a cumulative distribution plot (A.) and a simple histogram (B.). Since this network was constructed with a $5$-nearest neighbor rule, we see this reflected in the degree distribution, with all nodes having degree 5 or more. A few nodes have significantly higher degree (> 10) and represent single cells who is a nearest neighbor to many of the other cells in the original 50 dimensional space. 
+We visualize degree distribution in \ref{fig:DegDist} using a cumulative distribution plot (A.) and a simple histogram (B.). Since this network was constructed with a $5$-nearest neighbor rule, we see this reflected in the degree distribution, with all nodes having degree 5 or more. A few nodes have significantly higher degree ($> 10$) and represent single cells who is a nearest neighbor to many of the other cells in the original 50 dimensional space. 
 
 \begin{figure}
 \begin{center}
@@ -129,7 +129,7 @@ Because centralities are non-zero, the solution must be an eigenvector with all 
 
 
 \section{Introduction to community detection}
-A community in a network is broadly defined as a set of who share something in common in terms of their connectivity patterns in the network. One can think of a community as a clustering problem on networks, where the objective is to identify a set of nodes that are highly similar. The most basic type of community to understand is a network with assortative community structure. In this case, nodes are tightly connected to each other but more sparsely connected to the rest of the network. An example of a network with assortative community structure is shown in \ref{fig:Assort.} Communities in the network are outlined with pink dotted lines.
+While centrality measures allow for the prioritization of individual nodes in the network, it is also useful to look at sets of similar nodes in terms of how they are situated in the network, or a \emph{community}. A community in a network is broadly defined as a set of who share something in common in terms of their connectivity patterns in the network. One can think of a community as a clustering problem on networks, where the objective is to identify a set of nodes that are highly similar. The most basic type of community to understand is a network with assortative community structure. In this case, nodes are tightly connected to each other but more sparsely connected to the rest of the network. An example of a network with assortative community structure is shown in \ref{fig:Assort.} Communities in the network are outlined with pink dotted lines.
 
  \begin{figure}
 \begin{center}
@@ -353,36 +353,38 @@ A study lead by Aghaeepour \emph{et al.}, demonstrated that there is a typical t
 \subsection{Analysis of high dimensional single cell data for tumor heterogenity}
 \indent A very beautiful application of community detection is the development of a network and community detection based method, called PhenoGraph for the analysis of single cell data, presented by Levin \emph{et al.,} in 2015 \cite{phenoGraph}. Single cell technologies allow for the profiling of cells individually within a sample. Recent attention and methods development have focused on the use of RNA sequencing and mass cytometry to give a high dimensional profile for a single cell. Single cell technologies have enabled for an advancement in the understanding of the pathobiology of cancer in that cells within a tumor have been shown to exhibit a large amount of heterogeneity at the single cell level. Furthermore, this heterogeneity has important functional and clinical significance \cite{intraTumor}. The data produced by these single cell technologies profiles millions of cells, based on multiple features (whether those be genetic, immunological, or signaling response). Moreover, a key challenge is to accurately separate individual cells into biologically meaningful subpopulations or cell phenotypes. While we will mostly profile the community detection based method used for this task, the implications of this work lead to the identification of a cellular phenotype and a corresponding gene expression signature which was highly correlated with accurate prediction of patient survival rates. \\
 \indent Unsupervised analysis of cell types is a challenging problem as there are millions of cells, with each cell being a point in $d$-dimensional space. Traditional clustering algorithms are too slow, or require assumptions about the number of clusters, or the shape of the data in high-dimensional space. One benefit of community detection on networks is that many methods do not require specification of the number of clusters and are agnostic to the shape of the data in high dimensions. The first step of PhenoGraph is to build a $k$-nearest neighbor network between pairs of cells. To do this, each cell is connected to its $k$-nearest neighbors. The second step of the algorithm refined the $k$-nearest neighbor network to prioritize keeping the most similar pairs of nodes connected in the network and removing extraneous connections. This is done by creating a new weighted network between the cells based on the Jaccard similarity measure. In this context, the Jaccard similarity between a pair of nodes reflects the similarity of their neighbors in the network. With this refined network, modularity based community detection was applied and each of the resulting communities corresponds to a distinct cellular phenotype. When this method was applied to a manually gated (i.e. cells were manually separated dataset),  PhenoGraph showed very strong performance for multiple values of $k$. The authors specifically tried, $k=\{15,30,45,60\}$. 
-\indent The authors also provide an approach to add supervision to the problem, which uses partially labeled data set. In this context, this means that some of the cells have a classification. Moreover, given that the network contains $N$ nodes, with $T$ labeled nodes ($T<L$), the objective is to label the remaining $N-T$ nodes. Based on a concern that network-based classification methods operating on a majority vote rule for a node's neighbors, the authors sought to develop an approach that would not suffer in circumstances where a node's closest neighbors were a small subset of the available labeled data. This issue is mediated through the use of label information on the whole network through a random walk. Conceptually, starting from an unlabeled node, the random walker can move through the network, taking into account edge weight information at each step. The random walk classification scheme from an unlabeled node is therefore the probability of its random walk ultimately arriving at a node from each of the classes.  The probability of an unlabeled node reaching a node in each of the labeled classes can be computed in a straightforward way, using the graph laplacian \cite{RWR}.
+\indent The authors also provide an approach to add supervision to the problem, which uses partially labeled data set. In this context, this means that some of the cells have a classification. Moreover, given that the network contains $N$ nodes, with $T$ labeled nodes ($T<L$), the objective is to label the remaining $N-T$ nodes. Based on a concern that network-based classification methods operating on a majority vote rule for a node's neighbors, the authors sought to develop an approach that would not suffer in circumstances where a node's closest neighbors were a small subset of the available labeled data. This issue is mediated through the use of label information on the whole network through a random walk. Conceptually, starting from an unlabeled node, the random walker can move through the network, taking into account edge weight information at each step. The random walk classification scheme from an unlabeled node is therefore the probability of its random walk ultimately arriving at a node from each of the classes.  The probability of an unlabeled node reaching a node in each of the labeled classes can be computed in a straightforward way, using the graph laplacian \cite{RWR}. \\
 \indent Overall, the findings of this paper use community detection to allow for the analysis and understanding of tumor heterogeneity data that was not possible with standard high dimensional data analysis techniques.  The authors suggest that this method is useful in characterizing primitive cancer cells and for the identification of cell biology features that define particular biological states and clinical outcomes. 
 
 \subsection{Identification of virulence factor genes related to antibiotic resistance of uropathogenic \emph{E. coli}}
 \indent Urinary tract infections are primarily caused by uropathogenic \emph{E. coli} (UPEC). In their study Parker \emph{et al.,} seek to better understand UPEC antibiotic resistance, which prevents patients from being treated for urinary tract infections. Using a cohort of 337 \emph{E. coli} patient isolates, the authors looked closely at the virulence factor genes of these patients. Virulence factors are non conserved or are carried on mobile genetic elements and elicit biological functions that relate to uropathogenesis (i.e. the onset of a patient getting at UTI). The biological function of virulence factors are known and allow for the development of therapeutic agents. In the analysis, the presence or absence for each of 16 virulence factors was determined. A network was constructed between the 337 patient isolates, with each edge reflecting the pairwise similarity in their virulence factor profiles. Modularity based community detection was then applied to this network and partitioned it into 4 different communities. Most remarkably, each of the 4 communities was characterized by clinical isolated described by either a single or pair of virulence factor markers. These pairs of related virulence factors were then probed further to investigate their role in antibiotic resistance. This approach offers a n ew way to integrate genomic and individual patient information to determine which types of antibiotics might be most effective.  
-\section{Challenging problems in community detection}
-\subsection{Temporal Networks}
-\subsection{Multilayer networks}
-\subsection{Network Comparison}
-\subsection{Large Networks}
-\subsection{Attributed Networks}
 
 \section{Thesis Contribution}
-In this thesis, we focus on 3 of the discussed challenging problems of adapting community detection approaches to multilayer, large, and attributed networks. 
-
+\indent Given the several presented case studies of why community detection is a useful technique for studying network data, we sought to  identify the limitations of the commonly used methods and how they can be more suited to handle a wider range of network data. We are particularly inspired by data arising in social and biological networks, which can often produce very large networks, requiring scalable and use-to-use tools to interpret. 
 \subsection{Thesis Statement}
 
-[Inset thesis statement here]. To succinctly summarize the contributions of this thesis, we outline each of the 3 developed methods, their top 3 pieces of related work, and why our approach makes a novel contribution in table X. 
+In this thesis, we address three challenging types of network data,  where the identification of communities is challenging. {\bf 1) We focus on how to identify communities in multilayer networks by through an extension of the stochastic block model.} Our method learns a collection of models to describe the entire multilayer network. {\bf 2) We provide a method to pre-process a large network into a smaller network of super nodes that can be used as input to a community detection algorithm.} This pre-processing step decreases the run time of community detection algorithms and decreases the variability across multiple runs of the community detection algorithm. {\bf 3) We extend the stochastic block model to handle attributed network data, which allows the inference of node-to-community assignments to handle both connectivity and continuous attribute information.} Our learned model for the connectivity and attributes can be used to perform link prediction and collaborative filtering.  
 
+\subsection{Summary of the novelty of this work}
+
+ To succinctly summarize the contributions of this thesis, we outline each of the 3 developed methods, their top 3 pieces of related work, and why our approach makes a novel contribution in table \ref{Tab11}. 
+\begin{table}[h!]
+\tiny
 \begin{tabular}{ p{3cm}||p{3cm}|p{3cm}|p{3cm} }
  \multicolumn{4}{c}{} \\
 %\hline
- Method& Brief Description & Top 3 Similar Works & Novelty\\
+ Method& Brief Description & 3 Similar Approaches & Novelty\\
  \hline
-sMLSBM   & Stochastic block model for multilayer networks    &AFG&   004\\
-SuperNode&   AX  & ALA   &248\\
-Attribute SBM&   AX  & ALA   &248\\
+sMLSBM (Chapter 2)   & Stochastic block model for multilayer networks  & MLSBM through aggregation methods \cite{catala}, Restricted MLSBM \cite{mlsbm1},  MLSBM \cite{airoldi} & Instead of fitting a consensus SBM to all layers, we learn a set of models that represents different clusters of layers.\\
+\hline
+SuperNode (Chapter 3) &  Pre-processing a network into a smaller network of super nodes before applying community detection  & Identify communities on core of network and propagate labels outward \cite{peng}, Create super nodes with prior information about nodes expected to be together \cite{SuperNodeSide}, Reduce the size of the network by systematically removing nodes and edges \cite{gilbert}  & We recast the entire network as a network of super nodes and input this smaller version into community detection algorithms. We do not require prior knowledge or side information\\
+\hline
+Attribute SBM (Chapter 4) & Incorporate both network connectivity and continuous attributes into account when assigning nodes to communities  & SBM inference with a single attribute \cite{clauset}, iLouvain Modifying modularity to incorporate attributes \cite{ilouvain}, CESNA: Affiliation model with attributes \cite{cesna} & We adapt the SBM to handle multiple continuous attributes\\
  \hline
 \end{tabular}
-
+\caption{{\bf Summarizing the novelty of our 3 developed methods}. For each of the 3 methods we developed, we provide a brief description of what it does, the top 3 most similar approaches, and why our approach is novel.}
+\label{Tab11}
+\end{table}
 \subsection{Relevant Publications}
 The work addressed in this thesis can be found in the following publications. note that we have organized the publications by the theme they address. \\
 
@@ -773,7 +775,7 @@ Additionally, the Human Microbiome example reveals some interesting biological q
 \indent The rise of a greater number of multilayer network datasets is providing the need for additional tools for the construction and analysis of such networks. The sMLSBM provides a new method to find signal in inherently noisy and complex network data. 
 
 \section{Detectability in a single stratum}
-The development of sMLSBM motivated the analysis for how multiple layers can be collectively used to more accurately learn SBM model parameters in the single stratum case. That is, given a collection of sparse networks from a multilayer stochastic block model with one stratum, how can the layers most accurately be combined to give the most accurate definition of community structure. We investigate these questions in \emph{Enhanced detectability of community structure in multilayer networks through layer aggregation} \cite{taylor2015enhanced}. In particular, we studied the detectability limitations of the stochastic block model for a multilayer network with 1 stratum using random matrix theory techniques. 
+The development of sMLSBM motivated the analysis for how multiple layers can be collectively used to more accurately learn SBM model parameters in the single stratum case. That is, given a collection of sparse networks from a multilayer stochastic block model with one stratum, how can the layers most accurately be combined to give the most accurate definition of community structure. In work lead by Dane Taylor and collaborators Saray Shai, and Peter Mucha, we investigate these questions in \emph{Enhanced detectability of community structure in multilayer networks through layer aggregation} \cite{taylor2015enhanced}. In particular, we studied the detectability limitations of the stochastic block model for a multilayer network with 1 stratum using random matrix theory techniques. 
 
 \subsection{Investigating detectability in a multilayer network}
 Community structure detectability has gained considerable attention \cite{detect20,detect21,detect22,detect23,detect24,detect25} with a hope of being able to identify properties of networks and their corresponding adjacency matrices that reveal how prominent or easy-to-find the community structure is. A network with detectable community structure is thought to be one where multiple community detection algorithms would agree on common groups, and that nodes are not just being assigned to communities randomly, but instead exhibit straight-forward clustering patterns. Applying a community detection algorithm to a network with undetectable community structure might be dramatically different between algorithms, or may assign nodes to the biggest community or even all to the same community. It is particularly interesting to investigate this question in relation to a multilayer stochastic block model because we can generate samples from various models with different parameters and see if the community partition of the network agrees with the specified model. Previous work has previously been explored in networks with degree heterogeneity \cite{detectDegreeHetero}, hierarchical structure \cite{peixotoHierarchAttribute,HierarchAttl}, and in temporal networks \cite{detectTemporal}, but not characterized in multilayer networks. \\
@@ -803,6 +805,34 @@ has mean $Lp$ and variance $Lp(1-p)$. With sufficiently large variance in the ed
 \begin{equation}
 P(\lambda)=\frac{\sqrt{\lambda^2_{2}-\lambda^{2}}}{\pi \lambda_{2}^{2}/2}
 \end{equation}
+
+The largest eigenvalue of $\bar{{\bf B}}$ in the $N \rightarrow \infty$ limit is the isolated eigenvalue,
+
+\begin{equation}
+\lambda_{1}=NL\Delta/2+2[\rho(1-\rho)-\Delta^{2}/4]/\Delta. 
+\end{equation}
+
+The eigenvector ${\bf v}$ corresponding to $\lambda_{1}$ gives the spectral bipartition. Here, the inferred community label of node $i$ is determined by the sign of $v_{i}$ and provided that the largest eigenvalue corresponds to this isolated eigenvalue, $\lambda_{1}$, the eigenvector entries $\{v_{1}\}$ are correlated with the node-to-community labels, ${\bf z}$.  As shown in \cite{taylor2015enhanced}, we can derive a detectability equation that accounts for the number of layers,
+
+\begin{equation}
+NL\Delta=\sqrt{4NL\rho(1-\rho)}.
+\end{equation}
+
+\indent We now study $\Delta^{*}$ for the thresholded networks, which correspond to single-layer SBMs in which the community labels, ${\bf z}$ are identical to those of the multilayer SBM, but are new effective block edge probabilities
+
+\begin{equation}
+\hat{\Pi}_{nm}^{(\tilde{L})}=1-F(\tilde{L}-1;L,\Pi_{nm}),
+\end{equation}
+
+where $F(a;L,p)$ is the cumulative distribution function for the binomial distribution $f(a;L,p)$. The effective probabilities for the AND and OR networks are $\hat{\Pi}_{nm}^{(L)}=(\Pi_{nm})^{L}$ and $\hat{\Pi}_{nm}^{(1)}=1-(1-\Pi_{nm})^{L}$, respectively. For the two-community SBM, the effective probabilities are $\hat{p}_{\text{in,out}}^{(\tilde{L})}=1-F(\tilde{L}-1;L,p_{\text{in,out}})$, $\hat{\Delta}^{(\tilde{L})}=\hat{p_{in}}^{(\tilde{L})}-\hat{p_{in}}^{(\tilde{L})}$ and $\hat{\rho}^{(\tilde{L})}=\hat{p_{in}}^{(\tilde{L})}-\hat{p_{in}}^{(\tilde{L})}/2$. 
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=.6\linewidth]{Detect}
+\caption{{\bf Effects of layer aggregation on detectability.} Add stuff.}
+\label{Detect}
+\end{center}
+\end{figure}
 
 \chapter{Network compression for community detection with super nodes}
 \indent In practice, social and biological networks are quite large with hundreds of thousands or millions of nodes. For example, the SNAP (Stanford Network Analysis Project) network repository (\cite{https://snap.stanford.edu/data/}) houses various types of social and technological networks. For example, the amazon co-purchasing network has 548,000 nodes and 1,788,725 edges. Working with a network this size is overwhelming and makes computations slow and variable. In particular, we will show that community detection algorithms produce highly variable outputs on large networks or take a long time to run. In this chapter, we will introduce a pre-processing technique for networks to take the originally large network and reduce it to a smaller size, which enables analysis on a small network with a user-defined number of nodes or `super nodes'. This work is from our paper \emph{Compressing Networks with Super Nodees} \cite{compressing}.
@@ -1291,8 +1321,71 @@ Future work could extend the model to handle a combination of multiple discrete 
 
 Networks used across fields are becoming increasingly complex, often with multiple sources of information to integrate in order to make a conclusion for the data. Our approach to an attributed SBM advances the understanding of how to jointly consider attribute and connectivity information in a probabilistic framework.  
 
-\chapter{Community detection for understanding burn inhalation injury}
-\indent In 
+\chapter{A network approach to understanding microbiome disruption in response to acute lung injury}
+\indent As the final chapter in this thesis, we present an application of how network analysis and community detection were used to understand the changes in the microbiome composition of patients acute lung injury. Analogous to the discussions related to microbiome analysis earlier in this thesis, the profiling of the microbiome is accomplished through metagenomic sequencing and identifying OTUs (operational taxonomic units). Each OTU is treated as a taxonomic unit, or bacterial species and typical microbiome analyses look at the counts of a collection of OTUs across samples. In this work, we seek to study how the co-occurence patterns of OTUs differ between healthy patients and those with acute lung injury. We show that creating a network representation of this data and analyzing it with community detection is crucial for the ability to understand functional differences between two cohorts of patients.
+
+\section{Background and Motivation}
+ This study is a follow-up analysis to the work by Walsh \emph{et al.}, which sought to profile the microbial composition of patients with acute lung injury (ALI) from smoke \cite{walsh2017}. This analysis shows that patients with acute lung injury have enrichment for different taxa than healthy patients, however the co-occurence patterns between pairs of species was not investigated. it is interesting to study these co-occurence patterns because specific types of pairwise interactions between species lead to different functions of the involved individuals \cite{boon}.  In these interactions, bacteria undergo processed, such as, exchanging intermediate compounds to make amino acids or lateral gene transfer. Pairwise interactions can be classified as being mutualistic, where all species in an interaction benefit , or antagonistic, where some species benefit at the expense of others \cite{mutualism}. The identification of important pairwise interactions between taxa offer the opportunity for therapeutic intervention.  
+ 
+ \subsection{Data Background}
+\indent DNA was extracted from bronchial washings of 48 patients after 72 hours of hospitalization for burn and inhalation injury in the North Carolina Jaycee Burn Center. Patients were classified as having burn inhalation injury as hypoxemia according to the ration of the partial pressure of arterial oxygen ($PaO_{2}$) (P) to the fraction of inspired oxygen ($FiO_{2}$) (F) $\le 300$. A. patient with a P/F ratio $>300$ was assumed to have normal oxygenation levels. Those with P/F $<300$ were classified as having acute lung injury (ALI). DNA was sequenced using the MiSeq \cite{miSeq} platform and bacterial species were identified using the MT-Toolbox pipeline \cite{your}. The output of MT-Toolbox was an OTU count table, profiling the abundances or counts of 372 OTUs for each of the 48 patients.
+
+\section{Network Analysis Methods}
+\subsection{Creating Networks with SparCC}
+\indent Given the OTU count table that we generated, the next objective was to construct 2 networks. The first network being the OTU co-occurence network, constructed from the 24 patients with acute lung injury. The other network is the OTU co-occurence network between healthy patients. To construct these networks, we used SparCC \cite{sparcc}, the method discussed in chapter 2. As a recap, the objective of this method is to create sparse correlation networks between OTUs, based on their counts. Pearson correlation can be used to compute these correlations, bit suffers from the count-based nature of the data, producing spurious correlations. The authors further point out that spurious correlations are often worse when the diversity of the sample (defined as some function of the number of OTUs present) is low. Hence, SparCC is a state-of-the-art method because it takes this issue into account. The correlation network in each case  is between OTUs, according to their co-occurence patterns across patients in the associated cohort (healthy vs. acute lung injury). \\
+\indent The correlation networks returned by SparCC had both positive and negative edge weights. In this analysis, we only consider positive edges, as most of the the community detection literature is not amenable to signed networks. We were further curious to see how we could more closely hone in on the important structures by thresholding the network, or removing edges less than some threshold weight. We based this threshold on two criteria. First, we sought to find a stable threshold where slight variations in thereshold would not dramatically change the number of communities detected with a modularity-based community detection algorithm. Next, we also sought to identify the threshold producing a node-to- community partition similar to the results produced at an adjacent threshold. In summary, both of this methods seek to find a stable threshold that does not dramatically change the community structure. For both networks, this threshold turned out to be 0.14. In other words, we discarded edges with a weight less than 0.14. This produced 4 communities (identified through modularity optimization) in each network. We show the acute lung injury and healthy OTU co-occurence networks  (left and right, respectively) in Figure \ref{alinet}. Here, nodes are colored by their community assignment. From even this early glance, we observe that the structures of these networks are quite different. This observation allowed us to further analyze the difference in biological function reflected in these different network structures.  
+
+
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[width=0.7\textwidth]{ALINet}
+\caption{{\bf Microbial co-occurence networks for each patient cohort}. We constructed networks with SparCC in the ALI and non-ALI cohort networks (left and right, respectively). Four communities were identified in each network. Nodes are colored by their community assignment.}
+\label{alinet}
+\end{center}
+\end{figure}
+
+\section{Results}
+\subsection{Community overlap between network}
+\indent After constructing the network for each cohort, we first evaluated the similarity in all pairs of communities across both networks, and used bioinformatics tools to further uncover the biological differences. We denote the communities in the ALI network by ALI 1, ALI 2, ALI 3, and ALI 4. Similarly, we denote the four communities in the No ALI network by No ALI 1, No ALI 2, No ALI 3, and No ALI 4. In table \ref{Tab5}, we show the contingency tables, where each entry counts the number of OTUs shared between the community pair. We denoted the large overlaps (i.e. sharing many common OTUs) by pink shading in the table. In particular, we highlight the similarity between ALI 4 and No ALI A, ALI 3 and No ALI B, ALI 1 and No ALI C, and ALI 2 and No ALI D. 
+
+\begin{table}[]
+\centering
+\label{my-label}
+\begin{tabular}{lllll}
+      & No ALI A                                          & No ALI B                   & No ALI C                   & No ALI D                                          \\
+ALI 1 & 1                                                 & 1                          & \cellcolor[HTML]{EEB6D1}27 & 2                                                 \\
+ALI 2 & \cellcolor[HTML]{FFFFFF}50                        & 5                          & 9                          & \cellcolor[HTML]{EEB6D1}{\color[HTML]{333333} 22} \\
+ALI 3 & 66                                                & \cellcolor[HTML]{EEB6D1}46 & 37                         & 5                                                 \\
+ALI 4 & \cellcolor[HTML]{EEB6D1}{\color[HTML]{333333} 77} & 5                          & 15                         & 4                                                
+\end{tabular}
+\caption{{\bf Comparing Networks in Each Patient Cohort}. We compare the OTUs in each pair of communities in the ALI and No ALI cohort networks. Large overlaps are denoted by pink shading in the table.}
+\label{Tab5}
+\end{table}
+
+\subsection{Evaluating functional differences}
+\indent Next, we sought to study functional differences in the airway microbiota between patients with and without acute lung injury. In other words, each of the OTUs contains different genes, which leads to different functions (i.e. containing many genes that encode glycoside hydrolase activity). Moreover, we hypothesized that there would be a difference in the functions of the communities between the ALI and non ALI networks. To investigate this, we used PICRUSt \cite{picrust}, a bioinformatic approach used to predict the function of each community. PICRUSt works by looking at each community and the known genetic information about the OTUs assigned to that community and determining the enrichment of particular functions. 
+
+\subsection{Classifying each community according to predicted function}
+\indent PICRUSt originally returned 6,911 unique functions according to the communities across both networks. We were interested to see if we could train a classifier to predict an OTUs community assignment based on its inferred function, according to PICRUSt. In other words, each OTU has several predicted functions, according to its genetic content and we wished to test if we could predict an OTUs community assignment in each network based on the presence or absence of certain functions. From the 6,911 features returned by PICRUSt, we reduced the set by filtering out the functions that were not associated with any OTU. We further filtered out functions if they had a small ratio of within-class variance to between-class variance, meaning that we only wanted features that varied a lot between classes. Using a ratio threshold of 0.05 brought the number of features in our model to 328. A random forest model was trained with half of the data for the ALI and No ALI datasets independently.  To visualize which features were most predictive in being able to classify an OTU into a community, based on function, we measured its importance their importance based on their Gini importance \cite{gini}. In Figure \ref{Function}, the biological functions are presented from top to bottom for the ALI and No ALI networks (left and right, respectively) in terms of their Gini score.
+
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[width=0.9\textwidth]{Function}
+\caption{{\bf Predictive functions for community classification}. We used a set of 328 filtered functions to predict OTU-to-community assignment in the ALI and No ALI network (left and right, respectively). Biological features with more discriminative ability in classification from the random forest classifier are ranked higher on the list.}
+\label{Function}
+\end{center}
+\end{figure}
+
+When these highly ranked predictors were compared between the ALI and no ALI networks, there was very little observed overlap between the highly ranked features between the ALI and no ALI networks, which suggested that acute lung injury is severely altering the microbiome and its function.
+
+\section{Discussion}
+\indent In this chapter we presented preliminary work with an approach to better understand the disruption and evolution to the microbiome in response to acute lung injury. Recognizing the importance of not just measuring the abundances of OTUs in a sample, but also the species that it occurs with offers more in-depth insight into the underlying biological processes occurring. Constructing networks with SparCC for each of the ALI and No ALI cohorts allows us to probe the structural organization of these two different networks. The PICRUSt bionformatics tool and classification task provided important insight into the biological functions that are most indicative of each community in the ALI and No ALI networks. As shown in Figure \ref{Function}, the antibiotic transport system permease protein was ranked to be the most predictive in terms of classifying the OTUs into communities. This might suggest that patients with ALI are better able to transport antibiotics out of the cell, making them more resistant to treatment. This observation suggests that future work should be done to determine if \emph{Prevotella melaninogenica}, an enriched species shown by Walsh \emph{et al.} contains the antibiotic transport system permease protein and gives bacteria an advantage in resisting antibiotic treatment and remaining  in the airways of patients with ALI. \\
+\indent Overall, this work prioritized microbial interactions and potential biological mechanisms (specifically antibiotic resistance) that can be further investigated in the lab to understand the implications of acute lung injury on the microbial ecosystem in airways. 
+
+
+
+
+
 
 \chapter{Conclusion and future work}
 

@@ -120,6 +120,13 @@ Bonacci, T., Audebert, S., Camoin, L., Baudelet, E., Bidaut, G., Garcia, M.,
   ubiquitin-like proteins.
 \newblock {\em Journal of proteome research}, 13(5):2478--2494.
 
+\bibitem[Boon et~al., 2014]{boon}
+Boon, E., Meehan, C.~J., Whidden, C., Wong, D. H.-J., Langille, M.~G., and
+  Beiko, R.~G. (2014).
+\newblock Interactions in the microbiome: communities of organisms and
+  communities of genes.
+\newblock {\em FEMS microbiology reviews}, 38(1):90--118.
+
 \bibitem[Brandes et~al., 2011]{netensemble}
 Brandes, U., Lerner, J., and Nagel, U. (2011).
 \newblock Network ensemble clustering using latent roles.
@@ -134,6 +141,13 @@ Brandes, U., Lerner, J., Nagel, U., and Nick, B. (2009).
 Browet, A., Absil, P.-A., and Van~Dooren, P. (2011).
 \newblock Community detection for hierarchical image segmentation.
 \newblock In {\em IWCIA}, volume~11, pages 358--371. Springer.
+
+\bibitem[Caporaso et~al., 2012]{miSeq}
+Caporaso, J.~G., Lauber, C.~L., Walters, W.~A., Berg-Lyons, D., Huntley, J.,
+  Fierer, N., Owens, S.~M., Betley, J., Fraser, L., Bauer, M., et~al. (2012).
+\newblock Ultra-high-throughput microbial community analysis on the illumina
+  hiseq and miseq platforms.
+\newblock {\em The ISME journal}, 6(8):1621.
 
 \bibitem[Chen et~al., 2016]{cytofkit}
 Chen, H., Lau, M.~C., Wong, M.~T., Newell, E.~W., Poidinger, M., and Chen, J.
@@ -385,6 +399,14 @@ Lancichinetti, A. and Fortunato, S. (2011).
 \newblock Limits of modularity maximization in community detection.
 \newblock {\em Physical review E}, 84(6):066122.
 
+\bibitem[Langille et~al., 2013]{picrust}
+Langille, M.~G., Zaneveld, J., Caporaso, J.~G., McDonald, D., Knights, D.,
+  Reyes, J.~A., Clemente, J.~C., Burkepile, D.~E., Thurber, R. L.~V., Knight,
+  R., et~al. (2013).
+\newblock Predictive functional profiling of microbial communities using 16s
+  rrna marker gene sequences.
+\newblock {\em Nature biotechnology}, 31(9):814.
+
 \bibitem[Larremore et~al., 2013]{larremoreparasite}
 Larremore, D.~B., Clauset, A., and Buckee, C.~O. (2013).
 \newblock A network approach to analyzing highly recombinant malaria parasite
@@ -407,6 +429,12 @@ Leskovec, J., Lang, K.~J., Dasgupta, A., and Mahoney, M.~W. (2009).
 \newblock Community structure in large networks: Natural cluster sizes and the
   absence of large well-defined clusters.
 \newblock {\em Internet Mathematics}, 6(1):29--123.
+
+\bibitem[Leung and Poulin, 2008]{mutualism}
+Leung, T. and Poulin, R. (2008).
+\newblock Parasitism, commensalism, and mutualism: exploring the many shades of
+  symbioses.
+\newblock {\em Vie et Milieu}, 58(2):107.
 
 \bibitem[Levine et~al., 2015]{phenoGraph}
 Levine, J.~H., Simonds, E.~F., Bendall, S.~C., Davis, K.~L., El-ad, D.~A.,
@@ -439,6 +467,14 @@ Madeira, S.~C. and Oliveira, A.~L. (2004).
 Marusyk, A., Almendro, V., and Polyak, K. (2012).
 \newblock Intra-tumour heterogeneity: a looking glass for cancer?
 \newblock {\em Nature Reviews Cancer}, 12(5):323.
+
+\bibitem[Menze et~al., 2009]{gini}
+Menze, B.~H., Kelm, B.~M., Masuch, R., Himmelreich, U., Bachert, P., Petrich,
+  W., and Hamprecht, F.~A. (2009).
+\newblock A comparison of random forest and its gini importance with standard
+  chemometric methods for the feature selection and classification of spectral
+  data.
+\newblock {\em BMC bioinformatics}, 10(1):213.
 
 \bibitem[Meunier et~al., 2009]{hierarchicalmod}
 Meunier, D., Lambiotte, R., Fornito, A., Ersche, K.~D., and Bullmore, E.~T.
@@ -699,16 +735,23 @@ Ugander, J., Backstrom, L., and Kleinberg, J. (2013).
   Wide Web}, pages 1307--1318. International World Wide Web Conferences
   Steering Committee.
 
-\bibitem[Valles-Catala et~al., 2014]{catala}
-Valles-Catala, T., Massucci, F.~A., Guimera, R., and Sales-Pardo, M. (2014).
-\newblock stochastic block models reveal the multilayer structure of complex
-  networks.
-\newblock {\em arXiv preprint arXiv:1411.1098}.
+\bibitem[Valles-Catala et~al., 2016]{catala}
+Valles-Catala, T., Massucci, F.~A., Guimera, R., and Sales-Pardo, M. (2016).
+\newblock Multilayer stochastic block models reveal the multilayer structure of
+  complex networks.
+\newblock {\em Physical Review X}, 6(1):011036.
 
 \bibitem[van~den Heuvel and Sporns, 2013]{hub}
 van~den Heuvel, M.~P. and Sporns, O. (2013).
 \newblock Network hubs in the human brain.
 \newblock {\em Trends in cognitive sciences}, 17(12):683--696.
+
+\bibitem[Walsh et~al., 2017]{walsh2017}
+Walsh, D.~M., McCullough, S.~D., Yourstone, S., Jones, S.~W., Cairns, B.~A.,
+  Jones, C.~D., Jaspers, I., and Diaz-Sanchez, D. (2017).
+\newblock Alterations in airway microbiota in patients with pao2/fio2 ratio?
+  300 after burn and inhalation injury.
+\newblock {\em PloS one}, 12(3):e0173848.
 
 \bibitem[Wang et~al., 2014]{linkPredReview}
 Wang, P., Xu, B., Wu, Y., and Zhou, X. (2014).
@@ -748,6 +791,11 @@ Yang, L., Jin, D., He, D., Fu, H., Cao, X., and Fogelman-Soulie, F. (2017).
 \newblock Improving the efficiency and effectiveness of community detection via
   prior-induced equivalent super-network.
 \newblock {\em Scientific Reports}, 7(1):634.
+
+\bibitem[Yourstone et~al., 2014]{your}
+Yourstone, S.~M., Lundberg, D.~S., Dangl, J.~L., and Jones, C.~D. (2014).
+\newblock Mt-toolbox: improved amplicon sequencing using molecule tags.
+\newblock {\em BMC bioinformatics}, 15(1):284.
 
 \bibitem[Zapi{\'e}n-Campos et~al., 2015]{antagonism}
 Zapi{\'e}n-Campos, R., Olmedo-{\'A}lvarez, G., and Santill{\'a}n, M. (2015).
