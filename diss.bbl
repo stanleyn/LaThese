@@ -99,6 +99,11 @@ Bender, E.~A. and Canfield, E.~R. (1978).
 \newblock The asymptotic number of labeled graphs with given degree sequences.
 \newblock {\em Journal of Combinatorial Theory, Series A}, 24(3):296--307.
 
+\bibitem[Benson et~al., 2016]{Benson}
+Benson, A.~R., Gleich, D.~F., and Leskovec, J. (2016).
+\newblock Higher-order organization of complex networks.
+\newblock {\em Science}, 353(6295):163--166.
+
 \bibitem[Blondel et~al., 2008]{blondel}
 Blondel, V.~D., Guillaume, J.-L., Lambiotte, R., and Lefebvre, E. (2008).
 \newblock Fast unfolding of communities in large networks.
@@ -475,6 +480,11 @@ Menze, B.~H., Kelm, B.~M., Masuch, R., Himmelreich, U., Bachert, P., Petrich,
   chemometric methods for the feature selection and classification of spectral
   data.
 \newblock {\em BMC bioinformatics}, 10(1):213.
+
+\bibitem[Merris, 1994]{laplacian}
+Merris, R. (1994).
+\newblock Laplacian matrices of graphs: a survey.
+\newblock {\em Linear algebra and its applications}, 197:143--176.
 
 \bibitem[Meunier et~al., 2009]{hierarchicalmod}
 Meunier, D., Lambiotte, R., Fornito, A., Ersche, K.~D., and Bullmore, E.~T.
