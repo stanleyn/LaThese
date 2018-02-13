@@ -104,6 +104,12 @@ Benson, A.~R., Gleich, D.~F., and Leskovec, J. (2016).
 \newblock Higher-order organization of complex networks.
 \newblock {\em Science}, 353(6295):163--166.
 
+\bibitem[Betzel et~al., 2018]{betzel}
+Betzel, R.~F., Medaglia, J.~D., and Bassett, D.~S. (2018).
+\newblock Diversity of meso-scale architecture in human and non-human
+  connectomes.
+\newblock {\em Nature Communications}, 9(1):346.
+
 \bibitem[Blondel et~al., 2008]{blondel}
 Blondel, V.~D., Guillaume, J.-L., Lambiotte, R., and Lefebvre, E. (2008).
 \newblock Fast unfolding of communities in large networks.
@@ -255,6 +261,11 @@ Faust, K., Sathirapongsasuti, J.~F., Izard, J., Segata, N., Gevers, D., Raes,
   J., and Huttenhower, C. (2012).
 \newblock Microbial co-occurrence relationships in the human microbiome.
 \newblock {\em PLoS computational biology}, 8(7):e1002606.
+
+\bibitem[Feld, 1981]{pluralHom}
+Feld, S.~L. (1981).
+\newblock The focused organization of social ties.
+\newblock {\em American journal of sociology}, 86(5):1015--1035.
 
 \bibitem[Fortunato, 2010]{fortunato}
 Fortunato, S. (2010).
@@ -577,6 +588,12 @@ Paul, S. and Chen, Y. (2015).
   multi-layer stochastic blockmodel.
 \newblock {\em arXiv preprint arXiv:1506.02699}.
 
+\bibitem[Peel and Clauset, 2015]{peelChange}
+Peel, L. and Clauset, A. (2015).
+\newblock Detecting change points in the large-scale structure of evolving
+  networks.
+\newblock In {\em AAAI}, pages 2914--2920.
+
 \bibitem[Peel et~al., 2017]{peel2017ground}
 Peel, L., Larremore, D.~B., and Clauset, A. (2017).
 \newblock The ground truth about metadata and community detection in networks.
@@ -784,6 +801,13 @@ Yang, J. and Leskovec, J. (2012).
   detection.
 \newblock In {\em Data Mining (ICDM), 2012 IEEE 12th International Conference
   on}, pages 1170--1175. IEEE.
+
+\bibitem[Yang and Leskovec, 2013]{bigclam}
+Yang, J. and Leskovec, J. (2013).
+\newblock Overlapping community detection at scale: a nonnegative matrix
+  factorization approach.
+\newblock In {\em Proceedings of the sixth ACM international conference on Web
+  search and data mining}, pages 587--596. ACM.
 
 \bibitem[Yang and Leskovec, 2015]{jureTruth}
 Yang, J. and Leskovec, J. (2015).
