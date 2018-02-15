@@ -473,6 +473,11 @@ Lorrain, F. and White, H.~C. (1971).
 \newblock Structural equivalence of individuals in social networks.
 \newblock {\em The Journal of mathematical sociology}, 1(1):49--80.
 
+\bibitem[Maaten and Hinton, 2008]{TwoD}
+Maaten, L. v.~d. and Hinton, G. (2008).
+\newblock Visualizing data using t-sne.
+\newblock {\em Journal of machine learning research}, 9(Nov):2579--2605.
+
 \bibitem[Madeira and Oliveira, 2004]{biclustering}
 Madeira, S.~C. and Oliveira, A.~L. (2004).
 \newblock Biclustering algorithms for biological data analysis: a survey.

@@ -60,7 +60,7 @@ Alternatively, the assumption of a symmetric relationship between a pair of node
 
 \indent An initially overwhelming network structure can be mediated by tools to break down, quantify, and characterize structural patterns. In this section, we will describe a few of the essential summary statistics and analyses that can be performed and will be seen throughout the rest of this thesis.\\
 
-\indent To illustrate these quantities in an applied context, we will compute them on the network shown in Figure \ref{fig:Cytometry}. This network is constructed from a single cell mass cytometry dataset released publicly in the Cytofkit R package \cite{cytofkit}. Each node represents a single cell and is represented with 50 features profiled with mass cytometry. We created a network from this dataset by selecting 500 cells and building a $k$-nearest neighbor network with $k=5$. This means that for a node $i$, we found its $5$ nearest neighbors according to Euclidean distance, and connected them all to node $i$. 
+\indent To illustrate these quantities in an applied context, we will compute them on the network shown in Figure \ref{fig:Cytometry}. This network is constructed from a single cell mass cytometry dataset released publicly and processed using the Cytofkit R package \cite{cytofkit}. Each node represents a single cell and is represented with 52 features profiled with mass cytometry. We created a network from this dataset by selecting 500 cells and building a $k$-nearest neighbor network with $k=5$. This means that for a node $i$, we found its $5$ nearest neighbors according to Euclidean distance, and connected them all to node $i$. 
 
 \begin{figure}
 \begin{center}
@@ -165,7 +165,7 @@ Here, $\gamma$ is a resolution parameter \cite{resParam} that controls the scale
 
 \indent In order to determine ${\bf z}$, the most computationally efficient approach is known as the Louvain algorithm \cite{blondel}. The Louvain algorithm is an agglomerative heuristic, which initially starts with each node in its own community and in the first match merges pairs of nodes if their merge leads to an increase in modularity. Each group of nodes assembled after this first pass becomes a new node in the network and a new weighted network is created between the set of new nodes. The weight on the edges of the new network are the number of edges from the original network that go between the sets of merged nodes. This process is continues iteratively until the modularity no longer increases. The reason that this approach is so computationally tractable is because the gain in modularity, $\Delta Q$ of merging two groups of nodes can be explicitly computed in closed form.
 
-\indent Modularity has shown to be effective in applications from neuroscience \cite{hierarchicalmod} to image segmentation \cite{browet}. It has also shown to be effective in clustering high dimensional data that has been used to create a network. In \ref{fig:clustering}, we used tSNE \ref{tsne2} to project the 50-dimensional single cell data into 2 dimensions. Points are colored by their cluster assignment according to $k$- We first performed $k$-means on the original 50 dimensional data (left) and Louvain community detection on the 5 nearest neighbor network representation (right). One benefit of the Louvain algorithm is that it does not require specifying the number of cluster. Moreover, in this example, the Louvain algorithm maximized modularity by partitioning the network into 10 clusters. Moreover, we also clustered the original data with 10 clusters. From these two partitions, we observe that creating a network representation of the data before clustering assists in identifying smaller, less prominent clusters.
+\indent Modularity has shown to be effective in applications from neuroscience \cite{hierarchicalmod} to image segmentation \cite{browet}. It has also shown to be effective in clustering high dimensional data that has been used to create a network. In \ref{fig:clustering}, we used tSNE \cite{TwoD} to project the 50-dimensional single cell data into 2 dimensions. Points are colored by their cluster assignment according to $k$-means. We first performed $k$-means on the original 50 dimensional data (left) and Louvain community detection on the 5 nearest neighbor network representation (right). One benefit of the Louvain algorithm is that it does not require specifying the number of cluster. Moreover, in this example, the Louvain algorithm maximized modularity by partitioning the network into 10 clusters. Moreover, we also clustered the original data with 10 clusters. From these two partitions, we observe that creating a network representation of the data before clustering assists in identifying smaller, less prominent clusters.
 
 
  \begin{figure}
@@ -178,7 +178,7 @@ Here, $\gamma$ is a resolution parameter \cite{resParam} that controls the scale
 
 \subsection{Identifying communities with probabilistic approaches}
 
-\indent Probabilistic community detection methods aim to find a partition of the network through likelihood optimization. Intuitively, the goal is to study the generative process of the node edges in terms of inferred community assignments. For example, given nodes $i$ and $j$, one may model $P(a_{ij}=1)$ as $g(z_{i},z_{j})$, where $g(\cdot)$ is some rule based on the node-to-community assignments. Two common probabilistic community detection models are the stochastic block model \cite{originalSBM} and the affiliation model \cite{affil}. The definition and description of these models and inference techniques are described in depth in chapter \ref{probTech}. To facilitate working with probabilistic models, we first introduce some notation and background on inference techniques. 
+\indent Probabilistic community detection methods aim to find a partition of the network through likelihood optimization. Intuitively, the goal is to study the generative process of the node edges in terms of inferred community assignments. For example, given nodes $i$ and $j$, one may model $P(a_{ij}=1)$ as $g(z_{i},z_{j})$, where $g(\cdot)$ is some rule based on the node-to-community assignments. Two common probabilistic community detection models are the stochastic block model \cite{originalSBM} and the affiliation model \cite{affil}. The definition and description of these models and inference techniques are described in depth in this chapter. To facilitate working with probabilistic models, we first introduce some notation and background on inference techniques. 
 
 \subsubsection{Probabilistic graphical models for statistical inference}
 \label{pgm}
@@ -204,7 +204,8 @@ Here, ${\bf \pi}_{i}$ denotes the set of parents for node $i$. Using this inform
 
 \begin{equation}
 \begin{split}
-P(A,B,C,D,E,F)&=P(A)P(B\mid A)P(C\mid B)P(D \mid B,G)P(E \mid D,B,C)P(F\mid E).
+P(A,B,C,D,E,F)&=P(A)P(B\mid A)P(C\mid B)\\
+&\times P(D \mid B,G)P(E \mid D,B,C)P(F\mid E).
 \end{split}
 \end{equation}
 
@@ -445,7 +446,7 @@ The work addressed in this thesis can be found in the following publications. no
  \item {\bf SuperNode: For compressing a large network}. \url{https://github.com/stanleyn/SuperNode}
  \item {\bf Attributed SBM: For fitting an SBM with multiple continuous attributes}. \url{https://github.com/stanleyn/AttributedSBM}
  \end{enumerate}
-
+ 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 

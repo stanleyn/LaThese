@@ -2,17 +2,17 @@ This is BibTeX, Version 0.99d (TeX Live 2017)
 Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: diss.aux
 Case mismatch error between cite keys Dudin and dudin
----line 180 of file diss.aux
+---line 181 of file diss.aux
  : \citation{Dudin
  :                }
 I'm skipping whatever remains of this command
 Case mismatch error between cite keys Dudin and dudin
----line 199 of file diss.aux
+---line 200 of file diss.aux
  : \citation{Dudin
  :                }
 I'm skipping whatever remains of this command
 Case mismatch error between cite keys Dudin and dudin
----line 208 of file diss.aux
+---line 209 of file diss.aux
  : \citation{Dudin
  :                }
 I'm skipping whatever remains of this command
@@ -60,45 +60,45 @@ Warning--empty year in snapdata
 Warning--empty year in newmandata
 Warning--empty year in traaglouvain
 Warning--empty year in tiagoskewed
-You've used 149 entries,
+You've used 150 entries,
             1935 wiz_defined-function locations,
-            1284 strings with 29116 characters,
-and the built_in function-call counts, 65656 in all, are:
-= -- 6401
-> -- 2979
-< -- 84
-+ -- 1060
-- -- 1024
-* -- 5862
-:= -- 11218
-add.period$ -- 457
-call.type$ -- 149
-change.case$ -- 1245
-chr.to.int$ -- 141
-cite$ -- 161
-duplicate$ -- 2362
-empty$ -- 4463
-format.name$ -- 1253
-if$ -- 12868
+            1291 strings with 29245 characters,
+and the built_in function-call counts, 66078 in all, are:
+= -- 6445
+> -- 2992
+< -- 85
++ -- 1064
+- -- 1028
+* -- 5901
+:= -- 11288
+add.period$ -- 460
+call.type$ -- 150
+change.case$ -- 1252
+chr.to.int$ -- 142
+cite$ -- 162
+duplicate$ -- 2376
+empty$ -- 4495
+format.name$ -- 1260
+if$ -- 12951
 int.to.chr$ -- 9
 int.to.str$ -- 0
-missing$ -- 145
-newline$ -- 740
-num.names$ -- 435
-pop$ -- 1064
+missing$ -- 146
+newline$ -- 745
+num.names$ -- 438
+pop$ -- 1068
 preamble$ -- 1
-purify$ -- 1249
+purify$ -- 1256
 quote$ -- 0
-skip$ -- 1799
+skip$ -- 1810
 stack$ -- 0
-substring$ -- 4757
-swap$ -- 361
+substring$ -- 4800
+swap$ -- 362
 text.length$ -- 26
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 894
+type$ -- 900
 warning$ -- 8
-while$ -- 518
+while$ -- 522
 width$ -- 0
-write$ -- 1923
+write$ -- 1936
 (There were 9 error messages)
