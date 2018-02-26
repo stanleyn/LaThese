@@ -1,0 +1,65 @@
+This is BibTeX, Version 0.99d (TeX Live 2017)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: JustIntro.aux
+The style file: apalike.bst
+Database file #1: dissBib.bib
+Repeated entry---line 672 of file dissBib.bib
+ : @article{Dudin
+ :               ,
+I'm skipping whatever remains of this entry
+You're missing a field name---line 766 of file dissBib.bib
+ : 
+ : %  title={Spectral methods for community detection and graph partitioning},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 808 of file dissBib.bib
+ : 
+ : %  title={Inferring the mesoscale structure of layered, edge-valued and time-varying networks},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Repeated entry---line 1388 of file dissBib.bib
+ : @inproceedings{browet
+ :                      ,
+I'm skipping whatever remains of this entry
+You've used 80 entries,
+            1935 wiz_defined-function locations,
+            974 strings with 17650 characters,
+and the built_in function-call counts, 35060 in all, are:
+= -- 3435
+> -- 1522
+< -- 52
++ -- 535
+- -- 516
+* -- 3101
+:= -- 5977
+add.period$ -- 249
+call.type$ -- 80
+change.case$ -- 654
+chr.to.int$ -- 79
+cite$ -- 80
+duplicate$ -- 1287
+empty$ -- 2421
+format.name$ -- 654
+if$ -- 6900
+int.to.chr$ -- 2
+int.to.str$ -- 0
+missing$ -- 81
+newline$ -- 403
+num.names$ -- 240
+pop$ -- 547
+preamble$ -- 1
+purify$ -- 655
+quote$ -- 0
+skip$ -- 988
+stack$ -- 0
+substring$ -- 2576
+swap$ -- 203
+text.length$ -- 15
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 478
+warning$ -- 0
+while$ -- 284
+width$ -- 0
+write$ -- 1045
+(There were 4 error messages)

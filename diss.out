@@ -5,7 +5,7 @@
 \BOOKMARK [1][-]{section.1.1}{Network Notation and Basic Summarization}{chapter.1}% 5
 \BOOKMARK [2][-]{subsection.1.1.1}{Representing relational information}{section.1.1}% 6
 \BOOKMARK [2][-]{subsection.1.1.2}{Network Summary Statistics}{section.1.1}% 7
-\BOOKMARK [3][-]{subsubsection.1.1.2.1}{A network representation of single cell data and simple summary statistics}{subsection.1.1.2}% 8
+\BOOKMARK [3][-]{subsubsection.1.1.2.1}{Example: A network representation of single cell data and simple summary statistics}{subsection.1.1.2}% 8
 \BOOKMARK [3][-]{subsubsection.1.1.2.2}{Degree Distribution}{subsection.1.1.2}% 9
 \BOOKMARK [3][-]{subsubsection.1.1.2.3}{Centrality}{subsection.1.1.2}% 10
 \BOOKMARK [1][-]{section.1.2}{Introduction to community detection}{chapter.1}% 11
@@ -97,24 +97,40 @@
 \BOOKMARK [3][-]{subsubsection.4.5.2.3}{Link prediction experiments}{subsection.4.5.2}% 97
 \BOOKMARK [3][-]{subsubsection.4.5.2.4}{Collaborative filtering experiments}{subsection.4.5.2}% 98
 \BOOKMARK [1][-]{section.4.6}{Conclusion and Future Work}{chapter.4}% 99
-\BOOKMARK [0][-]{chapter.5}{A network approach to understanding microbiome disruption in response to acute lung injury}{}% 100
-\BOOKMARK [1][-]{section.5.1}{Background and Motivation}{chapter.5}% 101
-\BOOKMARK [2][-]{subsection.5.1.1}{Data Background}{section.5.1}% 102
-\BOOKMARK [1][-]{section.5.2}{Network Analysis Methods}{chapter.5}% 103
-\BOOKMARK [2][-]{subsection.5.2.1}{Creating Networks with SparCC}{section.5.2}% 104
-\BOOKMARK [1][-]{section.5.3}{Results}{chapter.5}% 105
-\BOOKMARK [2][-]{subsection.5.3.1}{Community overlap between network}{section.5.3}% 106
-\BOOKMARK [2][-]{subsection.5.3.2}{Evaluating functional differences}{section.5.3}% 107
-\BOOKMARK [2][-]{subsection.5.3.3}{Classifying each community according to predicted function}{section.5.3}% 108
-\BOOKMARK [1][-]{section.5.4}{Discussion}{chapter.5}% 109
-\BOOKMARK [0][-]{chapter.6}{Conclusion and Future Work}{}% 110
-\BOOKMARK [1][-]{section.6.1}{sMLSBM}{chapter.6}% 111
-\BOOKMARK [2][-]{subsection.6.1.1}{Recap}{section.6.1}% 112
-\BOOKMARK [2][-]{subsection.6.1.2}{Future Work}{section.6.1}% 113
-\BOOKMARK [1][-]{section.6.2}{Super Nodes}{chapter.6}% 114
-\BOOKMARK [2][-]{subsection.6.2.1}{Recap}{section.6.2}% 115
-\BOOKMARK [2][-]{subsection.6.2.2}{Future Work}{section.6.2}% 116
-\BOOKMARK [1][-]{section.6.3}{Attributed SBMs}{chapter.6}% 117
-\BOOKMARK [2][-]{subsection.6.3.1}{Recap}{section.6.3}% 118
-\BOOKMARK [2][-]{subsection.6.3.2}{Future Work}{section.6.3}% 119
-\BOOKMARK [0][-]{section*.4}{BIBLIOGRAPHY}{}% 120
+\BOOKMARK [0][-]{chapter.5}{Testing the Alignment of Node Attributes with Network Structure}{}% 100
+\BOOKMARK [1][-]{section.5.1}{Introduction}{chapter.5}% 101
+\BOOKMARK [2][-]{subsection.5.1.1}{Attributed Network Community Detection Methods}{section.5.1}% 102
+\BOOKMARK [3][-]{subsubsection.5.1.1.1}{Probabilistic approaches}{subsection.5.1.1}% 103
+\BOOKMARK [3][-]{subsubsection.5.1.1.2}{Quality function maximization}{subsection.5.1.1}% 104
+\BOOKMARK [1][-]{section.5.2}{Methods}{chapter.5}% 105
+\BOOKMARK [2][-]{subsection.5.2.1}{Notation}{section.5.2}% 106
+\BOOKMARK [2][-]{subsection.5.2.2}{Classifying Nodes}{section.5.2}% 107
+\BOOKMARK [2][-]{subsection.5.2.3}{Sampling Nodes and Creating Entropy Distributions}{section.5.2}% 108
+\BOOKMARK [2][-]{subsection.5.2.4}{Computing the empirical p-value}{section.5.2}% 109
+\BOOKMARK [1][-]{section.5.3}{Results}{chapter.5}% 110
+\BOOKMARK [2][-]{subsection.5.3.1}{Synthetic Examples}{section.5.3}% 111
+\BOOKMARK [3][-]{subsubsection.5.3.1.1}{Comparison to BESTest}{subsection.5.3.1}% 112
+\BOOKMARK [3][-]{subsubsection.5.3.1.2}{Strength of community structure}{subsection.5.3.1}% 113
+\BOOKMARK [2][-]{subsection.5.3.2}{Mass Cytometry Network Example}{section.5.3}% 114
+\BOOKMARK [1][-]{section.5.4}{Conclusion}{chapter.5}% 115
+\BOOKMARK [0][-]{chapter.6}{A network approach to understanding microbiome disruption in response to acute lung injury}{}% 116
+\BOOKMARK [1][-]{section.6.1}{Background and Motivation}{chapter.6}% 117
+\BOOKMARK [2][-]{subsection.6.1.1}{Data Background}{section.6.1}% 118
+\BOOKMARK [1][-]{section.6.2}{Network Analysis Methods}{chapter.6}% 119
+\BOOKMARK [2][-]{subsection.6.2.1}{Creating Networks with SparCC}{section.6.2}% 120
+\BOOKMARK [1][-]{section.6.3}{Results}{chapter.6}% 121
+\BOOKMARK [2][-]{subsection.6.3.1}{Community overlap between network}{section.6.3}% 122
+\BOOKMARK [2][-]{subsection.6.3.2}{Evaluating functional differences}{section.6.3}% 123
+\BOOKMARK [2][-]{subsection.6.3.3}{Classifying each community according to predicted function}{section.6.3}% 124
+\BOOKMARK [1][-]{section.6.4}{Discussion}{chapter.6}% 125
+\BOOKMARK [0][-]{chapter.7}{Conclusion and Future Work}{}% 126
+\BOOKMARK [1][-]{section.7.1}{sMLSBM}{chapter.7}% 127
+\BOOKMARK [2][-]{subsection.7.1.1}{Recap}{section.7.1}% 128
+\BOOKMARK [2][-]{subsection.7.1.2}{Future Work}{section.7.1}% 129
+\BOOKMARK [1][-]{section.7.2}{Super Nodes}{chapter.7}% 130
+\BOOKMARK [2][-]{subsection.7.2.1}{Recap}{section.7.2}% 131
+\BOOKMARK [2][-]{subsection.7.2.2}{Future Work}{section.7.2}% 132
+\BOOKMARK [1][-]{section.7.3}{Attributed SBMs}{chapter.7}% 133
+\BOOKMARK [2][-]{subsection.7.3.1}{Recap}{section.7.3}% 134
+\BOOKMARK [2][-]{subsection.7.3.2}{Future Work}{section.7.3}% 135
+\BOOKMARK [0][-]{section*.4}{BIBLIOGRAPHY}{}% 136

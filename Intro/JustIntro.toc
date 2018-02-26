@@ -1,0 +1,34 @@
+\contentsline {chapter}{LIST OF TABLES}{ix}{section*.1}
+\contentsline {chapter}{LIST OF FIGURES}{x}{section*.2}
+\contentsline {chapter}{LIST OF ABBREVIATIONS}{xii}{section*.3}
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Network Notation and Basic Summarization}{2}{section.1.1}
+\contentsline {subsection}{\numberline {1.1.1}Representing relational information}{2}{subsection.1.1.1}
+\contentsline {subsection}{\numberline {1.1.2}Network Summary Statistics}{3}{subsection.1.1.2}
+\contentsline {subsubsection}{\numberline {1.1.2.1}Example: A network representation of single cell data and simple summary statistics}{4}{subsubsection.1.1.2.1}
+\contentsline {subsubsection}{\numberline {1.1.2.2}Degree Distribution}{4}{subsubsection.1.1.2.2}
+\contentsline {subsubsection}{\numberline {1.1.2.3}Centrality}{6}{subsubsection.1.1.2.3}
+\contentsline {section}{\numberline {1.2}Introduction to community detection}{8}{section.1.2}
+\contentsline {section}{\numberline {1.3}Community detection methods}{9}{section.1.3}
+\contentsline {subsection}{\numberline {1.3.1}Notation for Community Detection}{10}{subsection.1.3.1}
+\contentsline {subsection}{\numberline {1.3.2}Quality function maximization with modularity}{10}{subsection.1.3.2}
+\contentsline {subsection}{\numberline {1.3.3}Identifying communities with probabilistic approaches}{12}{subsection.1.3.3}
+\contentsline {subsubsection}{\numberline {1.3.3.1}Probabilistic graphical models for statistical inference}{12}{subsubsection.1.3.3.1}
+\contentsline {subsubsection}{\numberline {1.3.3.2}Stochastic Block Model}{14}{subsubsection.1.3.3.2}
+\contentsline {subsubsection}{\numberline {1.3.3.3}Variants to the Classic Stochastic Block Model}{17}{subsubsection.1.3.3.3}
+\contentsline {subsubsection}{\numberline {1.3.3.4}Affiliation model and inference}{19}{subsubsection.1.3.3.4}
+\contentsline {subsection}{\numberline {1.3.4}Deep Learning Approaches}{20}{subsection.1.3.4}
+\contentsline {subsection}{\numberline {1.3.5}Higher order network analysis}{22}{subsection.1.3.5}
+\contentsline {section}{\numberline {1.4}Community detection in computational biology}{23}{section.1.4}
+\contentsline {subsection}{\numberline {1.4.1}Immunological profiling to establish a pregnancy immune clock}{23}{subsection.1.4.1}
+\contentsline {subsection}{\numberline {1.4.2}Uncovering differences in microbiome community structure in patients with inflammatory bowel disease}{24}{subsection.1.4.2}
+\contentsline {subsection}{\numberline {1.4.3}Community detection for analysis of flow cytometry data}{25}{subsection.1.4.3}
+\contentsline {subsection}{\numberline {1.4.4}Understanding genetic diversity of the malaria parasite genes}{26}{subsection.1.4.4}
+\contentsline {subsection}{\numberline {1.4.5}Analysis of high dimensional single cell data for tumor heterogenity}{28}{subsection.1.4.5}
+\contentsline {subsection}{\numberline {1.4.6}Identification of virulence factor genes related to antibiotic resistance of uropathogenic \emph {E. coli}}{30}{subsection.1.4.6}
+\contentsline {section}{\numberline {1.5}Thesis Contribution}{30}{section.1.5}
+\contentsline {subsection}{\numberline {1.5.1}Thesis Statement}{31}{subsection.1.5.1}
+\contentsline {subsection}{\numberline {1.5.2}Summary of the novelty of this work}{31}{subsection.1.5.2}
+\contentsline {subsection}{\numberline {1.5.3}Relevant Publications}{31}{subsection.1.5.3}
+\contentsline {subsection}{\numberline {1.5.4}Software}{32}{subsection.1.5.4}
+\contentsline {chapter}{BIBLIOGRAPHY}{34}{section*.4}

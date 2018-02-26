@@ -1,0 +1,460 @@
+\begin{thebibliography}{}
+
+\bibitem[Aghaeepour et~al., 2013]{nimaFlow}
+Aghaeepour, N., Finak, G., Hoos, H., Mosmann, T.~R., Brinkman, R., Gottardo,
+  R., Scheuermann, R.~H., Consortium, F., Consortium, D., et~al. (2013).
+\newblock Critical assessment of automated flow cytometry data analysis
+  techniques.
+\newblock {\em Nature methods}, 10(3):228.
+
+\bibitem[Aghaeepour et~al., 2017]{immuneClock}
+Aghaeepour, N., Ganio, E.~A., Mcilwain, D., Tsai, A.~S., Tingle, M.,
+  Van~Gassen, S., Gaudilliere, D.~K., Baca, Q., McNeil, L., Okada, R., et~al.
+  (2017).
+\newblock An immune clock of human pregnancy.
+\newblock {\em Science immunology}, 2(15):eaan2946.
+
+\bibitem[Aicher et~al., 2014]{aicher}
+Aicher, C., Jacobs, A.~Z., and Clauset, A. (2014).
+\newblock Learning latent block structure in weighted networks.
+\newblock {\em Journal of Complex Networks}, 3(2):221--248.
+
+\bibitem[Airoldi et~al., 2008]{mixMember}
+Airoldi, E.~M., Blei, D.~M., Fienberg, S.~E., and Xing, E.~P. (2008).
+\newblock Mixed membership stochastic blockmodels.
+\newblock {\em Journal of Machine Learning Research}, 9(Sep):1981--2014.
+
+\bibitem[Alipanahi et~al., 2015]{deepGenome}
+Alipanahi, B., Delong, A., Weirauch, M.~T., and Frey, B.~J. (2015).
+\newblock Predicting the sequence specificities of dna-and rna-binding proteins
+  by deep learning.
+\newblock {\em Nature biotechnology}, 33(8):831.
+
+\bibitem[Attias, 2000]{vBayes}
+Attias, H. (2000).
+\newblock A variational baysian framework for graphical models.
+\newblock In {\em Advances in neural information processing systems}, pages
+  209--215.
+
+\bibitem[Baldassano and Bassett, 2016]{moduleMicrobiome}
+Baldassano, S.~N. and Bassett, D.~S. (2016).
+\newblock Topological distortion and reorganized modular structure of gut
+  microbial co-occurrence networks in inflammatory bowel disease.
+\newblock {\em Scientific reports}, 6:26087.
+
+\bibitem[Barry et~al., 2007]{varIntro}
+Barry, A.~E., Leliwa-Sytek, A., Tavul, L., Imrie, H., Migot-Nabias, F., Brown,
+  S.~M., McVean, G.~A., and Day, K.~P. (2007).
+\newblock Population genomics of the immune evasion (var) genes of plasmodium
+  falciparum.
+\newblock {\em PLoS pathogens}, 3(3):e34.
+
+\bibitem[Bassett et~al., 2011]{Neuro}
+Bassett, D.~S., Wymbs, N.~F., Porter, M.~A., Mucha, P.~J., Carlson, J.~M., and
+  Grafton, S.~T. (2011).
+\newblock Dynamic reconfiguration of human brain networks during learning.
+\newblock {\em Proceedings of the National Academy of Sciences},
+  108(18):7641--7646.
+
+\bibitem[Bendall et~al., 2012]{cytof}
+Bendall, S.~C., Nolan, G.~P., Roederer, M., and Chattopadhyay, P.~K. (2012).
+\newblock A deep profiler's guide to cytometry.
+\newblock {\em Trends in immunology}, 33(7):323--332.
+
+\bibitem[Bender and Canfield, 1978]{benderCanfield}
+Bender, E.~A. and Canfield, E.~R. (1978).
+\newblock The asymptotic number of labeled graphs with given degree sequences.
+\newblock {\em Journal of Combinatorial Theory, Series A}, 24(3):296--307.
+
+\bibitem[Benson et~al., 2016]{Benson}
+Benson, A.~R., Gleich, D.~F., and Leskovec, J. (2016).
+\newblock Higher-order organization of complex networks.
+\newblock {\em Science}, 353(6295):163--166.
+
+\bibitem[Betzel et~al., 2018]{betzel}
+Betzel, R.~F., Medaglia, J.~D., and Bassett, D.~S. (2018).
+\newblock Diversity of meso-scale architecture in human and non-human
+  connectomes.
+\newblock {\em Nature Communications}, 9(1):346.
+
+\bibitem[Blondel et~al., 2008]{blondel}
+Blondel, V.~D., Guillaume, J.-L., Lambiotte, R., and Lefebvre, E. (2008).
+\newblock Fast unfolding of communities in large networks.
+\newblock {\em Journal of statistical mechanics: theory and experiment},
+  2008(10):P10008.
+
+\bibitem[Browet et~al., 2011]{browet}
+Browet, A., Absil, P.-A., and Van~Dooren, P. (2011).
+\newblock Community detection for hierarchical image segmentation.
+\newblock In {\em IWCIA}, volume~11, pages 358--371. Springer.
+
+\bibitem[Chen et~al., 2016]{cytofkit}
+Chen, H., Lau, M.~C., Wong, M.~T., Newell, E.~W., Poidinger, M., and Chen, J.
+  (2016).
+\newblock Cytofkit: a bioconductor package for an integrated mass cytometry
+  data analysis pipeline.
+\newblock {\em PLoS computational biology}, 12(9):e1005112.
+
+\bibitem[Combe et~al., 2015]{ilouvain}
+Combe, D., Largeron, C., G{\'e}ry, M., and Egyed-Zsigmond, E. (2015).
+\newblock I-louvain: An attributed graph clustering method.
+\newblock In {\em Advances in Intelligent Data Analysis XIV}, pages 181--192.
+  Springer.
+
+\bibitem[Daudin et~al., 2008]{dudin}
+Daudin, J.-J., Picard, F., and Robin, S. (2008).
+\newblock A mixture model for random graphs.
+\newblock {\em Statistics and computing}, 18(2):173--183.
+
+\bibitem[Davis et~al., 2017]{systemsImmuno}
+Davis, M.~M., Tato, C.~M., and Furman, D. (2017).
+\newblock Systems immunology: just getting started.
+\newblock {\em Nature immunology}, 18(7):725.
+
+\bibitem[Deng et~al., 2014]{collabComm}
+Deng, W., Patil, R., Najjar, L., Shi, Y., and Chen, Z. (2014).
+\newblock Incorporating community detection and clustering techniques into
+  collaborative filtering model.
+\newblock {\em Procedia Computer Science}, 31:66--74.
+
+\bibitem[Feld, 1981]{pluralHom}
+Feld, S.~L. (1981).
+\newblock The focused organization of social ties.
+\newblock {\em American journal of sociology}, 86(5):1015--1035.
+
+\bibitem[Fortunato and Hric, 2016]{fortu2}
+Fortunato, S. and Hric, D. (2016).
+\newblock Community detection in networks: A user guide.
+\newblock {\em Physics Reports}, 659:1--44.
+
+\bibitem[Gilbert and Levchenko, 2004]{gilbert}
+Gilbert, A.~C. and Levchenko, K. (2004).
+\newblock Compressing network graphs.
+\newblock In {\em Proceedings of the LinkKDD workshop at the 10th ACM
+  Conference on KDD}, volume 124.
+
+\bibitem[Girvan and Newman, 2002]{girvancommunity}
+Girvan, M. and Newman, M.~E. (2002).
+\newblock Community structure in social and biological networks.
+\newblock {\em Proceedings of the national academy of sciences},
+  99(12):7821--7826.
+
+\bibitem[Gleich, 2015]{gleichpagerank}
+Gleich, D.~F. (2015).
+\newblock Pagerank beyond the web.
+\newblock {\em SIAM Review}, 57(3):321--363.
+
+\bibitem[Greene and Cunningham, 2013]{socialnetwork}
+Greene, D. and Cunningham, P. (2013).
+\newblock Producing a unified graph representation from multiple social network
+  views.
+\newblock In {\em Proceedings of the 5th Annual ACM Web Science Conference},
+  pages 118--121. ACM.
+
+\bibitem[Grover and Leskovec, 2016]{node2vec}
+Grover, A. and Leskovec, J. (2016).
+\newblock node2vec: Scalable feature learning for networks.
+\newblock In {\em Proceedings of the 22nd ACM SIGKDD international conference
+  on Knowledge discovery and data mining}, pages 855--864. ACM.
+
+\bibitem[Han et~al., 2015]{airoldi}
+Han, Q., Xu, K., and Airoldi, E. (2015).
+\newblock Consistent estimation of dynamic and multi-layer block models.
+\newblock In {\em Proceedings of the 32nd International Conference on Machine
+  Learning (ICML-15)}, pages 1511--1520.
+
+\bibitem[Hartigan and Wong, 1979]{kMean}
+Hartigan, J.~A. and Wong, M.~A. (1979).
+\newblock Algorithm as 136: A k-means clustering algorithm.
+\newblock {\em Journal of the Royal Statistical Society. Series C (Applied
+  Statistics)}, 28(1):100--108.
+
+\bibitem[Jaakkola, 2001]{jakk}
+Jaakkola, T. (2001).
+\newblock 10 tutorial on variational approximation methods.
+\newblock {\em Advanced mean field methods: theory and practice}, page 129.
+
+\bibitem[Karrer and ~, 2011]{degreecorrectSBM}
+Karrer, B. and ~, M.~E. (2011).
+\newblock Stochastic blockmodels and community structure in networks.
+\newblock {\em Physical Review E}, 83(1):016107.
+
+\bibitem[Karrer and Newman, 2011]{degreeCorrect}
+Karrer, B. and Newman, M.~E. (2011).
+\newblock Stochastic blockmodels and community structure in networks.
+\newblock {\em Physical Review E}, 83(1):016107.
+
+\bibitem[Koller and Friedman, 2009]{koller}
+Koller, D. and Friedman, N. (2009).
+\newblock {\em Probabilistic graphical models: principles and techniques}.
+\newblock MIT press.
+
+\bibitem[Kossinets and Watts, 2009]{homophily}
+Kossinets, G. and Watts, D.~J. (2009).
+\newblock Origins of homophily in an evolving social network.
+\newblock {\em American journal of sociology}, 115(2):405--450.
+
+\bibitem[Lancichinetti and Fortunato, 2009]{fortu1}
+Lancichinetti, A. and Fortunato, S. (2009).
+\newblock Community detection algorithms: a comparative analysis.
+\newblock {\em Physical review E}, 80(5):056117.
+
+\bibitem[Larremore et~al., 2013]{larremoreparasite}
+Larremore, D.~B., Clauset, A., and Buckee, C.~O. (2013).
+\newblock A network approach to analyzing highly recombinant malaria parasite
+  genes.
+\newblock {\em PLoS computational biology}, 9(10):e1003268.
+
+\bibitem[Latouche et~al., 2011]{LA}
+Latouche, P., Birmel{\'e}, E., and Ambroise, C. (2011).
+\newblock Overlapping stochastic block models with application to the french
+  political blogosphere.
+\newblock {\em The Annals of Applied Statistics}, pages 309--336.
+
+\bibitem[Layeghifard et~al., 2017]{networkMicrobiome}
+Layeghifard, M., Hwang, D.~M., and Guttman, D.~S. (2017).
+\newblock Disentangling interactions in the microbiome: a network perspective.
+\newblock {\em Trends in microbiology}, 25(3):217--228.
+
+\bibitem[Levine et~al., 2015]{phenoGraph}
+Levine, J.~H., Simonds, E.~F., Bendall, S.~C., Davis, K.~L., El-ad, D.~A.,
+  Tadmor, M.~D., Litvin, O., Fienberg, H.~G., Jager, A., Zunder, E.~R., et~al.
+  (2015).
+\newblock Data-driven phenotypic dissection of aml reveals progenitor-like
+  cells that correlate with prognosis.
+\newblock {\em Cell}, 162(1):184--197.
+
+\bibitem[Libbrecht and Noble, 2015]{machineGenomics}
+Libbrecht, M.~W. and Noble, W.~S. (2015).
+\newblock Machine learning applications in genetics and genomics.
+\newblock {\em Nature Reviews Genetics}, 16(6):321.
+
+\bibitem[Lorrain and White, 1971]{structural}
+Lorrain, F. and White, H.~C. (1971).
+\newblock Structural equivalence of individuals in social networks.
+\newblock {\em The Journal of mathematical sociology}, 1(1):49--80.
+
+\bibitem[Maaten and Hinton, 2008]{TwoD}
+Maaten, L. v.~d. and Hinton, G. (2008).
+\newblock Visualizing data using t-sne.
+\newblock {\em Journal of machine learning research}, 9(Nov):2579--2605.
+
+\bibitem[Marusyk et~al., 2012]{intraTumor}
+Marusyk, A., Almendro, V., and Polyak, K. (2012).
+\newblock Intra-tumour heterogeneity: a looking glass for cancer?
+\newblock {\em Nature Reviews Cancer}, 12(5):323.
+
+\bibitem[Merris, 1994]{laplacian}
+Merris, R. (1994).
+\newblock Laplacian matrices of graphs: a survey.
+\newblock {\em Linear algebra and its applications}, 197:143--176.
+
+\bibitem[Meunier et~al., 2009]{hierarchicalmod}
+Meunier, D., Lambiotte, R., Fornito, A., Ersche, K.~D., and Bullmore, E.~T.
+  (2009).
+\newblock Hierarchical modularity in human brain functional networks.
+\newblock {\em Frontiers in neuroinformatics}, 3.
+
+\bibitem[Mikolov et~al., 2013]{word2Vec}
+Mikolov, T., Chen, K., Corrado, G., and Dean, J. (2013).
+\newblock Efficient estimation of word representations in vector space.
+\newblock {\em arXiv preprint arXiv:1301.3781}.
+
+\bibitem[Mucha et~al., 2010]{muchacommunity}
+Mucha, P.~J., Richardson, T., Macon, K., Porter, M.~A., and Onnela, J.-P.
+  (2010).
+\newblock Community structure in time-dependent, multiscale, and multiplex
+  networks.
+\newblock {\em science}, 328(5980):876--878.
+
+\bibitem[Murphy et~al., 1999]{belief}
+Murphy, K.~P., Weiss, Y., and Jordan, M.~I. (1999).
+\newblock Loopy belief propagation for approximate inference: An empirical
+  study.
+\newblock In {\em Proceedings of the Fifteenth conference on Uncertainty in
+  artificial intelligence}, pages 467--475. Morgan Kaufmann Publishers Inc.
+
+\bibitem[Newman, 2002]{newmanAssort}
+Newman, M.~E. (2002).
+\newblock Assortative mixing in networks.
+\newblock {\em Physical review letters}, 89(20):208701.
+
+\bibitem[Newman, 2006]{newman2006modularity}
+Newman, M.~E. (2006).
+\newblock Modularity and community structure in networks.
+\newblock {\em Proceedings of the national academy of sciences},
+  103(23):8577--8582.
+
+\bibitem[Newman and Clauset, 2016]{clauset}
+Newman, M.~E. and Clauset, A. (2016).
+\newblock Structure and inference in annotated networks.
+\newblock {\em Nature Communications}, 7:11863.
+
+\bibitem[Newman and Girvan, 2004]{newmangirvan}
+Newman, M.~E. and Girvan, M. (2004).
+\newblock Finding and evaluating community structure in networks.
+\newblock {\em Physical review E}, 69(2):026113.
+
+\bibitem[Noh and Rieger, 2004]{rWalk}
+Noh, J.~D. and Rieger, H. (2004).
+\newblock Random walks on complex networks.
+\newblock {\em Physical review letters}, 92(11):118701.
+
+\bibitem[Paul and Chen, 2015]{mlsbm1}
+Paul, S. and Chen, Y. (2015).
+\newblock Community detection in multi-relational data with restricted
+  multi-layer stochastic blockmodel.
+\newblock {\em arXiv preprint arXiv:1506.02699}.
+
+\bibitem[Peel et~al., 2017]{peel2017ground}
+Peel, L., Larremore, D.~B., and Clauset, A. (2017).
+\newblock The ground truth about metadata and community detection in networks.
+\newblock {\em Science Advances}, 3(5):e1602548.
+
+\bibitem[Peixoto, 2018]{peix}
+Peixoto, T.~P. (2018).
+\newblock Nonparametric weighted stochastic block models.
+\newblock {\em Physical Review E}, 97(1):012306.
+
+\bibitem[Peng et~al., 2014]{peng}
+Peng, C., Kolda, T.~G., and Pinar, A. (2014).
+\newblock Accelerating community detection by using k-core subgraphs.
+\newblock {\em arXiv preprint arXiv:1403.2226}.
+
+\bibitem[Perfetto et~al., 2004]{flow}
+Perfetto, S.~P., Chattopadhyay, P.~K., and Roederer, M. (2004).
+\newblock Seventeen-colour flow cytometry: unravelling the immune system.
+\newblock {\em Nature Reviews Immunology}, 4(8):648.
+
+\bibitem[Perozzi et~al., 2014]{deepWalk}
+Perozzi, B., Al-Rfou, R., and Skiena, S. (2014).
+\newblock Deepwalk: Online learning of social representations.
+\newblock In {\em Proceedings of the 20th ACM SIGKDD international conference
+  on Knowledge discovery and data mining}, pages 701--710. ACM.
+
+\bibitem[Reichardt and Bornholdt, 2006]{resParam}
+Reichardt, J. and Bornholdt, S. (2006).
+\newblock Statistical mechanics of community detection.
+\newblock {\em Physical Review E}, 74(1):016110.
+
+\bibitem[Rosenberg and Hirschberg, 2007]{VI}
+Rosenberg, A. and Hirschberg, J. (2007).
+\newblock V-measure: A conditional entropy-based external cluster evaluation
+  measure.
+\newblock In {\em Proceedings of the 2007 joint conference on empirical methods
+  in natural language processing and computational natural language learning
+  (EMNLP-CoNLL)}.
+
+\bibitem[Shai et~al., 2017]{shaicase}
+Shai, S., Stanley, N., Granell, C., Taylor, D., and Mucha, P.~J. (2017).
+\newblock Case studies in network community detection.
+\newblock {\em arXiv preprint arXiv:1705.02305}.
+
+\bibitem[Shreiner et~al., 2015]{gut}
+Shreiner, A.~B., Kao, J.~Y., and Young, V.~B. (2015).
+\newblock The gut microbiome in health and in disease.
+\newblock {\em Current opinion in gastroenterology}, 31(1):69.
+
+\bibitem[Snijders and Nowicki, 1997a]{originalSBM}
+Snijders, T.~A. and Nowicki, K. (1997a).
+\newblock Estimation and prediction for stochastic blockmodels for graphs with
+  latent block structure.
+\newblock {\em Journal of classification}, 14(1):75--100.
+
+\bibitem[Snijders and Nowicki, 1997b]{sbmorig}
+Snijders, T.~A. and Nowicki, K. (1997b).
+\newblock Estimation and prediction for stochastic blockmodels for graphs with
+  latent block structure.
+\newblock {\em Journal of classification}, 14(1):75--100.
+
+\bibitem[Tong et~al., 2008]{RWR}
+Tong, H., Faloutsos, C., and Pan, J.-Y. (2008).
+\newblock Random walk with restart: fast solutions and applications.
+\newblock {\em Knowledge and Information Systems}, 14(3):327--346.
+
+\bibitem[Traud et~al., 2009]{traud}
+Traud, A.~L., Frost, C., Mucha, P.~J., and Porter, M.~A. (2009).
+\newblock Visualization of communities in networks.
+\newblock {\em Chaos: An Interdisciplinary Journal of Nonlinear Science},
+  19(4):041104.
+
+\bibitem[Traud et~al., 2011]{Rand}
+Traud, A.~L., Kelsic, E.~D., Mucha, P.~J., and Porter, M.~A. (2011).
+\newblock Comparing community structure to characteristics in online collegiate
+  social networks.
+\newblock {\em SIAM review}, 53(3):526--543.
+
+\bibitem[Valles-Catala et~al., 2016]{catala}
+Valles-Catala, T., Massucci, F.~A., Guimera, R., and Sales-Pardo, M. (2016).
+\newblock Multilayer stochastic block models reveal the multilayer structure of
+  complex networks.
+\newblock {\em Physical Review X}, 6(1):011036.
+
+\bibitem[van~den Heuvel and Sporns, 2013]{hub}
+van~den Heuvel, M.~P. and Sporns, O. (2013).
+\newblock Network hubs in the human brain.
+\newblock {\em Trends in cognitive sciences}, 17(12):683--696.
+
+\bibitem[Wang et~al., 2014]{linkPredReview}
+Wang, P., Xu, B., Wu, Y., and Zhou, X. (2014).
+\newblock Link prediction in social networks: the state-of-the-art.
+\newblock {\em arXiv preprint arXiv:1411.5118}.
+
+\bibitem[Wong et~al., 2015]{wong2015}
+Wong, M.~T., Chen, J., Narayanan, S., Lin, W., Anicete, R., Kiaang, H. T.~K.,
+  De~Lafaille, M. A.~C., Poidinger, M., and Newell, E.~W. (2015).
+\newblock Mapping the diversity of follicular helper t cells in human blood and
+  tonsils using high-dimensional mass cytometry analysis.
+\newblock {\em Cell reports}, 11(11):1822--1833.
+
+\bibitem[Xiang and Gong, 2008]{spectral1}
+Xiang, T. and Gong, S. (2008).
+\newblock Spectral clustering with eigenvector selection.
+\newblock {\em Pattern Recognition}, 41(3):1012--1029.
+
+\bibitem[Yang and Leskovec, 2012]{affil}
+Yang, J. and Leskovec, J. (2012).
+\newblock Community-affiliation graph model for overlapping network community
+  detection.
+\newblock In {\em Data Mining (ICDM), 2012 IEEE 12th International Conference
+  on}, pages 1170--1175. IEEE.
+
+\bibitem[Yang and Leskovec, 2013]{bigclam}
+Yang, J. and Leskovec, J. (2013).
+\newblock Overlapping community detection at scale: a nonnegative matrix
+  factorization approach.
+\newblock In {\em Proceedings of the sixth ACM international conference on Web
+  search and data mining}, pages 587--596. ACM.
+
+\bibitem[Yang et~al., 2013]{cesna}
+Yang, J., McAuley, J., and Leskovec, J. (2013).
+\newblock Community detection in networks with node attributes.
+\newblock In {\em Data mining (ICDM), 2013 ieee 13th international conference
+  on}, pages 1151--1156. IEEE.
+
+\bibitem[Yang et~al., 2017]{SuperNodeSide}
+Yang, L., Jin, D., He, D., Fu, H., Cao, X., and Fogelman-Soulie, F. (2017).
+\newblock Improving the efficiency and effectiveness of community detection via
+  prior-induced equivalent super-network.
+\newblock {\em Scientific Reports}, 7(1):634.
+
+\bibitem[Zare et~al., 2010]{FlowSpectral}
+Zare, H., Shooshtari, P., Gupta, A., and Brinkman, R.~R. (2010).
+\newblock Data reduction for spectral clustering to analyze high throughput
+  flow cytometry data.
+\newblock {\em BMC bioinformatics}, 11(1):403.
+
+\bibitem[Zhang et~al., 2012]{comp}
+Zhang, P., Krzakala, F., Reichardt, J., and Zdeborov{\'a}, L. (2012).
+\newblock Comparative study for inference of hidden classes in stochastic block
+  models.
+\newblock {\em Journal of Statistical Mechanics: Theory and Experiment},
+  2012(12):P12021.
+
+\bibitem[Zou and Hastie, 2005]{eNet}
+Zou, H. and Hastie, T. (2005).
+\newblock Regularization and variable selection via the elastic net.
+\newblock {\em Journal of the Royal Statistical Society: Series B (Statistical
+  Methodology)}, 67(2):301--320.
+
+\end{thebibliography}

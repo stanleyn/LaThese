@@ -1,0 +1,34 @@
+\BOOKMARK [0][-]{section*.1}{LIST OF TABLES}{}% 1
+\BOOKMARK [0][-]{section*.2}{LIST OF FIGURES}{}% 2
+\BOOKMARK [0][-]{section*.3}{LIST OF ABBREVIATIONS}{}% 3
+\BOOKMARK [0][-]{chapter.1}{Introduction}{}% 4
+\BOOKMARK [1][-]{section.1.1}{Network Notation and Basic Summarization}{chapter.1}% 5
+\BOOKMARK [2][-]{subsection.1.1.1}{Representing relational information}{section.1.1}% 6
+\BOOKMARK [2][-]{subsection.1.1.2}{Network Summary Statistics}{section.1.1}% 7
+\BOOKMARK [3][-]{subsubsection.1.1.2.1}{Example: A network representation of single cell data and simple summary statistics}{subsection.1.1.2}% 8
+\BOOKMARK [3][-]{subsubsection.1.1.2.2}{Degree Distribution}{subsection.1.1.2}% 9
+\BOOKMARK [3][-]{subsubsection.1.1.2.3}{Centrality}{subsection.1.1.2}% 10
+\BOOKMARK [1][-]{section.1.2}{Introduction to community detection}{chapter.1}% 11
+\BOOKMARK [1][-]{section.1.3}{Community detection methods}{chapter.1}% 12
+\BOOKMARK [2][-]{subsection.1.3.1}{Notation for Community Detection}{section.1.3}% 13
+\BOOKMARK [2][-]{subsection.1.3.2}{Quality function maximization with modularity}{section.1.3}% 14
+\BOOKMARK [2][-]{subsection.1.3.3}{Identifying communities with probabilistic approaches}{section.1.3}% 15
+\BOOKMARK [3][-]{subsubsection.1.3.3.1}{Probabilistic graphical models for statistical inference}{subsection.1.3.3}% 16
+\BOOKMARK [3][-]{subsubsection.1.3.3.2}{Stochastic Block Model}{subsection.1.3.3}% 17
+\BOOKMARK [3][-]{subsubsection.1.3.3.3}{Variants to the Classic Stochastic Block Model}{subsection.1.3.3}% 18
+\BOOKMARK [3][-]{subsubsection.1.3.3.4}{Affiliation model and inference}{subsection.1.3.3}% 19
+\BOOKMARK [2][-]{subsection.1.3.4}{Deep Learning Approaches}{section.1.3}% 20
+\BOOKMARK [2][-]{subsection.1.3.5}{Higher order network analysis}{section.1.3}% 21
+\BOOKMARK [1][-]{section.1.4}{Community detection in computational biology}{chapter.1}% 22
+\BOOKMARK [2][-]{subsection.1.4.1}{Immunological profiling to establish a pregnancy immune clock}{section.1.4}% 23
+\BOOKMARK [2][-]{subsection.1.4.2}{Uncovering differences in microbiome community structure in patients with inflammatory bowel disease}{section.1.4}% 24
+\BOOKMARK [2][-]{subsection.1.4.3}{Community detection for analysis of flow cytometry data}{section.1.4}% 25
+\BOOKMARK [2][-]{subsection.1.4.4}{Understanding genetic diversity of the malaria parasite genes}{section.1.4}% 26
+\BOOKMARK [2][-]{subsection.1.4.5}{Analysis of high dimensional single cell data for tumor heterogenity}{section.1.4}% 27
+\BOOKMARK [2][-]{subsection.1.4.6}{Identification of virulence factor genes related to antibiotic resistance of uropathogenic E. coli}{section.1.4}% 28
+\BOOKMARK [1][-]{section.1.5}{Thesis Contribution}{chapter.1}% 29
+\BOOKMARK [2][-]{subsection.1.5.1}{Thesis Statement}{section.1.5}% 30
+\BOOKMARK [2][-]{subsection.1.5.2}{Summary of the novelty of this work}{section.1.5}% 31
+\BOOKMARK [2][-]{subsection.1.5.3}{Relevant Publications}{section.1.5}% 32
+\BOOKMARK [2][-]{subsection.1.5.4}{Software}{section.1.5}% 33
+\BOOKMARK [0][-]{section*.4}{BIBLIOGRAPHY}{}% 34
