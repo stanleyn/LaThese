@@ -107,7 +107,7 @@ Bender, E.~A. and Canfield, E.~R. (1978).
 \newblock The asymptotic number of labeled graphs with given degree sequences.
 \newblock {\em Journal of Combinatorial Theory, Series A}, 24(3):296--307.
 
-\bibitem[Benson et~al., 2016]{Benson}
+\bibitem[Benson et~al., 2016]{benson2}
 Benson, A.~R., Gleich, D.~F., and Leskovec, J. (2016).
 \newblock Higher-order organization of complex networks.
 \newblock {\em Science}, 353(6295):163--166.
@@ -167,6 +167,12 @@ Caporaso, J.~G., Lauber, C.~L., Walters, W.~A., Berg-Lyons, D., Huntley, J.,
 \newblock Ultra-high-throughput microbial community analysis on the illumina
   hiseq and miseq platforms.
 \newblock {\em The ISME journal}, 6(8):1621.
+
+\bibitem[Chaudhuri et~al., 2012]{spectralWalk}
+Chaudhuri, K., Chung, F., and Tsiatas, A. (2012).
+\newblock Spectral clustering of graphs with general degrees in the extended
+  planted partition model.
+\newblock In {\em Conference on Learning Theory}, pages 35--1.
 
 \bibitem[Chen et~al., 2016]{cytofkit}
 Chen, H., Lau, M.~C., Wong, M.~T., Newell, E.~W., Poidinger, M., and Chen, J.
@@ -926,6 +932,10 @@ Zhang, P., Krzakala, F., Reichardt, J., and Zdeborov{\'a}, L. (2012).
   models.
 \newblock {\em Journal of Statistical Mechanics: Theory and Experiment},
   2012(12):P12021.
+
+\bibitem[Zhu and Ghahramani, 2002]{learning2}
+Zhu, X. and Ghahramani, Z. (2002).
+\newblock Learning from labeled and unlabeled data with label propagation.
 
 \bibitem[Zitnik and Leskovec, 2017]{ohmNet}
 Zitnik, M. and Leskovec, J. (2017).

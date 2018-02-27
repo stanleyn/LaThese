@@ -31,7 +31,7 @@
 \BOOKMARK [2][-]{subsection.1.5.2}{Summary of the novelty of this work}{section.1.5}% 31
 \BOOKMARK [2][-]{subsection.1.5.3}{Relevant Publications}{section.1.5}% 32
 \BOOKMARK [2][-]{subsection.1.5.4}{Software}{section.1.5}% 33
-\BOOKMARK [0][-]{chapter.2}{A multilayer stochastic block model}{}% 34
+\BOOKMARK [0][-]{chapter.2}{Strata Multilayer Stochastic Block Model}{}% 34
 \BOOKMARK [1][-]{section.2.1}{Introduction to multilayer networks}{chapter.2}% 35
 \BOOKMARK [1][-]{section.2.2}{Comparing network layers based on community structure}{chapter.2}% 36
 \BOOKMARK [1][-]{section.2.3}{Related work in community detection of multilayer networks}{chapter.2}% 37
@@ -71,66 +71,57 @@
 \BOOKMARK [2][-]{subsection.3.5.4}{Quantifying variability across algorithm runs}{section.3.5}% 71
 \BOOKMARK [2][-]{subsection.3.5.5}{Neighborhood agreement}{section.3.5}% 72
 \BOOKMARK [1][-]{section.3.6}{Conclusion and Future Work}{chapter.3}% 73
-\BOOKMARK [0][-]{chapter.4}{An attributed stochastic block model}{}% 74
-\BOOKMARK [1][-]{section.4.1}{Motivation for studying attributed networks}{chapter.4}% 75
-\BOOKMARK [1][-]{section.4.2}{An Attributed Stochastic Block Model}{chapter.4}% 76
-\BOOKMARK [2][-]{subsection.4.2.1}{Objective}{section.4.2}% 77
-\BOOKMARK [2][-]{subsection.4.2.2}{Attribute Likelihood}{section.4.2}% 78
-\BOOKMARK [2][-]{subsection.4.2.3}{Adjacency Matrix Likelihood}{section.4.2}% 79
-\BOOKMARK [2][-]{subsection.4.2.4}{Inference}{section.4.2}% 80
-\BOOKMARK [2][-]{subsection.4.2.5}{Initialization}{section.4.2}% 81
-\BOOKMARK [1][-]{section.4.3}{Synthetic Data Results}{chapter.4}% 82
-\BOOKMARK [2][-]{subsection.4.3.1}{Detectability analysis}{section.4.3}% 83
+\BOOKMARK [0][-]{chapter.4}{Stochastic Block Models with Multiple Continuous Attributes}{}% 74
+\BOOKMARK [1][-]{section.4.1}{Introduction}{chapter.4}% 75
+\BOOKMARK [2][-]{subsection.4.1.1}{Related work in attributed networks}{section.4.1}% 76
+\BOOKMARK [1][-]{section.4.2}{An Attributed Stochastic Block Model}{chapter.4}% 77
+\BOOKMARK [2][-]{subsection.4.2.1}{Objective}{section.4.2}% 78
+\BOOKMARK [2][-]{subsection.4.2.2}{Attribute Likelihood}{section.4.2}% 79
+\BOOKMARK [2][-]{subsection.4.2.3}{Adjacency Matrix Likelihood}{section.4.2}% 80
+\BOOKMARK [2][-]{subsection.4.2.4}{Inference}{section.4.2}% 81
+\BOOKMARK [2][-]{subsection.4.2.5}{Initialization}{section.4.2}% 82
+\BOOKMARK [1][-]{section.4.3}{Synthetic Data Results}{chapter.4}% 83
 \BOOKMARK [1][-]{section.4.4}{Using the fitted attributed SBM for link prediction and collaborative filtering}{chapter.4}% 84
-\BOOKMARK [2][-]{subsection.4.4.1}{Link Prediction Methods}{section.4.4}% 85
-\BOOKMARK [2][-]{subsection.4.4.2}{Collaborative Filtering Methods}{section.4.4}% 86
+\BOOKMARK [2][-]{subsection.4.4.1}{Link Prediction Experiments}{section.4.4}% 85
+\BOOKMARK [2][-]{subsection.4.4.2}{Collaborative Filtering Experiments}{section.4.4}% 86
 \BOOKMARK [1][-]{section.4.5}{Applications in Biological Networks}{chapter.4}% 87
 \BOOKMARK [2][-]{subsection.4.5.1}{Microbiome Subject Similarity Results}{section.4.5}% 88
-\BOOKMARK [3][-]{subsubsection.4.5.1.1}{Motivation}{subsection.4.5.1}% 89
-\BOOKMARK [3][-]{subsubsection.4.5.1.2}{Pre-Processing}{subsection.4.5.1}% 90
-\BOOKMARK [3][-]{subsubsection.4.5.1.3}{Constructing Node Attributes}{subsection.4.5.1}% 91
-\BOOKMARK [3][-]{subsubsection.4.5.1.4}{Link Prediction Experiments}{subsection.4.5.1}% 92
-\BOOKMARK [3][-]{subsubsection.4.5.1.5}{Collaborative Filtering Experiments}{subsection.4.5.1}% 93
-\BOOKMARK [2][-]{subsection.4.5.2}{Protein Interaction Network Results}{section.4.5}% 94
-\BOOKMARK [3][-]{subsubsection.4.5.2.1}{Data Pre-Processing}{subsection.4.5.2}% 95
-\BOOKMARK [3][-]{subsubsection.4.5.2.2}{Constructing Node Attributes}{subsection.4.5.2}% 96
-\BOOKMARK [3][-]{subsubsection.4.5.2.3}{Link prediction experiments}{subsection.4.5.2}% 97
-\BOOKMARK [3][-]{subsubsection.4.5.2.4}{Collaborative filtering experiments}{subsection.4.5.2}% 98
-\BOOKMARK [1][-]{section.4.6}{Conclusion and Future Work}{chapter.4}% 99
-\BOOKMARK [0][-]{chapter.5}{Testing the Alignment of Node Attributes with Network Structure}{}% 100
-\BOOKMARK [1][-]{section.5.1}{Introduction}{chapter.5}% 101
-\BOOKMARK [2][-]{subsection.5.1.1}{Attributed Network Community Detection Methods}{section.5.1}% 102
-\BOOKMARK [3][-]{subsubsection.5.1.1.1}{Probabilistic approaches}{subsection.5.1.1}% 103
-\BOOKMARK [3][-]{subsubsection.5.1.1.2}{Quality function maximization}{subsection.5.1.1}% 104
-\BOOKMARK [1][-]{section.5.2}{Methods}{chapter.5}% 105
-\BOOKMARK [2][-]{subsection.5.2.1}{Notation}{section.5.2}% 106
-\BOOKMARK [2][-]{subsection.5.2.2}{Classifying Nodes}{section.5.2}% 107
-\BOOKMARK [2][-]{subsection.5.2.3}{Sampling Nodes and Creating Entropy Distributions}{section.5.2}% 108
-\BOOKMARK [2][-]{subsection.5.2.4}{Computing the empirical p-value}{section.5.2}% 109
-\BOOKMARK [1][-]{section.5.3}{Results}{chapter.5}% 110
-\BOOKMARK [2][-]{subsection.5.3.1}{Synthetic Examples}{section.5.3}% 111
-\BOOKMARK [3][-]{subsubsection.5.3.1.1}{Comparison to BESTest}{subsection.5.3.1}% 112
-\BOOKMARK [3][-]{subsubsection.5.3.1.2}{Strength of community structure}{subsection.5.3.1}% 113
-\BOOKMARK [2][-]{subsection.5.3.2}{Mass Cytometry Network Example}{section.5.3}% 114
-\BOOKMARK [1][-]{section.5.4}{Conclusion}{chapter.5}% 115
-\BOOKMARK [0][-]{chapter.6}{A network approach to understanding microbiome disruption in response to acute lung injury}{}% 116
-\BOOKMARK [1][-]{section.6.1}{Background and Motivation}{chapter.6}% 117
-\BOOKMARK [2][-]{subsection.6.1.1}{Data Background}{section.6.1}% 118
-\BOOKMARK [1][-]{section.6.2}{Network Analysis Methods}{chapter.6}% 119
-\BOOKMARK [2][-]{subsection.6.2.1}{Creating Networks with SparCC}{section.6.2}% 120
-\BOOKMARK [1][-]{section.6.3}{Results}{chapter.6}% 121
-\BOOKMARK [2][-]{subsection.6.3.1}{Community overlap between network}{section.6.3}% 122
-\BOOKMARK [2][-]{subsection.6.3.2}{Evaluating functional differences}{section.6.3}% 123
-\BOOKMARK [2][-]{subsection.6.3.3}{Classifying each community according to predicted function}{section.6.3}% 124
-\BOOKMARK [1][-]{section.6.4}{Discussion}{chapter.6}% 125
-\BOOKMARK [0][-]{chapter.7}{Conclusion and Future Work}{}% 126
-\BOOKMARK [1][-]{section.7.1}{sMLSBM}{chapter.7}% 127
-\BOOKMARK [2][-]{subsection.7.1.1}{Recap}{section.7.1}% 128
-\BOOKMARK [2][-]{subsection.7.1.2}{Future Work}{section.7.1}% 129
-\BOOKMARK [1][-]{section.7.2}{Super Nodes}{chapter.7}% 130
-\BOOKMARK [2][-]{subsection.7.2.1}{Recap}{section.7.2}% 131
-\BOOKMARK [2][-]{subsection.7.2.2}{Future Work}{section.7.2}% 132
-\BOOKMARK [1][-]{section.7.3}{Attributed SBMs}{chapter.7}% 133
-\BOOKMARK [2][-]{subsection.7.3.1}{Recap}{section.7.3}% 134
-\BOOKMARK [2][-]{subsection.7.3.2}{Future Work}{section.7.3}% 135
-\BOOKMARK [0][-]{section*.4}{BIBLIOGRAPHY}{}% 136
+\BOOKMARK [2][-]{subsection.4.5.2}{Protein Interaction Network Results}{section.4.5}% 89
+\BOOKMARK [1][-]{section.4.6}{Conclusion and future work}{chapter.4}% 90
+\BOOKMARK [0][-]{chapter.5}{Testing the Alignment of Node Attributes with Network Structure}{}% 91
+\BOOKMARK [1][-]{section.5.1}{Introduction}{chapter.5}% 92
+\BOOKMARK [2][-]{subsection.5.1.1}{Attributed Network Community Detection Methods}{section.5.1}% 93
+\BOOKMARK [3][-]{subsubsection.5.1.1.1}{Probabilistic approaches}{subsection.5.1.1}% 94
+\BOOKMARK [3][-]{subsubsection.5.1.1.2}{Quality function maximization}{subsection.5.1.1}% 95
+\BOOKMARK [1][-]{section.5.2}{Methods}{chapter.5}% 96
+\BOOKMARK [2][-]{subsection.5.2.1}{Notation}{section.5.2}% 97
+\BOOKMARK [2][-]{subsection.5.2.2}{Classifying Nodes}{section.5.2}% 98
+\BOOKMARK [2][-]{subsection.5.2.3}{Sampling Nodes and Creating Entropy Distributions}{section.5.2}% 99
+\BOOKMARK [2][-]{subsection.5.2.4}{Computing the empirical p-value}{section.5.2}% 100
+\BOOKMARK [1][-]{section.5.3}{Results}{chapter.5}% 101
+\BOOKMARK [2][-]{subsection.5.3.1}{Synthetic Examples}{section.5.3}% 102
+\BOOKMARK [3][-]{subsubsection.5.3.1.1}{Comparison to BESTest}{subsection.5.3.1}% 103
+\BOOKMARK [3][-]{subsubsection.5.3.1.2}{Strength of community structure}{subsection.5.3.1}% 104
+\BOOKMARK [2][-]{subsection.5.3.2}{Mass Cytometry Network Example}{section.5.3}% 105
+\BOOKMARK [1][-]{section.5.4}{Conclusion}{chapter.5}% 106
+\BOOKMARK [0][-]{chapter.6}{A network approach to understanding microbiome disruption in response to acute lung injury}{}% 107
+\BOOKMARK [1][-]{section.6.1}{Introduction}{chapter.6}% 108
+\BOOKMARK [2][-]{subsection.6.1.1}{Data Background}{section.6.1}% 109
+\BOOKMARK [1][-]{section.6.2}{Network Analysis Methods}{chapter.6}% 110
+\BOOKMARK [2][-]{subsection.6.2.1}{Creating Networks with SparCC}{section.6.2}% 111
+\BOOKMARK [1][-]{section.6.3}{Results}{chapter.6}% 112
+\BOOKMARK [2][-]{subsection.6.3.1}{Community overlap between network}{section.6.3}% 113
+\BOOKMARK [2][-]{subsection.6.3.2}{Evaluating functional differences}{section.6.3}% 114
+\BOOKMARK [2][-]{subsection.6.3.3}{Classifying each community according to predicted function}{section.6.3}% 115
+\BOOKMARK [1][-]{section.6.4}{Discussion}{chapter.6}% 116
+\BOOKMARK [0][-]{chapter.7}{Conclusion and Future Work}{}% 117
+\BOOKMARK [1][-]{section.7.1}{sMLSBM}{chapter.7}% 118
+\BOOKMARK [2][-]{subsection.7.1.1}{Recap}{section.7.1}% 119
+\BOOKMARK [2][-]{subsection.7.1.2}{Future Work}{section.7.1}% 120
+\BOOKMARK [1][-]{section.7.2}{Super Nodes}{chapter.7}% 121
+\BOOKMARK [2][-]{subsection.7.2.1}{Recap}{section.7.2}% 122
+\BOOKMARK [2][-]{subsection.7.2.2}{Future Work}{section.7.2}% 123
+\BOOKMARK [1][-]{section.7.3}{Attributed SBMs}{chapter.7}% 124
+\BOOKMARK [2][-]{subsection.7.3.1}{Recap}{section.7.3}% 125
+\BOOKMARK [2][-]{subsection.7.3.2}{Future Work}{section.7.3}% 126
+\BOOKMARK [0][-]{section*.4}{BIBLIOGRAPHY}{}% 127

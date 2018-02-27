@@ -2,38 +2,14 @@ This is BibTeX, Version 0.99d (TeX Live 2017)
 Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: diss.aux
 Case mismatch error between cite keys Dudin and dudin
----line 201 of file diss.aux
- : \citation{Dudin
- :                }
-I'm skipping whatever remains of this command
-Case mismatch error between cite keys Dudin and dudin
----line 220 of file diss.aux
- : \citation{Dudin
- :                }
-I'm skipping whatever remains of this command
-Case mismatch error between cite keys Dudin and dudin
----line 229 of file diss.aux
+---line 228 of file diss.aux
  : \citation{Dudin
  :                }
 I'm skipping whatever remains of this command
 Case mismatch error between cite keys sbmOrig and sbmorig
----line 442 of file diss.aux
- : \citation{sbmOrig
- :                  ,bigclam}
-I'm skipping whatever remains of this command
-Case mismatch error between cite keys benson and Benson
----line 444 of file diss.aux
- : \citation{benson
- :                 }
-I'm skipping whatever remains of this command
-Case mismatch error between cite keys sbmOrig and sbmorig
----line 445 of file diss.aux
+---line 374 of file diss.aux
  : \citation{sbmOrig
  :                  }
-I'm skipping whatever remains of this command
-White space in argument---line 465 of file diss.aux
- : \citation{learning
- :                    }
 I'm skipping whatever remains of this command
 The style file: apalike.bst
 Database file #1: dissBib.bib
@@ -70,7 +46,10 @@ Warning--entry type for "traaglouvain" isn't style-file defined
 --line 1459 of file dissBib.bib
 Warning--entry type for "tiagoskewed" isn't style-file defined
 --line 1462 of file dissBib.bib
-Warning--I didn't find a database entry for "https://snap.stanford.edu/data/"
+Warning--I didn't find a database entry for "Benson"
+Warning--I didn't find a database entry for "EM"
+Warning--I didn't find a database entry for "decelle"
+Warning--I didn't find a database entry for "taylor"
 Warning--I didn't find a database entry for "learning"
 Warning--to sort, need author or key in snapdata
 Warning--to sort, need author or key in newmandata
@@ -80,45 +59,46 @@ Warning--empty year in snapdata
 Warning--empty year in newmandata
 Warning--empty year in traaglouvain
 Warning--empty year in tiagoskewed
-You've used 162 entries,
+Warning--empty journal in learning2
+You've used 164 entries,
             1935 wiz_defined-function locations,
-            1359 strings with 31412 characters,
-and the built_in function-call counts, 71335 in all, are:
-= -- 6947
-> -- 3248
-< -- 91
-+ -- 1154
-- -- 1116
-* -- 6389
-:= -- 12201
-add.period$ -- 497
-call.type$ -- 162
-change.case$ -- 1355
-chr.to.int$ -- 154
-cite$ -- 174
-duplicate$ -- 2557
-empty$ -- 4845
-format.name$ -- 1370
-if$ -- 13967
+            1373 strings with 31725 characters,
+and the built_in function-call counts, 72140 in all, are:
+= -- 7026
+> -- 3279
+< -- 93
++ -- 1164
+- -- 1126
+* -- 6449
+:= -- 12334
+add.period$ -- 502
+call.type$ -- 164
+change.case$ -- 1370
+chr.to.int$ -- 156
+cite$ -- 177
+duplicate$ -- 2595
+empty$ -- 4903
+format.name$ -- 1384
+if$ -- 14132
 int.to.chr$ -- 9
 int.to.str$ -- 0
-missing$ -- 159
-newline$ -- 805
-num.names$ -- 474
-pop$ -- 1153
+missing$ -- 161
+newline$ -- 814
+num.names$ -- 480
+pop$ -- 1173
 preamble$ -- 1
-purify$ -- 1360
+purify$ -- 1375
 quote$ -- 0
-skip$ -- 1945
+skip$ -- 1974
 stack$ -- 0
-substring$ -- 5159
-swap$ -- 383
-text.length$ -- 27
+substring$ -- 5204
+swap$ -- 391
+text.length$ -- 28
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 970
-warning$ -- 8
-while$ -- 563
+type$ -- 982
+warning$ -- 9
+while$ -- 570
 width$ -- 0
-write$ -- 2092
-(There were 13 error messages)
+write$ -- 2115
+(There were 8 error messages)
