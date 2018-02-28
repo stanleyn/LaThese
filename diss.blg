@@ -47,9 +47,6 @@ Warning--entry type for "traaglouvain" isn't style-file defined
 Warning--entry type for "tiagoskewed" isn't style-file defined
 --line 1462 of file dissBib.bib
 Warning--I didn't find a database entry for "Benson"
-Warning--I didn't find a database entry for "EM"
-Warning--I didn't find a database entry for "decelle"
-Warning--I didn't find a database entry for "taylor"
 Warning--I didn't find a database entry for "learning"
 Warning--to sort, need author or key in snapdata
 Warning--to sort, need author or key in newmandata
@@ -62,7 +59,7 @@ Warning--empty year in tiagoskewed
 Warning--empty journal in learning2
 You've used 164 entries,
             1935 wiz_defined-function locations,
-            1373 strings with 31725 characters,
+            1369 strings with 31708 characters,
 and the built_in function-call counts, 72140 in all, are:
 = -- 7026
 > -- 3279

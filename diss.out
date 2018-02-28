@@ -115,13 +115,16 @@
 \BOOKMARK [2][-]{subsection.6.3.3}{Classifying each community according to predicted function}{section.6.3}% 115
 \BOOKMARK [1][-]{section.6.4}{Discussion}{chapter.6}% 116
 \BOOKMARK [0][-]{chapter.7}{Conclusion and Future Work}{}% 117
-\BOOKMARK [1][-]{section.7.1}{sMLSBM}{chapter.7}% 118
+\BOOKMARK [1][-]{section.7.1}{Strata Multilayer Stochastic Block Model}{chapter.7}% 118
 \BOOKMARK [2][-]{subsection.7.1.1}{Recap}{section.7.1}% 119
 \BOOKMARK [2][-]{subsection.7.1.2}{Future Work}{section.7.1}% 120
 \BOOKMARK [1][-]{section.7.2}{Super Nodes}{chapter.7}% 121
 \BOOKMARK [2][-]{subsection.7.2.1}{Recap}{section.7.2}% 122
 \BOOKMARK [2][-]{subsection.7.2.2}{Future Work}{section.7.2}% 123
-\BOOKMARK [1][-]{section.7.3}{Attributed SBMs}{chapter.7}% 124
+\BOOKMARK [1][-]{section.7.3}{Stochastic Block Models with Multiple Continuous Attributes}{chapter.7}% 124
 \BOOKMARK [2][-]{subsection.7.3.1}{Recap}{section.7.3}% 125
 \BOOKMARK [2][-]{subsection.7.3.2}{Future Work}{section.7.3}% 126
-\BOOKMARK [0][-]{section*.4}{BIBLIOGRAPHY}{}% 127
+\BOOKMARK [1][-]{section.7.4}{Testing Alignment of Attributes and Connectivity}{chapter.7}% 127
+\BOOKMARK [2][-]{subsection.7.4.1}{Recap}{section.7.4}% 128
+\BOOKMARK [2][-]{subsection.7.4.2}{Future Work}{section.7.4}% 129
+\BOOKMARK [0][-]{section*.4}{BIBLIOGRAPHY}{}% 130

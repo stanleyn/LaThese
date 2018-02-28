@@ -1,6 +1,6 @@
-\contentsline {chapter}{LIST OF TABLES}{xii}{section*.1}
-\contentsline {chapter}{LIST OF FIGURES}{xiii}{section*.2}
-\contentsline {chapter}{LIST OF ABBREVIATIONS}{xxiv}{section*.3}
+\contentsline {chapter}{LIST OF TABLES}{xiii}{section*.1}
+\contentsline {chapter}{LIST OF FIGURES}{xiv}{section*.2}
+\contentsline {chapter}{LIST OF ABBREVIATIONS}{xxv}{section*.3}
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Network Notation and Basic Summarization}{2}{section.1.1}
 \contentsline {subsection}{\numberline {1.1.1}Representing relational information}{2}{subsection.1.1.1}
@@ -81,13 +81,13 @@
 \contentsline {subsection}{\numberline {4.2.4}Inference}{88}{subsection.4.2.4}
 \contentsline {subsection}{\numberline {4.2.5}Initialization}{89}{subsection.4.2.5}
 \contentsline {section}{\numberline {4.3}Synthetic Data Results}{89}{section.4.3}
-\contentsline {section}{\numberline {4.4}Using the fitted attributed SBM for link prediction and collaborative filtering}{92}{section.4.4}
+\contentsline {section}{\numberline {4.4}Using the fitted attributed SBM for link prediction and collaborative filtering}{93}{section.4.4}
 \contentsline {subsection}{\numberline {4.4.1}Link Prediction Experiments}{94}{subsection.4.4.1}
 \contentsline {subsection}{\numberline {4.4.2}Collaborative Filtering Experiments}{94}{subsection.4.4.2}
 \contentsline {section}{\numberline {4.5}Applications in Biological Networks}{95}{section.4.5}
-\contentsline {subsection}{\numberline {4.5.1}Microbiome Subject Similarity Results}{95}{subsection.4.5.1}
-\contentsline {subsection}{\numberline {4.5.2}Protein Interaction Network Results}{97}{subsection.4.5.2}
-\contentsline {section}{\numberline {4.6}Conclusion and future work}{102}{section.4.6}
+\contentsline {subsection}{\numberline {4.5.1}Microbiome Subject Similarity Results}{96}{subsection.4.5.1}
+\contentsline {subsection}{\numberline {4.5.2}Protein Interaction Network Results}{98}{subsection.4.5.2}
+\contentsline {section}{\numberline {4.6}Conclusion and future work}{103}{section.4.6}
 \contentsline {chapter}{\numberline {5}Testing the Alignment of Node Attributes with Network Structure}{104}{chapter.5}
 \contentsline {section}{\numberline {5.1}Introduction}{104}{section.5.1}
 \contentsline {subsection}{\numberline {5.1.1}Attributed Network Community Detection Methods}{105}{subsection.5.1.1}
@@ -115,13 +115,16 @@
 \contentsline {subsection}{\numberline {6.3.3}Classifying each community according to predicted function}{126}{subsection.6.3.3}
 \contentsline {section}{\numberline {6.4}Discussion}{126}{section.6.4}
 \contentsline {chapter}{\numberline {7}Conclusion and Future Work}{128}{chapter.7}
-\contentsline {section}{\numberline {7.1}sMLSBM}{128}{section.7.1}
+\contentsline {section}{\numberline {7.1}Strata Multilayer Stochastic Block Model}{128}{section.7.1}
 \contentsline {subsection}{\numberline {7.1.1}Recap}{128}{subsection.7.1.1}
 \contentsline {subsection}{\numberline {7.1.2}Future Work}{129}{subsection.7.1.2}
 \contentsline {section}{\numberline {7.2}Super Nodes}{130}{section.7.2}
 \contentsline {subsection}{\numberline {7.2.1}Recap}{130}{subsection.7.2.1}
 \contentsline {subsection}{\numberline {7.2.2}Future Work}{131}{subsection.7.2.2}
-\contentsline {section}{\numberline {7.3}Attributed SBMs}{131}{section.7.3}
+\contentsline {section}{\numberline {7.3}Stochastic Block Models with Multiple Continuous Attributes}{131}{section.7.3}
 \contentsline {subsection}{\numberline {7.3.1}Recap}{131}{subsection.7.3.1}
 \contentsline {subsection}{\numberline {7.3.2}Future Work}{131}{subsection.7.3.2}
-\contentsline {chapter}{BIBLIOGRAPHY}{133}{section*.4}
+\contentsline {section}{\numberline {7.4}Testing Alignment of Attributes and Connectivity}{132}{section.7.4}
+\contentsline {subsection}{\numberline {7.4.1}Recap}{132}{subsection.7.4.1}
+\contentsline {subsection}{\numberline {7.4.2}Future Work}{133}{subsection.7.4.2}
+\contentsline {chapter}{BIBLIOGRAPHY}{134}{section*.4}
