@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  28 FEB 2018 15:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  1 MAR 2018 16:19
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -646,7 +646,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 \c@xxexample=\count150
 )) (./diss.aux
 
-./diss.aux:704: Package natbib Error: Bibliography not compatible with author-y
+./diss.aux:708: Package natbib Error: Bibliography not compatible with author-y
 ear citations.
 (natbib)                Press <return> to continue in numerical citation style.
 
@@ -655,7 +655,7 @@ See the natbib package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.704 ...and\NAT@force@numbers{}\NAT@force@numbers
+l.708 ...and\NAT@force@numbers{}\NAT@force@numbers
                                                   
 Check the bibliography entries for non-compliant syntax,
 or select author-year BibTeX style, e.g. plainnat
@@ -980,35 +980,35 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <20.74> not available
 ]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 19.
- <./figures/CoAuthor.pdf, id=1272, 492.36247pt x 303.58539pt>
+ <./figures/CoAuthor.pdf, id=1291, 492.36247pt x 303.58539pt>
 File: ./figures/CoAuthor.pdf Graphic file (type pdf)
 
 <use ./figures/CoAuthor.pdf>
 Package pdftex.def Info: ./figures/CoAuthor.pdf used on input line 24.
 (pdftex.def)             Requested size: 246.18063pt x 151.79231pt.
  [2 <./figures/CoAuthor.pdf>]
-<./figures/Hairball.png, id=1303, 378.41376pt x 353.32pt>
+<./figures/Hairball.png, id=1322, 378.41376pt x 353.32pt>
 File: ./figures/Hairball.png Graphic file (type png)
 
 <use ./figures/Hairball.png>
 Package pdftex.def Info: ./figures/Hairball.png used on input line 54.
 (pdftex.def)             Requested size: 151.36281pt x 141.32549pt.
  [3]
-<./figures/CytometryNet.pdf, id=1316, 409.56664pt x 408.9892pt>
+<./figures/CytometryNet.pdf, id=1335, 409.56664pt x 408.9892pt>
 File: ./figures/CytometryNet.pdf Graphic file (type pdf)
 
 <use ./figures/CytometryNet.pdf>
 Package pdftex.def Info: ./figures/CytometryNet.pdf used on input line 68.
 (pdftex.def)             Requested size: 204.7828pt x 204.4941pt.
  [4 <./figures/Hairball.png>]
-<./figures/DegDist.pdf, id=1325, 650.87637pt x 380.26236pt>
+<./figures/DegDist.pdf, id=1344, 650.87637pt x 380.26236pt>
 File: ./figures/DegDist.pdf Graphic file (type pdf)
 
 <use ./figures/DegDist.pdf>
 Package pdftex.def Info: ./figures/DegDist.pdf used on input line 84.
 (pdftex.def)             Requested size: 325.4374pt x 190.1307pt.
  [5 <./figures/CytometryNet.pdf>]
-<./figures/Centrality.pdf, id=1342, 890.57982pt x 321.72166pt>
+<./figures/Centrality.pdf, id=1361, 890.57982pt x 321.72166pt>
 File: ./figures/Centrality.pdf Graphic file (type pdf)
 
 <use ./figures/Centrality.pdf>
@@ -1029,28 +1029,28 @@ Underfull \hbox (badness 10000) in paragraph at lines 126--127
  []
 
 [7 <./figures/Centrality.pdf>]
-<./figures/AssortativeNet.pdf, id=1484, 452.83559pt x 447.2744pt>
+<./figures/AssortativeNet.pdf, id=1503, 452.83559pt x 447.2744pt>
 File: ./figures/AssortativeNet.pdf Graphic file (type pdf)
 
 <use ./figures/AssortativeNet.pdf>
 Package pdftex.def Info: ./figures/AssortativeNet.pdf used on input line 135.
 (pdftex.def)             Requested size: 181.13101pt x 178.90659pt.
  [8] [9 <./figures/AssortativeNet.pdf>]
-[10] <./figures/clustering.pdf, id=1534, 484.58853pt x 336.01695pt>
+[10] <./figures/clustering.pdf, id=1553, 484.58853pt x 336.01695pt>
 File: ./figures/clustering.pdf Graphic file (type pdf)
 
 <use ./figures/clustering.pdf>
 Package pdftex.def Info: ./figures/clustering.pdf used on input line 175.
 (pdftex.def)             Requested size: 242.29367pt x 168.00806pt.
  [11] [12 <./figures/clustering.pdf, page is rotated 90 degrees>] <./figures/DA
-G.png, id=1582, 501.875pt x 301.125pt>
+G.png, id=1601, 501.875pt x 301.125pt>
 File: ./figures/DAG.png Graphic file (type png)
 
 <use ./figures/DAG.png>
 Package pdftex.def Info: ./figures/DAG.png used on input line 195.
 (pdftex.def)             Requested size: 150.56366pt x 90.33818pt.
  [13 <./figures/DAG.png>]
-<./figures/SBMGraphical.pdf, id=1595, 127.90616pt x 295.53088pt>
+<./figures/SBMGraphical.pdf, id=1614, 127.90616pt x 295.53088pt>
 File: ./figures/SBMGraphical.pdf Graphic file (type pdf)
 
 <use ./figures/SBMGraphical.pdf>
@@ -1137,477 +1137,483 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 468--473
 [33
 
 ] [34] [35] [36] [37] [38]
-<./figures/Figure_1.pdf, id=1965, 591.14969pt x 516.32516pt>
+<./figures/Figure_1.pdf, id=1984, 591.14969pt x 516.32516pt>
 File: ./figures/Figure_1.pdf Graphic file (type pdf)
 
 <use ./figures/Figure_1.pdf>
 Package pdftex.def Info: ./figures/Figure_1.pdf used on input line 533.
 (pdftex.def)             Requested size: 216.81pt x 189.36708pt.
- [39 <./figures/Figure_1.pdf>] [40] [41]
-<./figures/Figure_2.pdf, id=2038, 499.85454pt x 522.40414pt>
+ [39] [40 <./figures/Figure_1.pdf>] [41]
+<./figures/Figure_2.pdf, id=2058, 499.85454pt x 522.40414pt>
 File: ./figures/Figure_2.pdf Graphic file (type pdf)
 
 <use ./figures/Figure_2.pdf>
-Package pdftex.def Info: ./figures/Figure_2.pdf used on input line 568.
+Package pdftex.def Info: ./figures/Figure_2.pdf used on input line 570.
 (pdftex.def)             Requested size: 216.81pt x 226.59032pt.
  [42 <./figures/Figure_2.pdf>] [43]
 
-Package natbib Warning: Citation `Dudin' on page 44 undefined on input line 618
+Package natbib Warning: Citation `Dudin' on page 44 undefined on input line 620
 .
 
-[44] [45] [46] <./figures/Figure3.pdf, id=2185, 881.69911pt x 755.43613pt>
+[44] [45] [46] <./figures/Figure3.pdf, id=2207, 881.69911pt x 755.43613pt>
 File: ./figures/Figure3.pdf Graphic file (type pdf)
 
 <use ./figures/Figure3.pdf>
-Package pdftex.def Info: ./figures/Figure3.pdf used on input line 688.
+Package pdftex.def Info: ./figures/Figure3.pdf used on input line 690.
 (pdftex.def)             Requested size: 303.53267pt x 260.06091pt.
- [47 <./figures/Figure3.pdf>]
-
-LaTeX Warning: Reference `sec:Algorithm' on page 48 undefined on input line 719
-.
-
-[48]
-Underfull \hbox (badness 10000) in paragraph at lines 734--739
+ [47] [48 <./figures/Figure3.pdf>] [49]
+Underfull \hbox (badness 10000) in paragraph at lines 736--741
 
  []
 
-<./figures/Figure4.pdf, id=2251, 614.295pt x 544.0325pt>
+<./figures/Figure4.pdf, id=2282, 614.295pt x 544.0325pt>
 File: ./figures/Figure4.pdf Graphic file (type pdf)
 
 <use ./figures/Figure4.pdf>
-Package pdftex.def Info: ./figures/Figure4.pdf used on input line 745.
+Package pdftex.def Info: ./figures/Figure4.pdf used on input line 747.
 (pdftex.def)             Requested size: 303.53267pt x 268.8196pt.
- [49] [50 <./figures/Figure4.pdf>] [51] [52]
-<./figures/Fig5.pdf, id=2306, 434.24594pt x 383.1373pt>
+ [50] [51 <./figures/Figure4.pdf>] [52]
+<./figures/Fig5.pdf, id=2330, 434.24594pt x 383.1373pt>
 File: ./figures/Fig5.pdf Graphic file (type pdf)
 
 <use ./figures/Fig5.pdf>
-Package pdftex.def Info: ./figures/Fig5.pdf used on input line 782.
-(pdftex.def)             Requested size: 216.81pt x 191.2934pt.
- [53 <./figures/Fig5.pdf>]
-<./figures/Fig6_Dec15.pdf, id=2386, 588.41847pt x 839.44243pt>
+Package pdftex.def Info: ./figures/Fig5.pdf used on input line 784.
+(pdftex.def)             Requested size: 260.17465pt x 229.5626pt.
+ [53]
+<./figures/Fig6_Dec15.pdf, id=2347, 588.41847pt x 839.44243pt>
 File: ./figures/Fig6_Dec15.pdf Graphic file (type pdf)
 
 <use ./figures/Fig6_Dec15.pdf>
-Package pdftex.def Info: ./figures/Fig6_Dec15.pdf used on input line 797.
+Package pdftex.def Info: ./figures/Fig6_Dec15.pdf used on input line 800.
 (pdftex.def)             Requested size: 260.17465pt x 371.16187pt.
- [54] [55 <./figures/Fig6_Dec15.pdf>] [56]
+ [54 <./figures/Fig5.pdf>] [55 <./figures/Fig6_Dec15.pdf>] [56]
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 833--838
+[] 
+ []
+
 [57] [58]
 
 Package amsmath Warning: Foreign command \atopwithdelims;
 (amsmath)                \frac or \genfrac should be used instead
-(amsmath)                 on input line 852.
+(amsmath)                 on input line 862.
 
-[59] <./figures/Detect.png, id=2583, 803.0pt x 637.38126pt>
+[59] [60] <./figures/Detect.png, id=2622, 803.0pt x 637.38126pt>
 File: ./figures/Detect.png Graphic file (type png)
 
 <use ./figures/Detect.png>
-Package pdftex.def Info: ./figures/Detect.png used on input line 888.
-(pdftex.def)             Requested size: 260.17465pt x 206.51428pt.
- [60] [61 <./figures/Detect.png>] [62]
+Package pdftex.def Info: ./figures/Detect.png used on input line 900.
+(pdftex.def)             Requested size: 346.89732pt x 275.35239pt.
+ [61] [62 <./figures/Detect.png>] [63]
 Chapter 3.
 
-Overfull \hbox (19.29605pt too wide) in paragraph at lines 899--899
+Overfull \hbox (19.29605pt too wide) in paragraph at lines 911--911
  |\OT1/ptm/b/n/20.74 Network com-pres-sion for com-mu-nity de-tec-tion with 
  []
 
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 901--906
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 913--918
 [] 
  []
 
-[63
+[64
 
-] <./figures/hamilton.png, id=2614, 815.6874pt x 365.2044pt>
+] <./figures/hamilton.png, id=2653, 815.6874pt x 365.2044pt>
 File: ./figures/hamilton.png Graphic file (type png)
 
 <use ./figures/hamilton.png>
-Package pdftex.def Info: ./figures/hamilton.png used on input line 915.
+Package pdftex.def Info: ./figures/hamilton.png used on input line 927.
 (pdftex.def)             Requested size: 260.17465pt x 116.48886pt.
- [64 <./figures/hamilton.png>]
+ [65 <./figures/hamilton.png>]
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 935.
+LaTeX Font Warning: Command \small invalid in math mode on input line 947.
 
-LaTeX Font Info:    Calculating math sizes for size <> on input line 936.
+LaTeX Font Info:    Calculating math sizes for size <> on input line 948.
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <> not available
-(Font)              size <5> substituted on input line 936.
+(Font)              size <5> substituted on input line 948.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <0.7> not available
-(Font)              size <5> substituted on input line 936.
+(Font)              size <5> substituted on input line 948.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <0.5> not available
-(Font)              size <5> substituted on input line 936.
+(Font)              size <5> substituted on input line 948.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <> not available
-(Font)              size <5> substituted on input line 936.
+(Font)              size <5> substituted on input line 948.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <0.7> not available
-(Font)              size <5> substituted on input line 936.
+(Font)              size <5> substituted on input line 948.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <0.5> not available
-(Font)              size <5> substituted on input line 936.
+(Font)              size <5> substituted on input line 948.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <> not available
-(Font)              size <5> substituted on input line 936.
+(Font)              size <5> substituted on input line 948.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <0.7> not available
-(Font)              size <5> substituted on input line 936.
+(Font)              size <5> substituted on input line 948.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <0.5> not available
-(Font)              size <5> substituted on input line 936.
+(Font)              size <5> substituted on input line 948.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <> not available
-(Font)              size <5> substituted on input line 936.
+(Font)              size <5> substituted on input line 948.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <0.7> not available
-(Font)              size <5> substituted on input line 936.
+(Font)              size <5> substituted on input line 948.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <0.5> not available
-(Font)              size <5> substituted on input line 936.
+(Font)              size <5> substituted on input line 948.
 
-[65] [66] [67] [68]
-<./figures/Schematic_smaller.pdf, id=2670, 807.8912pt x 287.69781pt>
+[66] [67] [68] [69]
+<./figures/Schematic_smaller.pdf, id=2708, 807.8912pt x 287.69781pt>
 File: ./figures/Schematic_smaller.pdf Graphic file (type pdf)
 
 <use ./figures/Schematic_smaller.pdf>
-Package pdftex.def Info: ./figures/Schematic_smaller.pdf used on input line 963
+Package pdftex.def Info: ./figures/Schematic_smaller.pdf used on input line 975
 .
 (pdftex.def)             Requested size: 403.94461pt x 143.84856pt.
- [69 <./figures/Schematic_smaller.pdf>]
-[70] <./figures/Synthetic.pdf, id=2714, 405.72491pt x 402.57712pt>
+ [70 <./figures/Schematic_smaller.pdf>]
+[71] <./figures/Synthetic.pdf, id=2753, 405.72491pt x 402.57712pt>
 File: ./figures/Synthetic.pdf Graphic file (type pdf)
 
 <use ./figures/Synthetic.pdf>
-Package pdftex.def Info: ./figures/Synthetic.pdf used on input line 987.
+Package pdftex.def Info: ./figures/Synthetic.pdf used on input line 999.
 (pdftex.def)             Requested size: 216.81pt x 215.12784pt.
- [71 <./figures/Synthetic.pdf>] [72] [73]
-<./figures/Conceptual.pdf, id=2756, 925.73367pt x 373.2098pt>
+ [72 <./figures/Synthetic.pdf>] [73] [74]
+<./figures/Conceptual.pdf, id=2794, 925.73367pt x 373.2098pt>
 File: ./figures/Conceptual.pdf Graphic file (type pdf)
 
 <use ./figures/Conceptual.pdf>
-Package pdftex.def Info: ./figures/Conceptual.pdf used on input line 1042.
+Package pdftex.def Info: ./figures/Conceptual.pdf used on input line 1054.
 (pdftex.def)             Requested size: 462.8657pt x 186.60443pt.
 
-Overfull \hbox (29.2457pt too wide) in paragraph at lines 1042--1043
+Overfull \hbox (29.2457pt too wide) in paragraph at lines 1054--1055
  [] 
  []
 
-<./figures/NMI_UnderSeg.pdf, id=2765, 898.48154pt x 410.8104pt>
+<./figures/NMI_UnderSeg.pdf, id=2803, 898.48154pt x 410.8104pt>
 File: ./figures/NMI_UnderSeg.pdf Graphic file (type pdf)
 
 <use ./figures/NMI_UnderSeg.pdf>
-Package pdftex.def Info: ./figures/NMI_UnderSeg.pdf used on input line 1053.
+Package pdftex.def Info: ./figures/NMI_UnderSeg.pdf used on input line 1065.
 (pdftex.def)             Requested size: 449.23967pt x 205.4047pt.
 
-Overfull \hbox (15.61966pt too wide) in paragraph at lines 1053--1054
+Overfull \hbox (15.61966pt too wide) in paragraph at lines 1065--1066
  [][] 
  []
 
-[74] [75 <./figures/Conceptual.pdf>] [76 <./figures/NMI_UnderSeg.pdf>]
-<./figures/RunTime.pdf, id=2848, 725.34018pt x 244.7301pt>
+[75] [76 <./figures/Conceptual.pdf>] [77 <./figures/NMI_UnderSeg.pdf>]
+<./figures/RunTime.pdf, id=2887, 725.34018pt x 244.7301pt>
 File: ./figures/RunTime.pdf Graphic file (type pdf)
 
 <use ./figures/RunTime.pdf>
-Package pdftex.def Info: ./figures/RunTime.pdf used on input line 1067.
+Package pdftex.def Info: ./figures/RunTime.pdf used on input line 1079.
 (pdftex.def)             Requested size: 507.73466pt x 171.3099pt.
 
-Overfull \hbox (74.11465pt too wide) in paragraph at lines 1067--1068
+Overfull \hbox (74.11465pt too wide) in paragraph at lines 1079--1080
  [][] 
  []
 
-[77] [78 <./figures/RunTime.pdf>]
-<./figures/VariabilityFigBoth.pdf, id=2887, 903.76053pt x 378.87718pt>
+[78] [79 <./figures/RunTime.pdf>]
+<./figures/VariabilityFigBoth.pdf, id=2925, 903.76053pt x 378.87718pt>
 File: ./figures/VariabilityFigBoth.pdf Graphic file (type pdf)
 
 <use ./figures/VariabilityFigBoth.pdf>
 Package pdftex.def Info: ./figures/VariabilityFigBoth.pdf used on input line 10
-79.
+91.
 (pdftex.def)             Requested size: 632.62805pt x 265.21222pt.
 
-Overfull \hbox (199.00804pt too wide) in paragraph at lines 1079--1080
+Overfull \hbox (199.00804pt too wide) in paragraph at lines 1091--1092
  [] 
  []
 
-[79 <./figures/VariabilityFigBoth.pdf>]
-<./figures/FinalAUC.pdf, id=2921, 865.84134pt x 403.0766pt>
+[80 <./figures/VariabilityFigBoth.pdf>]
+<./figures/FinalAUC.pdf, id=2959, 865.84134pt x 403.0766pt>
 File: ./figures/FinalAUC.pdf Graphic file (type pdf)
 
 <use ./figures/FinalAUC.pdf>
-Package pdftex.def Info: ./figures/FinalAUC.pdf used on input line 1093.
+Package pdftex.def Info: ./figures/FinalAUC.pdf used on input line 1105.
 (pdftex.def)             Requested size: 432.9196pt x 201.5378pt.
- [80] [81 <./figures/FinalAUC.pdf>] [82]
+ [81] [82 <./figures/FinalAUC.pdf>] [83]
 Chapter 4.
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 1106--1111
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 1118--1123
 [] 
  []
 
-[83
+[84
 
-] [84]
-
-Package natbib Warning: Citation `sbmOrig' on page 85 undefined on input line 1
-123.
-
-[85] <./figures/GraphModel.pdf, id=3017, 311.1625pt x 125.46875pt>
+] [85] [86] <./figures/GraphModel.pdf, id=3056, 311.1625pt x 125.46875pt>
 File: ./figures/GraphModel.pdf Graphic file (type pdf)
 
 <use ./figures/GraphModel.pdf>
-Package pdftex.def Info: ./figures/GraphModel.pdf used on input line 1134.
+Package pdftex.def Info: ./figures/GraphModel.pdf used on input line 1149.
 (pdftex.def)             Requested size: 217.81226pt x 87.82751pt.
- [86] [87 <./figures/GraphModel.pdf>] [88]
-[89] <./figures/SyntheticFig.pdf, id=3090, 470.75874pt x 274.02374pt>
+ [87] [88 <./figures/GraphModel.pdf>] [89]
+[90] <./figures/SyntheticFig.pdf, id=3131, 470.75874pt x 274.02374pt>
 File: ./figures/SyntheticFig.pdf Graphic file (type pdf)
 
 <use ./figures/SyntheticFig.pdf>
-Package pdftex.def Info: ./figures/SyntheticFig.pdf used on input line 1268.
-(pdftex.def)             Requested size: 260.17465pt x 151.44524pt.
+Package pdftex.def Info: ./figures/SyntheticFig.pdf used on input line 1283.
+(pdftex.def)             Requested size: 376.60751pt x 219.21928pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[90] [91 <./figures/SyntheticFig.pdf>]
-<./figures/DetectExp.pdf, id=3140, 433.62pt x 361.35pt>
+[91] [92 <./figures/SyntheticFig.pdf>]
+<./figures/DetectExp.pdf, id=3179, 433.62pt x 361.35pt>
 File: ./figures/DetectExp.pdf Graphic file (type pdf)
 
 <use ./figures/DetectExp.pdf>
-Package pdftex.def Info: ./figures/DetectExp.pdf used on input line 1282.
-(pdftex.def)             Requested size: 216.81pt x 180.67456pt.
- [92 <./figures/DetectExp.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 1301--1302
+Package pdftex.def Info: ./figures/DetectExp.pdf used on input line 1297.
+(pdftex.def)             Requested size: 260.17401pt x 216.81168pt.
+ [93 <./figures/DetectExp.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 1316--1317
 
  []
 
-[93] [94] [95] [96]
-<./figures/MicrobiomeNets_Dec12.pdf, id=3189, 576.1525pt x 269.005pt>
+[94] [95] [96] [97]
+<./figures/MicrobiomeNets_Dec12.pdf, id=3228, 576.1525pt x 269.005pt>
 File: ./figures/MicrobiomeNets_Dec12.pdf Graphic file (type pdf)
 
 <use ./figures/MicrobiomeNets_Dec12.pdf>
 Package pdftex.def Info: ./figures/MicrobiomeNets_Dec12.pdf used on input line 
-1342.
-(pdftex.def)             Requested size: 303.53267pt x 141.72229pt.
+1357.
+(pdftex.def)             Requested size: 403.30399pt x 188.3022pt.
 
-<ROC_Microbiome.pdf, id=3191, 407.31653pt x 368.4996pt>
+<ROC_Microbiome.pdf, id=3230, 407.31653pt x 368.4996pt>
 File: ROC_Microbiome.pdf Graphic file (type pdf)
 
 <use ROC_Microbiome.pdf>
-Package pdftex.def Info: ROC_Microbiome.pdf used on input line 1353.
+Package pdftex.def Info: ROC_Microbiome.pdf used on input line 1368.
 (pdftex.def)             Requested size: 216.81pt x 196.14728pt.
 
-<./figures/CollabFilterMicro.pdf, id=3193, 433.62pt x 433.62pt>
+<./figures/CollabFilterMicro.pdf, id=3232, 433.62pt x 433.62pt>
 File: ./figures/CollabFilterMicro.pdf Graphic file (type pdf)
 
 <use ./figures/CollabFilterMicro.pdf>
-Package pdftex.def Info: ./figures/CollabFilterMicro.pdf used on input line 136
-3.
+Package pdftex.def Info: ./figures/CollabFilterMicro.pdf used on input line 137
+8.
 (pdftex.def)             Requested size: 216.81pt x 216.80946pt.
- [97 <./figures/MicrobiomeNets_Dec12.pdf>]
+ [98 <./figures/MicrobiomeNets_Dec12.pdf>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<./figures/ProteinNet_Dec12.pdf, id=3232, 740.7675pt x 342.27875pt>
+[99 <./ROC_Microbiome.pdf, page is rotated 90 degrees>]
+<./figures/ProteinNet_Dec12.pdf, id=3299, 740.7675pt x 342.27875pt>
 File: ./figures/ProteinNet_Dec12.pdf Graphic file (type pdf)
 
 <use ./figures/ProteinNet_Dec12.pdf>
-Package pdftex.def Info: ./figures/ProteinNet_Dec12.pdf used on input line 1374
+Package pdftex.def Info: ./figures/ProteinNet_Dec12.pdf used on input line 1389
 .
-(pdftex.def)             Requested size: 303.53267pt x 140.25162pt.
+(pdftex.def)             Requested size: 518.5337pt x 239.59348pt.
+
+Overfull \hbox (84.9137pt too wide) in paragraph at lines 1389--1390
+ [] 
+ []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[98 <./ROC_Microbiome.pdf, page is rotated 90 degrees>] [99 <./figures/CollabFi
-lterMicro.pdf> <./figures/ProteinNet_Dec12.pdf>]
-<./figures/EntropyCalc_6Classleft_2classright.pdf, id=3297, 578.16pt x 361.35pt
+
+<./figures/EntropyCalc_6Classleft_2classright.pdf, id=3304, 578.16pt x 361.35pt
 >
 File: ./figures/EntropyCalc_6Classleft_2classright.pdf Graphic file (type pdf)
  <use ./figures/EntropyCalc_6Classleft_2classright.pdf>
 Package pdftex.def Info: ./figures/EntropyCalc_6Classleft_2classright.pdf used 
-on input line 1388.
-(pdftex.def)             Requested size: 216.81pt x 135.50592pt.
- [100 <./figures/EntropyCalc_6Classleft_2classright.pdf>]
-<ROC_Protein.pdf, id=3332, 410.7045pt x 373.6141pt>
-File: ROC_Protein.pdf Graphic file (type pdf)
- <use ROC_Protein.pdf>
-Package pdftex.def Info: ROC_Protein.pdf used on input line 1407.
-(pdftex.def)             Requested size: 216.81pt x 197.2278pt.
-
+on input line 1403.
+(pdftex.def)             Requested size: 404.70924pt x 252.94327pt.
+ [100 <./figures/CollabFilterMicro.pdf>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<./figures/CollabProtein.pdf, id=3335, 433.62pt x 433.62pt>
+[101 <./figures/ProteinNet_Dec12.pdf>] [102 <./figures/EntropyCalc_6Classleft_2
+classright.pdf>] <ROC_Protein.pdf, id=3378, 410.7045pt x 373.6141pt>
+File: ROC_Protein.pdf Graphic file (type pdf)
+
+<use ROC_Protein.pdf>
+Package pdftex.def Info: ROC_Protein.pdf used on input line 1422.
+(pdftex.def)             Requested size: 216.81pt x 197.2278pt.
+
+<./figures/CollabProtein.pdf, id=3381, 433.62pt x 433.62pt>
 File: ./figures/CollabProtein.pdf Graphic file (type pdf)
 
 <use ./figures/CollabProtein.pdf>
-Package pdftex.def Info: ./figures/CollabProtein.pdf used on input line 1417.
+Package pdftex.def Info: ./figures/CollabProtein.pdf used on input line 1432.
 (pdftex.def)             Requested size: 216.81pt x 216.80946pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[101] [102 <./ROC_Protein.pdf, page is rotated 90 degrees> <./figures/CollabPro
-tein.pdf>] [103]
+[103 <./ROC_Protein.pdf, page is rotated 90 degrees>] [104 <./figures/CollabPro
+tein.pdf>] [105]
 Chapter 5.
 
-Overfull \hbox (6.39568pt too wide) in paragraph at lines 1430--1430
+Overfull \hbox (6.39568pt too wide) in paragraph at lines 1445--1445
  |\OT1/ptm/b/n/20.74 Testing the Align-ment of Node At-tributes with Net- 
  []
 
-[104
+[106
 
-] [105] [106] [107]
-<./figures/Schem.pdf, id=3424, 321.83035pt x 517.66519pt>
+] [107] [108] <./figures/Schem.pdf, id=3459, 321.83035pt x 517.66519pt>
 File: ./figures/Schem.pdf Graphic file (type pdf)
 
 <use ./figures/Schem.pdf>
-Package pdftex.def Info: ./figures/Schem.pdf used on input line 1464.
+Package pdftex.def Info: ./figures/Schem.pdf used on input line 1479.
 (pdftex.def)             Requested size: 160.91478pt x 258.83195pt.
- [108 <./figures/Schem.pdf>]
-
-Package natbib Warning: Citation `learning' on page 109 undefined on input line
- 1490.
-
-[109]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1509.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1509.
-
-[110] <./figures/SimpleSynthetic.pdf, id=3469, 986.56575pt x 308.44495pt>
-File: ./figures/SimpleSynthetic.pdf Graphic file (type pdf)
-
-<use ./figures/SimpleSynthetic.pdf>
-Package pdftex.def Info: ./figures/SimpleSynthetic.pdf used on input line 1531.
-
-(pdftex.def)             Requested size: 390.25536pt x 122.01091pt.
- [111] [112 <./figures/SimpleSynthetic.pdf>] <./figures/BestCompare.pdf, id=351
-8, 997.7422pt x 317.66791pt>
-File: ./figures/BestCompare.pdf Graphic file (type pdf)
-
-<use ./figures/BestCompare.pdf>
-Package pdftex.def Info: ./figures/BestCompare.pdf used on input line 1555.
-(pdftex.def)             Requested size: 390.25536pt x 124.25352pt.
- [113] [114 <./figures/BestCompare.pdf>]
-<./figures/PinPout.pdf, id=3556, 664.72247pt x 296.90562pt>
-File: ./figures/PinPout.pdf Graphic file (type pdf)
-
-<use ./figures/PinPout.pdf>
-Package pdftex.def Info: ./figures/PinPout.pdf used on input line 1569.
-(pdftex.def)             Requested size: 390.25536pt x 174.31201pt.
- [115 <./figures/PinPout.pdf>]
-<./figures/MakerDist.pdf, id=3590, 988.38321pt x 312.30525pt>
-File: ./figures/MakerDist.pdf Graphic file (type pdf)
-
-<use ./figures/MakerDist.pdf>
-Package pdftex.def Info: ./figures/MakerDist.pdf used on input line 1581.
-(pdftex.def)             Requested size: 390.25536pt x 123.30917pt.
-
-<./figures/MassCytometry.pdf, id=3592, 740.73141pt x 724.70273pt>
-File: ./figures/MassCytometry.pdf Graphic file (type pdf)
-
-<use ./figures/MassCytometry.pdf>
-Package pdftex.def Info: ./figures/MassCytometry.pdf used on input line 1591.
-(pdftex.def)             Requested size: 346.89732pt x 339.39394pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[116] [117 <./figures/MakerDist.pdf>] [118 <./figures/MassCytometry.pdf>]
-<./figures/MakerRank.pdf, id=3679, 519.9425pt x 519.9425pt>
+[109] [110 <./figures/Schem.pdf>] [111]
+Overfull \hbox (3.06569pt too wide) in paragraph at lines 1522--1523
+[]\OT1/ptm/m/n/10.95 (-20) Moreover, $\OML/cmm/m/it/10.95 H\OT1/cmr/m/n/10.95 (
+\OT1/cmr/bx/n/10.95 Y[]\OT1/cmr/m/n/10.95 )$ \OT1/ptm/m/n/10.95 (-20) and $\OML
+/cmm/m/it/10.95 H\OT1/cmr/m/n/10.95 (\OT1/cmr/bx/n/10.95 Y[]\OT1/cmr/m/n/10.95 
+)$ \OT1/ptm/m/n/10.95 (-20) give $\OML/cmm/m/it/10.95 E$ \OT1/ptm/m/n/10.95 (-2
+0) and $\OML/cmm/m/it/10.95 E[]$\OT1/ptm/m/n/10.95 (-20) , re-spec-tively. We l
+et $\OMS/cmsy/m/n/10.95 E \OT1/cmr/m/n/10.95 = \OMS/cmsy/m/n/10.95 f\OML/cmm/m/
+it/10.95 E[]; E[]; [] E[]\OMS/cmsy/m/n/10.95 g$
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 1524.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 1524.
+
+[112] <./figures/SimpleSynthetic.pdf, id=3510, 986.56575pt x 308.44495pt>
+File: ./figures/SimpleSynthetic.pdf Graphic file (type pdf)
+
+<use ./figures/SimpleSynthetic.pdf>
+Package pdftex.def Info: ./figures/SimpleSynthetic.pdf used on input line 1547.
+
+(pdftex.def)             Requested size: 390.25536pt x 122.01091pt.
+ [113] [114 <./figures/SimpleSynthetic.pdf>] <./figures/BestCompare.pdf, id=355
+9, 997.7422pt x 317.66791pt>
+File: ./figures/BestCompare.pdf Graphic file (type pdf)
+
+<use ./figures/BestCompare.pdf>
+Package pdftex.def Info: ./figures/BestCompare.pdf used on input line 1571.
+(pdftex.def)             Requested size: 390.25536pt x 124.25352pt.
+ [115] [116 <./figures/BestCompare.pdf>]
+<./figures/PinPout.pdf, id=3597, 664.72247pt x 296.90562pt>
+File: ./figures/PinPout.pdf Graphic file (type pdf)
+
+<use ./figures/PinPout.pdf>
+Package pdftex.def Info: ./figures/PinPout.pdf used on input line 1585.
+(pdftex.def)             Requested size: 390.25536pt x 174.31201pt.
+ [117 <./figures/PinPout.pdf>]
+<./figures/MakerDist.pdf, id=3631, 988.38321pt x 312.30525pt>
+File: ./figures/MakerDist.pdf Graphic file (type pdf)
+
+<use ./figures/MakerDist.pdf>
+Package pdftex.def Info: ./figures/MakerDist.pdf used on input line 1597.
+(pdftex.def)             Requested size: 494.1904pt x 156.15224pt.
+
+Overfull \hbox (60.57039pt too wide) in paragraph at lines 1597--1598
+ [] 
+ []
+
+<./figures/MassCytometry.pdf, id=3633, 740.73141pt x 724.70273pt>
+File: ./figures/MassCytometry.pdf Graphic file (type pdf)
+
+<use ./figures/MassCytometry.pdf>
+Package pdftex.def Info: ./figures/MassCytometry.pdf used on input line 1607.
+(pdftex.def)             Requested size: 346.89732pt x 339.39394pt.
+ [118] [119 <./figures/MakerDist.pdf>]
+[120 <./figures/MassCytometry.pdf>]
+<./figures/MakerRank.pdf, id=3720, 519.9425pt x 519.9425pt>
 File: ./figures/MakerRank.pdf Graphic file (type pdf)
 
 <use ./figures/MakerRank.pdf>
-Package pdftex.def Info: ./figures/MakerRank.pdf used on input line 1603.
+Package pdftex.def Info: ./figures/MakerRank.pdf used on input line 1619.
 (pdftex.def)             Requested size: 346.89732pt x 346.89194pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[119] [120 <./figures/MakerRank.pdf>] [121]
+[121] [122 <./figures/MakerRank.pdf>] [123]
 Chapter 6.
 
-Overfull \hbox (10.29417pt too wide) in paragraph at lines 1617--1617
+Overfull \hbox (10.29417pt too wide) in paragraph at lines 1633--1633
  |\OT1/ptm/b/n/20.74 A net-work ap-proach to un-der-stand-ing mi-cro-biome 
  []
 
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 1619--1624
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 1635--1640
 [] 
  []
 
-[122
+[124
 
-] [123] <./figures/ALINet.pdf, id=3722, 521.64705pt x 299.40419pt>
+] [125] <./figures/ALINet.pdf, id=3762, 521.64705pt x 299.40419pt>
 File: ./figures/ALINet.pdf Graphic file (type pdf)
 
 <use ./figures/ALINet.pdf>
-Package pdftex.def Info: ./figures/ALINet.pdf used on input line 1641.
+Package pdftex.def Info: ./figures/ALINet.pdf used on input line 1657.
 (pdftex.def)             Requested size: 303.53267pt x 174.22104pt.
- [124 <./figures/ALINet.pdf>]
+ [126 <./figures/ALINet.pdf>]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 1651.
+               Default added (so using `tbp') on input line 1667.
 
-[125] <./figures/Function.pdf, id=3753, 1027.84pt x 770.88pt>
+[127] <./figures/Function.pdf, id=3794, 1027.84pt x 770.88pt>
 File: ./figures/Function.pdf Graphic file (type pdf)
 
 <use ./figures/Function.pdf>
-Package pdftex.def Info: ./figures/Function.pdf used on input line 1673.
+Package pdftex.def Info: ./figures/Function.pdf used on input line 1689.
 (pdftex.def)             Requested size: 390.25536pt x 292.69043pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[126] [127 <./figures/Function.pdf>]
+[128] [129 <./figures/Function.pdf>]
 Chapter 7.
-[128
+[130
 
-] [129] [130] [131] [132] (./common/references.tex [133] (./diss.bbl
-[134
+] [131] [132] [133] [134] (./common/references.tex [135] (./diss.bbl
+[136
 
-] [135] [136] [137] [138] [139] [140] [141] [142] [143]))
+] [137] [138] [139] [140] [141] [142] [143] [144] [145]))
 
 Package natbib Warning: There were undefined citations.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1726.
-[144]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1726.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1742.
+[146]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1742.
  (./diss.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1726.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1726.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1742.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1742.
 
 Package rerunfilecheck Info: File `diss.out' has not changed.
-(rerunfilecheck)             Checksum: 3E2561BBBDFD895500995C793A344B85;10831.
+(rerunfilecheck)             Checksum: 70E9608766FDBECA3F0B950072636AED;11176.
 
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 4.5pt have occurred.
 
-
-LaTeX Warning: There were undefined references.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1726.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1742.
  ) 
 Here is how much of TeX's memory you used:
- 14429 strings out of 492995
- 214653 string characters out of 6132704
- 462579 words of memory out of 5000000
- 16799 multiletter control sequences out of 15000+600000
+ 14439 strings out of 492995
+ 214989 string characters out of 6132704
+ 464135 words of memory out of 5000000
+ 16802 multiletter control sequences out of 15000+600000
  56937 words of font info for 283 fonts, out of 8000000 for 9000
  1142 hyphenation exceptions out of 8191
  43i,17n,39p,3720b,796s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1634,10 +1640,10 @@ ts/type1/urw/courier/ucrro8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type
 1/urw/times/utmb8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/time
 s/utmbi8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/utmr8a.
 pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on diss.pdf (169 pages, 10052188 bytes).
+Output written on diss.pdf (171 pages, 10053588 bytes).
 PDF statistics:
- 4066 PDF objects out of 4296 (max. 8388607)
- 3461 compressed objects within 35 object streams
- 591 named destinations out of 1000 (max. 500000)
- 37096 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 4107 PDF objects out of 4296 (max. 8388607)
+ 3500 compressed objects within 35 object streams
+ 598 named destinations out of 1000 (max. 500000)
+ 37128 words of extra memory for PDF output out of 42996 (max. 10000000)
 

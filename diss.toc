@@ -24,7 +24,7 @@
 \contentsline {subsection}{\numberline {1.4.2}Uncovering differences in microbiome community structure in patients with inflammatory bowel disease}{24}{subsection.1.4.2}
 \contentsline {subsection}{\numberline {1.4.3}Community detection for analysis of flow cytometry data}{25}{subsection.1.4.3}
 \contentsline {subsection}{\numberline {1.4.4}Understanding genetic diversity of the malaria parasite genes}{26}{subsection.1.4.4}
-\contentsline {subsection}{\numberline {1.4.5}Analysis of high dimensional single cell data for tumor heterogenity}{28}{subsection.1.4.5}
+\contentsline {subsection}{\numberline {1.4.5}Analysis of high dimensional single cell data for tumor heterogeneity}{28}{subsection.1.4.5}
 \contentsline {subsection}{\numberline {1.4.6}Identification of virulence factor genes related to antibiotic resistance of uropathogenic \emph {E. coli}}{29}{subsection.1.4.6}
 \contentsline {section}{\numberline {1.5}Thesis Contribution}{30}{section.1.5}
 \contentsline {subsection}{\numberline {1.5.1}Thesis Statement}{30}{subsection.1.5.1}
@@ -32,99 +32,103 @@
 \contentsline {subsection}{\numberline {1.5.3}Relevant Publications}{31}{subsection.1.5.3}
 \contentsline {subsection}{\numberline {1.5.4}Software}{32}{subsection.1.5.4}
 \contentsline {chapter}{\numberline {2}Strata Multilayer Stochastic Block Model}{33}{chapter.2}
-\contentsline {section}{\numberline {2.1}Introduction to multilayer networks}{33}{section.2.1}
-\contentsline {section}{\numberline {2.2}Comparing network layers based on community structure}{35}{section.2.2}
-\contentsline {section}{\numberline {2.3}Related work in community detection of multilayer networks}{36}{section.2.3}
-\contentsline {section}{\numberline {2.4}A Summary of Novel Contributions of sMLSBM}{38}{section.2.4}
-\contentsline {section}{\numberline {2.5}sMLSBM Model Definition}{39}{section.2.5}
-\contentsline {section}{\numberline {2.6}Inference for learning model parameters of sMLSBM}{40}{section.2.6}
-\contentsline {section}{\numberline {2.7}Synthetic Examples}{46}{section.2.7}
-\contentsline {subsection}{\numberline {2.7.1}Comparison of sMLSBM to other SBM Approaches}{46}{subsection.2.7.1}
-\contentsline {subsection}{\numberline {2.7.2}Synthetic Experiment with Two Strata}{48}{subsection.2.7.2}
-\contentsline {section}{\numberline {2.8}Human Microbiome Project Example}{49}{section.2.8}
-\contentsline {subsection}{\numberline {2.8.1}Comparison of sMLSBM to multilayer network reducibility}{52}{subsection.2.8.1}
-\contentsline {subsection}{\numberline {2.8.2}Generating samples from the fitted sMLSBM}{53}{subsection.2.8.2}
-\contentsline {section}{\numberline {2.9}Concluding remarks for sMLSBM}{54}{section.2.9}
-\contentsline {section}{\numberline {2.10}Detectability in a single stratum}{56}{section.2.10}
-\contentsline {subsection}{\numberline {2.10.1}Investigating detectability in a multilayer network}{57}{subsection.2.10.1}
-\contentsline {subsection}{\numberline {2.10.2}Studying detectability in two block networks}{57}{subsection.2.10.2}
-\contentsline {subsection}{\numberline {2.10.3}Using random matrix theory to study detectability}{58}{subsection.2.10.3}
-\contentsline {subsection}{\numberline {2.10.4}Results}{60}{subsection.2.10.4}
-\contentsline {subsection}{\numberline {2.10.5}Conclusion}{60}{subsection.2.10.5}
-\contentsline {chapter}{\numberline {3}Network compression for community detection with super nodes}{63}{chapter.3}
-\contentsline {section}{\numberline {3.1}Super pixel pre-processing of images}{63}{section.3.1}
-\contentsline {section}{\numberline {3.2}Super node pre-processing for networks}{65}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Problem Formulation}{65}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}An opportunity for super nodes in community detection}{66}{subsection.3.2.2}
-\contentsline {section}{\numberline {3.3}Background}{66}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Related Work}{66}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Validation metrics for a quality super node representation}{68}{subsection.3.3.2}
-\contentsline {subsubsection}{\numberline {3.3.2.1}Objectively Comparing Partitions on Possibly Different Scales}{69}{subsubsection.3.3.2.1}
-\contentsline {section}{\numberline {3.4}Methods}{70}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Defining seeds}{70}{subsection.3.4.1}
-\contentsline {subsection}{\numberline {3.4.2}Grow Super Nodes Around Seeds}{72}{subsection.3.4.2}
-\contentsline {subsection}{\numberline {3.4.3}Create Network of Super Nodes}{72}{subsection.3.4.3}
-\contentsline {section}{\numberline {3.5}Results}{73}{section.3.5}
-\contentsline {subsection}{\numberline {3.5.1}Overview of experiments}{73}{subsection.3.5.1}
-\contentsline {subsection}{\numberline {3.5.2}Normalized mutual information and under segmentation error}{74}{subsection.3.5.2}
-\contentsline {subsection}{\numberline {3.5.3}Run time Analysis}{77}{subsection.3.5.3}
-\contentsline {subsection}{\numberline {3.5.4}Quantifying variability across algorithm runs}{78}{subsection.3.5.4}
-\contentsline {subsection}{\numberline {3.5.5}Neighborhood agreement}{80}{subsection.3.5.5}
-\contentsline {section}{\numberline {3.6}Conclusion and Future Work}{82}{section.3.6}
-\contentsline {chapter}{\numberline {4}Stochastic Block Models with Multiple Continuous Attributes}{83}{chapter.4}
-\contentsline {section}{\numberline {4.1}Introduction}{84}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Related work in attributed networks}{84}{subsection.4.1.1}
-\contentsline {section}{\numberline {4.2}An Attributed Stochastic Block Model}{86}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Objective}{86}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}Attribute Likelihood}{87}{subsection.4.2.2}
-\contentsline {subsection}{\numberline {4.2.3}Adjacency Matrix Likelihood}{88}{subsection.4.2.3}
-\contentsline {subsection}{\numberline {4.2.4}Inference}{88}{subsection.4.2.4}
-\contentsline {subsection}{\numberline {4.2.5}Initialization}{89}{subsection.4.2.5}
-\contentsline {section}{\numberline {4.3}Synthetic Data Results}{89}{section.4.3}
-\contentsline {section}{\numberline {4.4}Using the fitted attributed SBM for link prediction and collaborative filtering}{93}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}Link Prediction Experiments}{94}{subsection.4.4.1}
-\contentsline {subsection}{\numberline {4.4.2}Collaborative Filtering Experiments}{94}{subsection.4.4.2}
-\contentsline {section}{\numberline {4.5}Applications in Biological Networks}{95}{section.4.5}
-\contentsline {subsection}{\numberline {4.5.1}Microbiome Subject Similarity Results}{96}{subsection.4.5.1}
-\contentsline {subsection}{\numberline {4.5.2}Protein Interaction Network Results}{98}{subsection.4.5.2}
-\contentsline {section}{\numberline {4.6}Conclusion and future work}{103}{section.4.6}
-\contentsline {chapter}{\numberline {5}Testing the Alignment of Node Attributes with Network Structure}{104}{chapter.5}
-\contentsline {section}{\numberline {5.1}Introduction}{104}{section.5.1}
-\contentsline {subsection}{\numberline {5.1.1}Attributed Network Community Detection Methods}{105}{subsection.5.1.1}
-\contentsline {subsubsection}{\numberline {5.1.1.1}Probabilistic approaches}{105}{subsubsection.5.1.1.1}
-\contentsline {subsubsection}{\numberline {5.1.1.2}Quality function maximization}{106}{subsubsection.5.1.1.2}
-\contentsline {section}{\numberline {5.2}Methods}{107}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}Notation}{108}{subsection.5.2.1}
-\contentsline {subsection}{\numberline {5.2.2}Classifying Nodes}{109}{subsection.5.2.2}
-\contentsline {subsection}{\numberline {5.2.3}Sampling Nodes and Creating Entropy Distributions}{109}{subsection.5.2.3}
-\contentsline {subsection}{\numberline {5.2.4}Computing the empirical $p$-value}{110}{subsection.5.2.4}
-\contentsline {section}{\numberline {5.3}Results}{111}{section.5.3}
-\contentsline {subsection}{\numberline {5.3.1}Synthetic Examples}{111}{subsection.5.3.1}
-\contentsline {subsubsection}{\numberline {5.3.1.1}Comparison to BESTest}{112}{subsubsection.5.3.1.1}
-\contentsline {subsubsection}{\numberline {5.3.1.2}Strength of community structure}{113}{subsubsection.5.3.1.2}
-\contentsline {subsection}{\numberline {5.3.2}Mass Cytometry Network Example}{116}{subsection.5.3.2}
-\contentsline {section}{\numberline {5.4}Conclusion}{121}{section.5.4}
-\contentsline {chapter}{\numberline {6}A network approach to understanding microbiome disruption in response to acute lung injury}{122}{chapter.6}
-\contentsline {section}{\numberline {6.1}Introduction}{122}{section.6.1}
-\contentsline {subsection}{\numberline {6.1.1}Data Background}{123}{subsection.6.1.1}
-\contentsline {section}{\numberline {6.2}Network Analysis Methods}{123}{section.6.2}
-\contentsline {subsection}{\numberline {6.2.1}Creating Networks with SparCC}{123}{subsection.6.2.1}
-\contentsline {section}{\numberline {6.3}Results}{125}{section.6.3}
-\contentsline {subsection}{\numberline {6.3.1}Community overlap between network}{125}{subsection.6.3.1}
-\contentsline {subsection}{\numberline {6.3.2}Evaluating functional differences}{125}{subsection.6.3.2}
-\contentsline {subsection}{\numberline {6.3.3}Classifying each community according to predicted function}{126}{subsection.6.3.3}
-\contentsline {section}{\numberline {6.4}Discussion}{126}{section.6.4}
-\contentsline {chapter}{\numberline {7}Conclusion and Future Work}{128}{chapter.7}
-\contentsline {section}{\numberline {7.1}Strata Multilayer Stochastic Block Model}{128}{section.7.1}
-\contentsline {subsection}{\numberline {7.1.1}Recap}{128}{subsection.7.1.1}
-\contentsline {subsection}{\numberline {7.1.2}Future Work}{129}{subsection.7.1.2}
-\contentsline {section}{\numberline {7.2}Super Nodes}{130}{section.7.2}
-\contentsline {subsection}{\numberline {7.2.1}Recap}{130}{subsection.7.2.1}
-\contentsline {subsection}{\numberline {7.2.2}Future Work}{131}{subsection.7.2.2}
-\contentsline {section}{\numberline {7.3}Stochastic Block Models with Multiple Continuous Attributes}{131}{section.7.3}
-\contentsline {subsection}{\numberline {7.3.1}Recap}{131}{subsection.7.3.1}
-\contentsline {subsection}{\numberline {7.3.2}Future Work}{131}{subsection.7.3.2}
-\contentsline {section}{\numberline {7.4}Testing Alignment of Attributes and Connectivity}{132}{section.7.4}
-\contentsline {subsection}{\numberline {7.4.1}Recap}{132}{subsection.7.4.1}
-\contentsline {subsection}{\numberline {7.4.2}Future Work}{133}{subsection.7.4.2}
-\contentsline {chapter}{BIBLIOGRAPHY}{134}{section*.4}
+\contentsline {section}{\numberline {2.1}Introduction}{34}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Introduction to multilayer networks}{34}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}Comparing network layers based on community structure}{35}{subsection.2.1.2}
+\contentsline {subsection}{\numberline {2.1.3}Related work in community detection of multilayer networks}{37}{subsection.2.1.3}
+\contentsline {subsection}{\numberline {2.1.4}A Summary of Novel Contributions of sMLSBM}{39}{subsection.2.1.4}
+\contentsline {section}{\numberline {2.2}Methods}{39}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}sMLSBM Model Definition}{39}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Inference for learning model parameters of sMLSBM}{41}{subsection.2.2.2}
+\contentsline {section}{\numberline {2.3}Results}{46}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Synthetic Examples}{46}{subsection.2.3.1}
+\contentsline {subsubsection}{\numberline {2.3.1.1}Comparison of sMLSBM to other SBM Approaches}{47}{subsubsection.2.3.1.1}
+\contentsline {subsubsection}{\numberline {2.3.1.2}Synthetic Experiment with Two Strata}{49}{subsubsection.2.3.1.2}
+\contentsline {subsection}{\numberline {2.3.2}Human Microbiome Project Example}{50}{subsection.2.3.2}
+\contentsline {subsubsection}{\numberline {2.3.2.1}Comparison of sMLSBM to multilayer network reducibility}{52}{subsubsection.2.3.2.1}
+\contentsline {subsubsection}{\numberline {2.3.2.2}Generating samples from the fitted sMLSBM}{53}{subsubsection.2.3.2.2}
+\contentsline {section}{\numberline {2.4}Conclusion}{56}{section.2.4}
+\contentsline {section}{\numberline {2.5}Detectability in a single stratum}{57}{section.2.5}
+\contentsline {subsection}{\numberline {2.5.1}Introduction to detectability}{57}{subsection.2.5.1}
+\contentsline {subsection}{\numberline {2.5.2}Studying detectability in two block networks}{58}{subsection.2.5.2}
+\contentsline {subsection}{\numberline {2.5.3}Using random matrix theory to study detectability}{59}{subsection.2.5.3}
+\contentsline {subsection}{\numberline {2.5.4}Results}{61}{subsection.2.5.4}
+\contentsline {subsection}{\numberline {2.5.5}Conclusion}{61}{subsection.2.5.5}
+\contentsline {chapter}{\numberline {3}Network compression for community detection with super nodes}{64}{chapter.3}
+\contentsline {section}{\numberline {3.1}Super pixel pre-processing of images}{64}{section.3.1}
+\contentsline {section}{\numberline {3.2}Super node pre-processing for networks}{66}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Problem Formulation}{66}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}An opportunity for super nodes in community detection}{67}{subsection.3.2.2}
+\contentsline {section}{\numberline {3.3}Background}{67}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Related Work}{67}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Validation metrics for a quality super node representation}{69}{subsection.3.3.2}
+\contentsline {subsubsection}{\numberline {3.3.2.1}Objectively Comparing Partitions on Possibly Different Scales}{70}{subsubsection.3.3.2.1}
+\contentsline {section}{\numberline {3.4}Methods}{71}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Defining seeds}{71}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}Grow Super Nodes Around Seeds}{73}{subsection.3.4.2}
+\contentsline {subsection}{\numberline {3.4.3}Create Network of Super Nodes}{73}{subsection.3.4.3}
+\contentsline {section}{\numberline {3.5}Results}{74}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}Overview of experiments}{74}{subsection.3.5.1}
+\contentsline {subsection}{\numberline {3.5.2}Normalized mutual information and under segmentation error}{75}{subsection.3.5.2}
+\contentsline {subsection}{\numberline {3.5.3}Run time Analysis}{78}{subsection.3.5.3}
+\contentsline {subsection}{\numberline {3.5.4}Quantifying variability across algorithm runs}{79}{subsection.3.5.4}
+\contentsline {subsection}{\numberline {3.5.5}Neighborhood agreement}{81}{subsection.3.5.5}
+\contentsline {section}{\numberline {3.6}Conclusion and Future Work}{83}{section.3.6}
+\contentsline {chapter}{\numberline {4}Stochastic Block Models with Multiple Continuous Attributes}{84}{chapter.4}
+\contentsline {section}{\numberline {4.1}Introduction}{85}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Related work in attributed networks}{85}{subsection.4.1.1}
+\contentsline {section}{\numberline {4.2}Methods}{87}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Attributed SBM model definition}{87}{subsection.4.2.1}
+\contentsline {subsubsection}{\numberline {4.2.1.1}Objective}{87}{subsubsection.4.2.1.1}
+\contentsline {subsubsection}{\numberline {4.2.1.2}Attribute Likelihood}{88}{subsubsection.4.2.1.2}
+\contentsline {subsubsection}{\numberline {4.2.1.3}Adjacency Matrix Likelihood}{89}{subsubsection.4.2.1.3}
+\contentsline {subsubsection}{\numberline {4.2.1.4}Inference}{89}{subsubsection.4.2.1.4}
+\contentsline {subsubsection}{\numberline {4.2.1.5}Initialization}{90}{subsubsection.4.2.1.5}
+\contentsline {subsection}{\numberline {4.2.2}Synthetic Data Results}{90}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}Attributed SBM for Link Prediction and Collaborative Filtering}{94}{subsection.4.2.3}
+\contentsline {subsubsection}{\numberline {4.2.3.1}Link Prediction Experiments}{95}{subsubsection.4.2.3.1}
+\contentsline {subsubsection}{\numberline {4.2.3.2}Collaborative Filtering Experiments}{96}{subsubsection.4.2.3.2}
+\contentsline {subsection}{\numberline {4.2.4}Results in biological networks}{96}{subsection.4.2.4}
+\contentsline {subsubsection}{\numberline {4.2.4.1}Microbiome Subject Similarity Results}{97}{subsubsection.4.2.4.1}
+\contentsline {subsubsection}{\numberline {4.2.4.2}Protein Interaction Network Results}{99}{subsubsection.4.2.4.2}
+\contentsline {section}{\numberline {4.3}Conclusion}{104}{section.4.3}
+\contentsline {chapter}{\numberline {5}Testing the Alignment of Node Attributes with Network Structure}{106}{chapter.5}
+\contentsline {section}{\numberline {5.1}Introduction}{106}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Attributed Network Community Detection Methods}{107}{subsection.5.1.1}
+\contentsline {subsubsection}{\numberline {5.1.1.1}Probabilistic approaches}{107}{subsubsection.5.1.1.1}
+\contentsline {subsubsection}{\numberline {5.1.1.2}Quality function maximization}{108}{subsubsection.5.1.1.2}
+\contentsline {section}{\numberline {5.2}Methods}{109}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Notation}{110}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}Classifying Nodes}{111}{subsection.5.2.2}
+\contentsline {subsection}{\numberline {5.2.3}Sampling Nodes and Creating Entropy Distributions}{111}{subsection.5.2.3}
+\contentsline {subsection}{\numberline {5.2.4}Computing the empirical $p$-value}{112}{subsection.5.2.4}
+\contentsline {section}{\numberline {5.3}Results}{113}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Synthetic Examples}{113}{subsection.5.3.1}
+\contentsline {subsubsection}{\numberline {5.3.1.1}Comparison to BESTest}{114}{subsubsection.5.3.1.1}
+\contentsline {subsubsection}{\numberline {5.3.1.2}Strength of community structure}{115}{subsubsection.5.3.1.2}
+\contentsline {subsection}{\numberline {5.3.2}Mass Cytometry Network Example}{118}{subsection.5.3.2}
+\contentsline {section}{\numberline {5.4}Conclusion}{123}{section.5.4}
+\contentsline {chapter}{\numberline {6}A network approach to understanding microbiome disruption in response to acute lung injury}{124}{chapter.6}
+\contentsline {section}{\numberline {6.1}Introduction}{124}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}Data Background}{125}{subsection.6.1.1}
+\contentsline {section}{\numberline {6.2}Network Analysis Methods}{125}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Creating Networks with SparCC}{125}{subsection.6.2.1}
+\contentsline {section}{\numberline {6.3}Results}{127}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}Community overlap between network}{127}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.2}Evaluating functional differences}{127}{subsection.6.3.2}
+\contentsline {subsection}{\numberline {6.3.3}Classifying each community according to predicted function}{128}{subsection.6.3.3}
+\contentsline {section}{\numberline {6.4}Discussion}{128}{section.6.4}
+\contentsline {chapter}{\numberline {7}Conclusion and Future Work}{130}{chapter.7}
+\contentsline {section}{\numberline {7.1}Strata Multilayer Stochastic Block Model}{130}{section.7.1}
+\contentsline {subsection}{\numberline {7.1.1}Recap}{130}{subsection.7.1.1}
+\contentsline {subsection}{\numberline {7.1.2}Future Work}{131}{subsection.7.1.2}
+\contentsline {section}{\numberline {7.2}Super Nodes}{132}{section.7.2}
+\contentsline {subsection}{\numberline {7.2.1}Recap}{132}{subsection.7.2.1}
+\contentsline {subsection}{\numberline {7.2.2}Future Work}{133}{subsection.7.2.2}
+\contentsline {section}{\numberline {7.3}Stochastic Block Models with Multiple Continuous Attributes}{133}{section.7.3}
+\contentsline {subsection}{\numberline {7.3.1}Recap}{133}{subsection.7.3.1}
+\contentsline {subsection}{\numberline {7.3.2}Future Work}{133}{subsection.7.3.2}
+\contentsline {section}{\numberline {7.4}Testing Alignment of Attributes and Connectivity}{134}{section.7.4}
+\contentsline {subsection}{\numberline {7.4.1}Recap}{134}{subsection.7.4.1}
+\contentsline {subsection}{\numberline {7.4.2}Future Work}{135}{subsection.7.4.2}
+\contentsline {chapter}{BIBLIOGRAPHY}{136}{section*.4}
