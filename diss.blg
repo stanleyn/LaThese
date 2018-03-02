@@ -2,7 +2,7 @@ This is BibTeX, Version 0.99d (TeX Live 2017)
 Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: diss.aux
 Case mismatch error between cite keys Dudin and dudin
----line 231 of file diss.aux
+---line 233 of file diss.aux
  : \citation{Dudin
  :                }
 I'm skipping whatever remains of this command
@@ -37,59 +37,51 @@ Warning--entry type for "snapdata" isn't style-file defined
 --line 1453 of file dissBib.bib
 Warning--entry type for "newmandata" isn't style-file defined
 --line 1456 of file dissBib.bib
-Warning--entry type for "traaglouvain" isn't style-file defined
---line 1459 of file dissBib.bib
-Warning--entry type for "tiagoskewed" isn't style-file defined
---line 1462 of file dissBib.bib
 Warning--I didn't find a database entry for "Benson"
 Warning--to sort, need author or key in snapdata
 Warning--to sort, need author or key in newmandata
-Warning--to sort, need author or key in traaglouvain
-Warning--to sort, need author or key in tiagoskewed
 Warning--empty year in snapdata
 Warning--empty year in newmandata
-Warning--empty year in traaglouvain
-Warning--empty year in tiagoskewed
 Warning--empty journal in learning2
-You've used 164 entries,
+You've used 163 entries,
             1935 wiz_defined-function locations,
-            1368 strings with 31700 characters,
-and the built_in function-call counts, 72140 in all, are:
-= -- 7026
-> -- 3279
+            1369 strings with 31857 characters,
+and the built_in function-call counts, 72257 in all, are:
+= -- 7033
+> -- 3307
 < -- 93
-+ -- 1164
-- -- 1126
-* -- 6449
-:= -- 12334
-add.period$ -- 502
-call.type$ -- 164
-change.case$ -- 1370
-chr.to.int$ -- 156
-cite$ -- 177
-duplicate$ -- 2595
-empty$ -- 4903
-format.name$ -- 1384
-if$ -- 14132
++ -- 1174
+- -- 1136
+* -- 6472
+:= -- 12368
+add.period$ -- 503
+call.type$ -- 163
+change.case$ -- 1372
+chr.to.int$ -- 155
+cite$ -- 170
+duplicate$ -- 2589
+empty$ -- 4897
+format.name$ -- 1395
+if$ -- 14148
 int.to.chr$ -- 9
 int.to.str$ -- 0
-missing$ -- 161
-newline$ -- 814
-num.names$ -- 480
-pop$ -- 1173
+missing$ -- 162
+newline$ -- 813
+num.names$ -- 483
+pop$ -- 1163
 preamble$ -- 1
 purify$ -- 1375
 quote$ -- 0
-skip$ -- 1974
+skip$ -- 1972
 stack$ -- 0
-substring$ -- 5204
-swap$ -- 391
+substring$ -- 5215
+swap$ -- 392
 text.length$ -- 28
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 982
-warning$ -- 9
-while$ -- 570
+type$ -- 976
+warning$ -- 5
+while$ -- 574
 width$ -- 0
-write$ -- 2115
+write$ -- 2114
 (There were 7 error messages)

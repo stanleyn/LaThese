@@ -6,12 +6,6 @@
 \bibitem[new, ]{newmandata}
 \url{http://www-personal.umich.edu/~mejn/netdata/}.
 
-\bibitem[tra, ]{traaglouvain}
-\url{https://github.com/vtraag/louvain-igraph}.
-
-\bibitem[tia, ]{tiagoskewed}
-\url{https://graph-tool.skewed.de/}.
-
 \bibitem[Abbe et~al., 2016]{detect25}
 Abbe, E., Bandeira, A.~S., and Hall, G. (2016).
 \newblock Exact recovery in the stochastic block model.
@@ -622,6 +616,13 @@ Onnela, J.-P., Fenn, D.~J., Reid, S., Porter, M.~A., Mucha, P.~J., Fricker,
   M.~D., and Jones, N.~S. (2012).
 \newblock Taxonomies of networks from community structure.
 \newblock {\em Physical Review E}, 86(3):036104.
+
+\bibitem[Parker et~al., 2015]{parker2015network}
+Parker, K.~S., Wilson, J.~D., Marschall, J., Mucha, P.~J., and Henderson, J.~P.
+  (2015).
+\newblock Network analysis reveals sex-and antibiotic resistance-associated
+  antivirulence targets in clinical uropathogens.
+\newblock {\em ACS infectious diseases}, 1(11):523--532.
 
 \bibitem[Paul and Chen, 2015]{mlsbm1}
 Paul, S. and Chen, Y. (2015).
