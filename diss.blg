@@ -37,7 +37,6 @@ Warning--entry type for "snapdata" isn't style-file defined
 --line 1453 of file dissBib.bib
 Warning--entry type for "newmandata" isn't style-file defined
 --line 1456 of file dissBib.bib
-Warning--I didn't find a database entry for "Benson"
 Warning--to sort, need author or key in snapdata
 Warning--to sort, need author or key in newmandata
 Warning--empty year in snapdata
@@ -45,7 +44,7 @@ Warning--empty year in newmandata
 Warning--empty journal in learning2
 You've used 163 entries,
             1935 wiz_defined-function locations,
-            1369 strings with 31857 characters,
+            1367 strings with 31845 characters,
 and the built_in function-call counts, 72257 in all, are:
 = -- 7033
 > -- 3307
