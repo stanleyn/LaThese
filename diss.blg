@@ -33,54 +33,46 @@ Repeated entry---line 1388 of file dissBib.bib
  : @inproceedings{browet
  :                      ,
 I'm skipping whatever remains of this entry
-Warning--entry type for "snapdata" isn't style-file defined
---line 1453 of file dissBib.bib
-Warning--entry type for "newmandata" isn't style-file defined
---line 1456 of file dissBib.bib
-Warning--to sort, need author or key in snapdata
-Warning--to sort, need author or key in newmandata
-Warning--empty year in snapdata
-Warning--empty year in newmandata
 Warning--empty journal in learning2
-You've used 163 entries,
+You've used 161 entries,
             1935 wiz_defined-function locations,
-            1367 strings with 31845 characters,
-and the built_in function-call counts, 72257 in all, are:
-= -- 7033
+            1363 strings with 31741 characters,
+and the built_in function-call counts, 71883 in all, are:
+= -- 6993
 > -- 3307
 < -- 93
 + -- 1174
 - -- 1136
-* -- 6472
-:= -- 12368
-add.period$ -- 503
-call.type$ -- 163
-change.case$ -- 1372
-chr.to.int$ -- 155
-cite$ -- 170
-duplicate$ -- 2589
-empty$ -- 4897
+* -- 6446
+:= -- 12316
+add.period$ -- 501
+call.type$ -- 161
+change.case$ -- 1364
+chr.to.int$ -- 153
+cite$ -- 162
+duplicate$ -- 2569
+empty$ -- 4861
 format.name$ -- 1395
-if$ -- 14148
+if$ -- 14072
 int.to.chr$ -- 9
 int.to.str$ -- 0
 missing$ -- 162
-newline$ -- 813
+newline$ -- 807
 num.names$ -- 483
-pop$ -- 1163
+pop$ -- 1145
 preamble$ -- 1
-purify$ -- 1375
+purify$ -- 1365
 quote$ -- 0
-skip$ -- 1972
+skip$ -- 1960
 stack$ -- 0
-substring$ -- 5215
+substring$ -- 5189
 swap$ -- 392
 text.length$ -- 28
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 976
-warning$ -- 5
+type$ -- 964
+warning$ -- 1
 while$ -- 574
 width$ -- 0
-write$ -- 2114
+write$ -- 2100
 (There were 7 error messages)

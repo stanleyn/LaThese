@@ -1,11 +1,5 @@
 \begin{thebibliography}{}
 
-\bibitem[sna, ]{snapdata}
-\url{https://snap.stanford.edu/data}.
-
-\bibitem[new, ]{newmandata}
-\url{http://www-personal.umich.edu/~mejn/netdata/}.
-
 \bibitem[Abbe et~al., 2016]{detect25}
 Abbe, E., Bandeira, A.~S., and Hall, G. (2016).
 \newblock Exact recovery in the stochastic block model.
