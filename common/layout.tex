@@ -1,13 +1,20 @@
 % Use proper margins.
-\geometry{letterpaper,left=1.25in,top=1in,right=1.25in,bottom=1in,nohead}
+\geometry{letterpaper,left=1.25in,top=1in,right=1in,bottom=1in,nohead}
+\usepackage{indentfirst}
 
-
+% set size of sections to be normal
+\titleformat*{\section}{\large\bfseries}
+\titleformat*{\subsection}{\large\bfseries}
+\titleformat*{\subsubsection}{\large\bfseries}
+\titleformat*{\paragraph}{\large\bfseries}
+\titleformat*{\subparagraph}{\large\bfseries}
 
 % double-space text
 \doublespacing
 
 % Center chapter titles, omit page numbers.
-\titleformat{\chapter}[display]{\fillast\bfseries}{\Large\MakeUppercase{\chaptertitlename} \thechapter}{-11pt}{\huge\singlespacing}[\thispagestyle{empty}]
+\titleformat{\chapter}[display]{\fillast\bfseries}{\large\MakeUppercase{\chaptertitlename} \thechapter}{-11pt}{\large\singlespacing}
+%\titleformat{\chapter}[display]{\fillast\bfseries}{\Large\MakeUppercase{\chaptertitlename} \thechapter}{-11pt}{\huge\singlespacing}[\thispagestyle{empty}]
 
 % Extend to 2in top margins
 % Leave 22pts = 2x font size after heading
