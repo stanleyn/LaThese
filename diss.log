@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  19 APR 2018 12:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  19 APR 2018 15:40
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -641,18 +641,6 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 Package hyperref Info: Option `colorlinks' set `false' on input line 50.
 
-
-./common/preamble.tex:56: LaTeX Error: Missing \begin{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.56 ...ecolor{byzantium}{rgb}{0.44, 0.16, 0.39} d
-                                                  
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
 (./common/layout.tex
 (/usr/local/texlive/2017/texmf-dist/tex/latex/tools/indentfirst.sty
 Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
@@ -789,9 +777,7 @@ LaTeX Info: Redefining \nameref on input line 3.
 \@outlinefile=\write3
 \openout3 = `diss.out'.
 
- (./frontmatter/pages.tex [1
-
-{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+ (./frontmatter/pages.tex
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: letterpaper
@@ -824,10 +810,10 @@ LaTeX Info: Redefining \nameref on input line 3.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
- (./frontmatter/titlepage.tex
-[1
+ (./frontmatter/titlepage.tex [1
 
-])
+
+{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}])
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: letterpaper
@@ -860,7 +846,8 @@ LaTeX Info: Redefining \nameref on input line 3.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
- (./frontmatter/copyright.tex
+
+(./frontmatter/copyright.tex
 LaTeX Font Info:    Try loading font information for TS1+ptm on input line 9.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/ts1ptm.fd
@@ -912,6 +899,11 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
 
 ]
 (./frontmatter/acknowledgement.tex [5] [6]) (./frontmatter/contents.tex
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24.88> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 20.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 20.
+
 (./diss.toc (/usr/local/texlive/2017/texmf-dist/tex/latex/microtype/mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
@@ -982,46 +974,38 @@ Overfull \hbox (10.51236pt too wide) in paragraph at lines 18--18
 
 ]))
 Chapter 1.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 12.
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.16 ...{Network Notation and Basic Summarization}
-                                                   [1
+[1
 
 
-]
-<./figures/CoAuthor.pdf, id=1288, 492.36247pt x 303.58539pt>
+] <./figures/CoAuthor.pdf, id=1285, 492.36247pt x 303.58539pt>
 File: ./figures/CoAuthor.pdf Graphic file (type pdf)
 
 <use ./figures/CoAuthor.pdf>
 Package pdftex.def Info: ./figures/CoAuthor.pdf used on input line 24.
 (pdftex.def)             Requested size: 246.18063pt x 151.79231pt.
  [2 <./figures/CoAuthor.pdf>]
-<./figures/Hairball.png, id=1319, 378.41376pt x 353.32pt>
+<./figures/Hairball.png, id=1316, 378.41376pt x 353.32pt>
 File: ./figures/Hairball.png Graphic file (type png)
 
 <use ./figures/Hairball.png>
 Package pdftex.def Info: ./figures/Hairball.png used on input line 54.
 (pdftex.def)             Requested size: 151.36281pt x 141.32549pt.
  [3]
-<./figures/CytometryNet.pdf, id=1335, 409.56664pt x 408.9892pt>
+<./figures/CytometryNet.pdf, id=1332, 409.56664pt x 408.9892pt>
 File: ./figures/CytometryNet.pdf Graphic file (type pdf)
 
 <use ./figures/CytometryNet.pdf>
 Package pdftex.def Info: ./figures/CytometryNet.pdf used on input line 68.
 (pdftex.def)             Requested size: 204.7828pt x 204.4941pt.
  [4 <./figures/Hairball.png>]
-<./figures/DegDist.pdf, id=1344, 650.87637pt x 380.26236pt>
+<./figures/DegDist.pdf, id=1341, 650.87637pt x 380.26236pt>
 File: ./figures/DegDist.pdf Graphic file (type pdf)
 
 <use ./figures/DegDist.pdf>
 Package pdftex.def Info: ./figures/DegDist.pdf used on input line 84.
 (pdftex.def)             Requested size: 325.4374pt x 190.1307pt.
  [5 <./figures/CytometryNet.pdf>]
-<./figures/Centrality.pdf, id=1361, 890.57982pt x 321.72166pt>
+<./figures/Centrality.pdf, id=1358, 890.57982pt x 321.72166pt>
 File: ./figures/Centrality.pdf Graphic file (type pdf)
 
 <use ./figures/Centrality.pdf>
@@ -1042,28 +1026,28 @@ Underfull \hbox (badness 10000) in paragraph at lines 126--127
  []
 
 [7 <./figures/Centrality.pdf>]
-<./figures/AssortativeNet.pdf, id=1504, 452.83559pt x 447.2744pt>
+<./figures/AssortativeNet.pdf, id=1501, 452.83559pt x 447.2744pt>
 File: ./figures/AssortativeNet.pdf Graphic file (type pdf)
 
 <use ./figures/AssortativeNet.pdf>
 Package pdftex.def Info: ./figures/AssortativeNet.pdf used on input line 135.
 (pdftex.def)             Requested size: 181.13101pt x 178.90659pt.
  [8] [9 <./figures/AssortativeNet.pdf>]
-[10] <./figures/clustering.pdf, id=1568, 484.58853pt x 336.01695pt>
+[10] <./figures/clustering.pdf, id=1565, 484.58853pt x 336.01695pt>
 File: ./figures/clustering.pdf Graphic file (type pdf)
 
 <use ./figures/clustering.pdf>
 Package pdftex.def Info: ./figures/clustering.pdf used on input line 175.
 (pdftex.def)             Requested size: 242.29367pt x 168.00806pt.
  [11] [12 <./figures/clustering.pdf, page is rotated 90 degrees>] <./figures/DA
-G.png, id=1619, 501.875pt x 301.125pt>
+G.png, id=1615, 501.875pt x 301.125pt>
 File: ./figures/DAG.png Graphic file (type png)
 
 <use ./figures/DAG.png>
 Package pdftex.def Info: ./figures/DAG.png used on input line 195.
 (pdftex.def)             Requested size: 150.56366pt x 90.33818pt.
  [13 <./figures/DAG.png>]
-<./figures/SBMGraphical.pdf, id=1634, 127.90616pt x 295.53088pt>
+<./figures/SBMGraphical.pdf, id=1631, 127.90616pt x 295.53088pt>
 File: ./figures/SBMGraphical.pdf Graphic file (type pdf)
 
 <use ./figures/SBMGraphical.pdf>
@@ -1078,13 +1062,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 382--384
 [26] [27] [28]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <12> not available
 (Font)              Font shape `OT1/ptm/b/it' tried instead on input line 395.
-
-Overfull \hbox (20.41202pt too wide) in paragraph at lines 395--395
-|[]\OT1/ptm/b/n/12 Identification of vir-u-lence fac-tor genes re-lated to an-t
-ibi-otic re-sis-tance of uropathogenic
- []
-
-[29]
+ [29]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <10.95> not available
 (Font)              Font shape `OT1/ptm/b/it' tried instead on input line 402.
  [30]
@@ -1219,14 +1197,14 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
 [35
 
 ] [36] [37] [38] [39] [40]
-<./figures/Figure_1.pdf, id=2162, 591.14969pt x 516.32516pt>
+<./figures/Figure_1.pdf, id=2159, 591.14969pt x 516.32516pt>
 File: ./figures/Figure_1.pdf Graphic file (type pdf)
 
 <use ./figures/Figure_1.pdf>
 Package pdftex.def Info: ./figures/Figure_1.pdf used on input line 559.
 (pdftex.def)             Requested size: 225.84375pt x 197.25343pt.
  [41] [42 <./figures/Figure_1.pdf>] [43]
-<./figures/Figure_2.pdf, id=2240, 499.85454pt x 522.40414pt>
+<./figures/Figure_2.pdf, id=2237, 499.85454pt x 522.40414pt>
 File: ./figures/Figure_2.pdf Graphic file (type pdf)
 
 <use ./figures/Figure_2.pdf>
@@ -1237,7 +1215,7 @@ Package pdftex.def Info: ./figures/Figure_2.pdf used on input line 596.
 Package natbib Warning: Citation `Dudin' on page 46 undefined on input line 646
 .
 
-[46] [47] [48] <./figures/Figure3.pdf, id=2396, 881.69911pt x 755.43613pt>
+[46] [47] [48] <./figures/Figure3.pdf, id=2392, 881.69911pt x 755.43613pt>
 File: ./figures/Figure3.pdf Graphic file (type pdf)
 
 <use ./figures/Figure3.pdf>
@@ -1248,21 +1226,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 762--767
 
  []
 
-<./figures/Figure4.pdf, id=2473, 614.295pt x 544.0325pt>
+<./figures/Figure4.pdf, id=2470, 614.295pt x 544.0325pt>
 File: ./figures/Figure4.pdf Graphic file (type pdf)
 
 <use ./figures/Figure4.pdf>
 Package pdftex.def Info: ./figures/Figure4.pdf used on input line 773.
 (pdftex.def)             Requested size: 316.17987pt x 280.01799pt.
  [52] [53 <./figures/Figure4.pdf>] [54]
-<./figures/Fig5.pdf, id=2534, 434.24594pt x 383.1373pt>
+<./figures/Fig5.pdf, id=2530, 434.24594pt x 383.1373pt>
 File: ./figures/Fig5.pdf Graphic file (type pdf)
 
 <use ./figures/Fig5.pdf>
 Package pdftex.def Info: ./figures/Fig5.pdf used on input line 810.
 (pdftex.def)             Requested size: 271.01526pt x 239.12698pt.
  [55]
-<./figures/Fig6_Dec15.pdf, id=2553, 588.41847pt x 839.44243pt>
+<./figures/Fig6_Dec15.pdf, id=2550, 588.41847pt x 839.44243pt>
 File: ./figures/Fig6_Dec15.pdf Graphic file (type pdf)
 
 <use ./figures/Fig6_Dec15.pdf>
@@ -1279,7 +1257,7 @@ Package amsmath Warning: Foreign command \atopwithdelims;
 (amsmath)                \frac or \genfrac should be used instead
 (amsmath)                 on input line 887.
 
-[61] [62] <./figures/Detect.png, id=2862, 803.0pt x 637.38126pt>
+[61] [62] <./figures/Detect.png, id=2859, 803.0pt x 637.38126pt>
 File: ./figures/Detect.png Graphic file (type png)
 
 <use ./figures/Detect.png>
@@ -1289,7 +1267,7 @@ Package pdftex.def Info: ./figures/Detect.png used on input line 924.
 Chapter 3.
 [65
 
-] <./figures/hamilton.png, id=2899, 815.6874pt x 365.2044pt>
+] <./figures/hamilton.png, id=2896, 815.6874pt x 365.2044pt>
 File: ./figures/hamilton.png Graphic file (type png)
 
 <use ./figures/hamilton.png>
@@ -1349,7 +1327,7 @@ LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <0.5> not available
 (Font)              size <5> substituted on input line 971.
 
 [67] [68] [69] [70]
-<./figures/Schematic_smaller.pdf, id=2973, 807.8912pt x 287.69781pt>
+<./figures/Schematic_smaller.pdf, id=2970, 807.8912pt x 287.69781pt>
 File: ./figures/Schematic_smaller.pdf Graphic file (type pdf)
 
 <use ./figures/Schematic_smaller.pdf>
@@ -1357,14 +1335,14 @@ Package pdftex.def Info: ./figures/Schematic_smaller.pdf used on input line 997
 .
 (pdftex.def)             Requested size: 403.94461pt x 143.84856pt.
  [71 <./figures/Schematic_smaller.pdf>]
-[72] <./figures/Synthetic.pdf, id=3022, 405.72491pt x 402.57712pt>
+[72] <./figures/Synthetic.pdf, id=3018, 405.72491pt x 402.57712pt>
 File: ./figures/Synthetic.pdf Graphic file (type pdf)
 
 <use ./figures/Synthetic.pdf>
 Package pdftex.def Info: ./figures/Synthetic.pdf used on input line 1021.
 (pdftex.def)             Requested size: 225.84375pt x 224.09023pt.
  [73 <./figures/Synthetic.pdf>] [74] [75]
-<./figures/Conceptual.pdf, id=3062, 925.73367pt x 373.2098pt>
+<./figures/Conceptual.pdf, id=3059, 925.73367pt x 373.2098pt>
 File: ./figures/Conceptual.pdf Graphic file (type pdf)
 
 <use ./figures/Conceptual.pdf>
@@ -1375,21 +1353,21 @@ Overfull \hbox (11.17819pt too wide) in paragraph at lines 1076--1077
  [] 
  []
 
-<./figures/NMI_UnderSeg.pdf, id=3071, 898.48154pt x 410.8104pt>
+<./figures/NMI_UnderSeg.pdf, id=3068, 898.48154pt x 410.8104pt>
 File: ./figures/NMI_UnderSeg.pdf Graphic file (type pdf)
 
 <use ./figures/NMI_UnderSeg.pdf>
 Package pdftex.def Info: ./figures/NMI_UnderSeg.pdf used on input line 1087.
 (pdftex.def)             Requested size: 449.23967pt x 205.4047pt.
  [76] [77 <./figures/Conceptual.pdf>] [78 <./figures/NMI_UnderSeg.pdf>]
-<./figures/RunTime.pdf, id=3156, 725.34018pt x 244.7301pt>
+<./figures/RunTime.pdf, id=3152, 725.34018pt x 244.7301pt>
 File: ./figures/RunTime.pdf Graphic file (type pdf)
 
 <use ./figures/RunTime.pdf>
 Package pdftex.def Info: ./figures/RunTime.pdf used on input line 1101.
 (pdftex.def)             Requested size: 316.17987pt x 106.68079pt.
  [79]
-<./figures/VariabilityFigBoth.pdf, id=3164, 903.76053pt x 378.87718pt>
+<./figures/VariabilityFigBoth.pdf, id=3161, 903.76053pt x 378.87718pt>
 File: ./figures/VariabilityFigBoth.pdf Graphic file (type pdf)
 
 <use ./figures/VariabilityFigBoth.pdf>
@@ -1397,7 +1375,7 @@ Package pdftex.def Info: ./figures/VariabilityFigBoth.pdf used on input line 11
 13.
 (pdftex.def)             Requested size: 316.17987pt x 132.5454pt.
  [80 <./figures/RunTime.pdf>]
-<./figures/FinalAUC.pdf, id=3198, 865.84134pt x 403.0766pt>
+<./figures/FinalAUC.pdf, id=3195, 865.84134pt x 403.0766pt>
 File: ./figures/FinalAUC.pdf Graphic file (type pdf)
 
 <use ./figures/FinalAUC.pdf>
@@ -1408,21 +1386,21 @@ Chapter 4.
 [84
 
 ] [85] [86] [87]
-<./figures/GraphModel.pdf, id=3353, 311.1625pt x 125.46875pt>
+<./figures/GraphModel.pdf, id=3350, 311.1625pt x 125.46875pt>
 File: ./figures/GraphModel.pdf Graphic file (type pdf)
 
 <use ./figures/GraphModel.pdf>
 Package pdftex.def Info: ./figures/GraphModel.pdf used on input line 1170.
 (pdftex.def)             Requested size: 217.81226pt x 87.82751pt.
  [88 <./figures/GraphModel.pdf>] [89] [90]
-<./figures/SyntheticFig.pdf, id=3426, 470.75874pt x 274.02374pt>
+<./figures/SyntheticFig.pdf, id=3422, 470.75874pt x 274.02374pt>
 File: ./figures/SyntheticFig.pdf Graphic file (type pdf)
 
 <use ./figures/SyntheticFig.pdf>
 Package pdftex.def Info: ./figures/SyntheticFig.pdf used on input line 1304.
 (pdftex.def)             Requested size: 376.60751pt x 219.21928pt.
  [91] [92 <./figures/SyntheticFig.pdf>]
-<./figures/DetectExp.pdf, id=3478, 433.62pt x 361.35pt>
+<./figures/DetectExp.pdf, id=3475, 433.62pt x 361.35pt>
 File: ./figures/DetectExp.pdf Graphic file (type pdf)
 
 <use ./figures/DetectExp.pdf>
@@ -1438,7 +1416,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1337--1338
  []
 
 [95] [96] [97]
-<./figures/MicrobiomeNets_Dec12.pdf, id=3533, 576.1525pt x 269.005pt>
+<./figures/MicrobiomeNets_Dec12.pdf, id=3530, 576.1525pt x 269.005pt>
 File: ./figures/MicrobiomeNets_Dec12.pdf Graphic file (type pdf)
 
 <use ./figures/MicrobiomeNets_Dec12.pdf>
@@ -1449,14 +1427,14 @@ Package pdftex.def Info: ./figures/MicrobiomeNets_Dec12.pdf used on input line
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<ROC_Microbiome.pdf, id=3535, 407.31653pt x 368.4996pt>
+<ROC_Microbiome.pdf, id=3532, 407.31653pt x 368.4996pt>
 File: ROC_Microbiome.pdf Graphic file (type pdf)
 
 <use ROC_Microbiome.pdf>
 Package pdftex.def Info: ROC_Microbiome.pdf used on input line 1389.
 (pdftex.def)             Requested size: 225.84375pt x 204.31726pt.
 
-<./figures/CollabFilterMicro.pdf, id=3537, 433.62pt x 433.62pt>
+<./figures/CollabFilterMicro.pdf, id=3534, 433.62pt x 433.62pt>
 File: ./figures/CollabFilterMicro.pdf Graphic file (type pdf)
 
 <use ./figures/CollabFilterMicro.pdf>
@@ -1467,7 +1445,7 @@ Package pdftex.def Info: ./figures/CollabFilterMicro.pdf used on input line 139
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<./figures/ProteinNet_Dec12.pdf, id=3546, 740.7675pt x 342.27875pt>
+<./figures/ProteinNet_Dec12.pdf, id=3543, 740.7675pt x 342.27875pt>
 File: ./figures/ProteinNet_Dec12.pdf Graphic file (type pdf)
 
 <use ./figures/ProteinNet_Dec12.pdf>
@@ -1479,7 +1457,7 @@ Package pdftex.def Info: ./figures/ProteinNet_Dec12.pdf used on input line 1410
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-<./figures/EntropyCalc_6Classleft_2classright.pdf, id=3592, 578.16pt x 361.35pt
+<./figures/EntropyCalc_6Classleft_2classright.pdf, id=3589, 578.16pt x 361.35pt
 >
 File: ./figures/EntropyCalc_6Classleft_2classright.pdf Graphic file (type pdf)
  <use ./figures/EntropyCalc_6Classleft_2classright.pdf>
@@ -1491,7 +1469,7 @@ on input line 1424.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [101 <./figures/CollabFilterMicro.pdf>]
-<ROC_Protein.pdf, id=3631, 410.7045pt x 373.6141pt>
+<ROC_Protein.pdf, id=3628, 410.7045pt x 373.6141pt>
 File: ROC_Protein.pdf Graphic file (type pdf)
  <use ROC_Protein.pdf>
 Package pdftex.def Info: ROC_Protein.pdf used on input line 1443.
@@ -1501,7 +1479,7 @@ Package pdftex.def Info: ROC_Protein.pdf used on input line 1443.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [102 <./figures/ProteinNet_Dec12.pdf>]
-<./figures/CollabProtein.pdf, id=3663, 433.62pt x 433.62pt>
+<./figures/CollabProtein.pdf, id=3659, 433.62pt x 433.62pt>
 File: ./figures/CollabProtein.pdf Graphic file (type pdf)
 
 <use ./figures/CollabProtein.pdf>
@@ -1516,7 +1494,7 @@ f, page is rotated 90 degrees>] [105 <./figures/CollabProtein.pdf>]
 Chapter 5.
 [106
 
-] [107] [108] <./figures/Schem.pdf, id=3792, 321.83035pt x 517.66519pt>
+] [107] [108] <./figures/Schem.pdf, id=3788, 321.83035pt x 517.66519pt>
 File: ./figures/Schem.pdf Graphic file (type pdf)
 
 <use ./figures/Schem.pdf>
@@ -1535,7 +1513,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 1545.
 
-[112] <./figures/SimpleSynthetic.pdf, id=3844, 986.56575pt x 308.44495pt>
+[112] <./figures/SimpleSynthetic.pdf, id=3841, 986.56575pt x 308.44495pt>
 File: ./figures/SimpleSynthetic.pdf Graphic file (type pdf)
 
 <use ./figures/SimpleSynthetic.pdf>
@@ -1543,28 +1521,28 @@ Package pdftex.def Info: ./figures/SimpleSynthetic.pdf used on input line 1568.
 
 (pdftex.def)             Requested size: 406.516pt x 127.0939pt.
  [113] [114 <./figures/SimpleSynthetic.pdf>] <./figures/BestCompare.pdf, id=389
-6, 997.7422pt x 317.66791pt>
+2, 997.7422pt x 317.66791pt>
 File: ./figures/BestCompare.pdf Graphic file (type pdf)
 
 <use ./figures/BestCompare.pdf>
 Package pdftex.def Info: ./figures/BestCompare.pdf used on input line 1592.
 (pdftex.def)             Requested size: 406.516pt x 129.43034pt.
  [115] [116 <./figures/BestCompare.pdf>]
-<./figures/PinPout.pdf, id=3933, 664.72247pt x 296.90562pt>
+<./figures/PinPout.pdf, id=3930, 664.72247pt x 296.90562pt>
 File: ./figures/PinPout.pdf Graphic file (type pdf)
 
 <use ./figures/PinPout.pdf>
 Package pdftex.def Info: ./figures/PinPout.pdf used on input line 1606.
 (pdftex.def)             Requested size: 406.516pt x 181.57426pt.
  [117 <./figures/PinPout.pdf>]
-<./figures/MakerDist.pdf, id=3973, 988.38321pt x 312.30525pt>
+<./figures/MakerDist.pdf, id=3970, 988.38321pt x 312.30525pt>
 File: ./figures/MakerDist.pdf Graphic file (type pdf)
 
 <use ./figures/MakerDist.pdf>
 Package pdftex.def Info: ./figures/MakerDist.pdf used on input line 1618.
 (pdftex.def)             Requested size: 316.17987pt x 99.9016pt.
  [118 <./figures/MakerDist.pdf>]
-<./figures/MassCytometry.pdf, id=4002, 740.73141pt x 724.70273pt>
+<./figures/MassCytometry.pdf, id=3999, 740.73141pt x 724.70273pt>
 File: ./figures/MassCytometry.pdf Graphic file (type pdf)
 
 <use ./figures/MassCytometry.pdf>
@@ -1575,7 +1553,7 @@ Package pdftex.def Info: ./figures/MassCytometry.pdf used on input line 1628.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [119] [120 <./figures/MassCytometry.pdf>]
-<./figures/MakerRank.pdf, id=4064, 519.9425pt x 519.9425pt>
+<./figures/MakerRank.pdf, id=4060, 519.9425pt x 519.9425pt>
 File: ./figures/MakerRank.pdf Graphic file (type pdf)
 
 <use ./figures/MakerRank.pdf>
@@ -1590,7 +1568,7 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 1656--1661
 
 [124
 
-] [125] <./figures/ALINet.pdf, id=4112, 521.64705pt x 299.40419pt>
+] [125] <./figures/ALINet.pdf, id=4109, 521.64705pt x 299.40419pt>
 File: ./figures/ALINet.pdf Graphic file (type pdf)
 
 <use ./figures/ALINet.pdf>
@@ -1601,7 +1579,7 @@ Package pdftex.def Info: ./figures/ALINet.pdf used on input line 1678.
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 1688.
 
-[127] <./figures/Function.pdf, id=4147, 1027.84pt x 770.88pt>
+[127] <./figures/Function.pdf, id=4144, 1027.84pt x 770.88pt>
 File: ./figures/Function.pdf Graphic file (type pdf)
 
 <use ./figures/Function.pdf>
@@ -1626,7 +1604,7 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1763.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1763.
 
 Package rerunfilecheck Info: File `diss.out' has not changed.
-(rerunfilecheck)             Checksum: 4D4FEDEA655F9B92EC05098662E7F7A5;11300.
+(rerunfilecheck)             Checksum: 27379E8CE18A2FADCAD647E5F05D35EB;11282.
 
 
 LaTeX Font Warning: Size substitutions with differences
@@ -1635,11 +1613,11 @@ LaTeX Font Warning: Size substitutions with differences
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1763.
  ) 
 Here is how much of TeX's memory you used:
- 14509 strings out of 492995
- 215799 string characters out of 6132704
- 469413 words of memory out of 5000000
- 16804 multiletter control sequences out of 15000+600000
- 63444 words of font info for 329 fonts, out of 8000000 for 9000
+ 14505 strings out of 492995
+ 215820 string characters out of 6132704
+ 468422 words of memory out of 5000000
+ 16809 multiletter control sequences out of 15000+600000
+ 63949 words of font info for 325 fonts, out of 8000000 for 9000
  1142 hyphenation exceptions out of 8191
  43i,17n,40p,3720b,768s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
@@ -1665,10 +1643,10 @@ ts/type1/urw/courier/ucrro8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type
 1/urw/times/utmb8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/time
 s/utmbi8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/utmr8a.
 pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on diss.pdf (170 pages, 10069218 bytes).
+Output written on diss.pdf (169 pages, 10068444 bytes).
 PDF statistics:
- 4459 PDF objects out of 5155 (max. 8388607)
- 3847 compressed objects within 39 object streams
+ 4456 PDF objects out of 5155 (max. 8388607)
+ 3845 compressed objects within 39 object streams
  600 named destinations out of 1000 (max. 500000)
- 42256 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 43280 words of extra memory for PDF output out of 51595 (max. 10000000)
 

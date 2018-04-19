@@ -392,7 +392,7 @@ The use of community detection in this analysis helped to understand which immun
 The authors also provide an approach to add supervision to the problem, which uses partially labeled data set. In this context, this means that some of the cells have a classification. Moreover, given that the network contains $N$ nodes, with $T$ labeled nodes ($T<N$), the objective is to label the remaining $N-T$ nodes. Based on a concern that network-based classification methods operating on a majority vote rule for a node's neighbors, the authors sought to develop an approach that would not suffer in circumstances where a node's closest neighbors were a small subset of the available labeled data. This issue is mediated through the use of label information on the whole network through a random walk. Conceptually, starting from an unlabeled node, the random walker can move through the network, taking into account edge weight information at each step. The random walk classification scheme from an unlabeled node is therefore the probability of its random walk ultimately arriving at a node from each of the classes.  The probability of an unlabeled node reaching a node in each of the labeled classes can be computed in a straightforward way, using the graph Laplacian \cite{RWR}. \\
 \indent Overall, the findings of this paper use community detection to allow for the analysis and understanding of tumor heterogeneity data that was not possible with standard high dimensional data analysis techniques.  The authors suggest that this method is useful in characterizing primitive cancer cells and for the identification of cell biology features that define particular biological states and clinical outcomes. 
 
-\subsection{Identification of virulence factor genes related to antibiotic resistance of uropathogenic \emph{E. coli}}
+\subsection{Virulence factor genes related to antibiotic resistance of uropathogenic \emph{E. coli}}
 \indent Urinary tract infections are primarily caused by uropathogenic \emph{E. coli} (UPEC). In their study Parker \emph{et al.} seek to better understand UPEC antibiotic resistance, which prevents patients from being treated for urinary tract infections \cite{parker2015network}. Using a cohort of 337 \emph{E. coli} patient isolates, the authors looked closely at the virulence factor genes of these patients. Virulence factors are non conserved or are carried on mobile genetic elements and elicit biological functions that relate to uropathogenesis (i.e.~the onset of a patient getting a UTI). The biological function of virulence factors are known and allow for the development of therapeutic agents. In the analysis, the presence or absence for each of 16 virulence factors was determined. A network was constructed between the 337 patient isolates, with each edge reflecting the pairwise similarity in their virulence factor profiles. Modularity based community detection was then applied to this network and partitioned it into 4 different communities. Most remarkably, each of the 4 communities was characterized by clinical isolates described by either a single or pair of virulence factor markers. These pairs of related virulence factors were then probed further to investigate their role in antibiotic resistance. This approach offers a new way to integrate genomic and individual patient information to determine which types of antibiotics might be most effective.  
 
 \section{Thesis Contribution}
@@ -479,7 +479,7 @@ The work addressed in this thesis is described in the references listed below. N
 %\chapter{Strata Multilayer Stochastic Block Model }
 
 \chapter[Strata Multilayer Stochastic Block Model]{Strata Multilayer Stochastic Block Model
-\footnote{\emph{This work is done in collaboration with Saray Shai, Dane Taylor and Peter Mucha and appears in the following publications:}
+\footnote{This work appears in the following publications:
   \begin{itemize}
  \item \emph{Clustering Network Layers with the Strata Multilayer Stochastic Block Model}. {\bf N. Stanley, S. Shai, D. Taylor, P.J. Mucha}. IEEE Transactions on Network Science and Engineering. 2016. \url{http://ieeexplore.ieee.org/abstract/document/7442167/}
 \item \emph{Enhanced Detectability of Community Structure in Multilayer Networks Through Layer Aggregation}. {\bf D. Taylor, S. Shai, N. Stanley, P.J. Mucha}. Physical Review Letters. 2016. \url{https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.116.228301}
@@ -934,7 +934,7 @@ In this work, we studied limitations on community detection for multilayer netwo
 
 
 \chapter[Network compression for community detection with super nodes]{Network compression for community detection with super nodes \footnote{
-       \emph{This work is done in collaboration with Roland Kwitt, Marc Niethammer, and Peter Mucha and appears in the following publication:}
+       \emph{This work appears in the following publication:}
     \emph{Compressing Networks with Super Nodes}. {\bf N. Stanley, R. Kwitt, M. Niethammer, P.J. Mucha}. Under Review. 2018. \url{https://arxiv.org/abs/1706.04110}
 }}
 
@@ -1138,8 +1138,8 @@ Future work could also examine graph theoretic properties of super node represen
 
 
 \chapter[Stochastic Block Models with Multiple Continuous Attributes]{Stochastic Block Models with Multiple Continuous Attributes \footnote{
-     \emph{This work is done in collaboration with Thomas Bonacci, Roland Kwitt, Marc Niethammer, and Peter Mucha. It appears in the following publication:}
-       \emph{Stochastic Block Models with Multiple Continuous Attributes}. {\bf N. Stanley, S. Shai, D. Taylor, P.J. Mucha}. Under Review. 2018. \url{https://arxiv.org/abs/1803.02726}
+     This work appears in the following publication:
+       \emph{Stochastic Block Models with Multiple Continuous Attributes}. {\bf N. Stanley, T. Bonacci, R. Kwitt, M. Niethammer, and P.J. Mucha}. Under Review. 2018. \url{https://arxiv.org/abs/1803.02726}
 }
 }
 
