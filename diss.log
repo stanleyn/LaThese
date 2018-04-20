@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  19 APR 2018 15:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  20 APR 2018 11:08
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1561,29 +1561,24 @@ Package pdftex.def Info: ./figures/MakerRank.pdf used on input line 1640.
 (pdftex.def)             Requested size: 361.35138pt x 361.34709pt.
  [121 <./figures/MakerRank.pdf>] [122] [123]
 Chapter 6.
-
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 1656--1661
-[] 
- []
-
 [124
 
 ] [125] <./figures/ALINet.pdf, id=4109, 521.64705pt x 299.40419pt>
 File: ./figures/ALINet.pdf Graphic file (type pdf)
 
 <use ./figures/ALINet.pdf>
-Package pdftex.def Info: ./figures/ALINet.pdf used on input line 1678.
+Package pdftex.def Info: ./figures/ALINet.pdf used on input line 1672.
 (pdftex.def)             Requested size: 316.17987pt x 181.48044pt.
  [126 <./figures/ALINet.pdf>]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 1688.
+               Default added (so using `tbp') on input line 1682.
 
 [127] <./figures/Function.pdf, id=4144, 1027.84pt x 770.88pt>
 File: ./figures/Function.pdf Graphic file (type pdf)
 
 <use ./figures/Function.pdf>
-Package pdftex.def Info: ./figures/Function.pdf used on input line 1710.
+Package pdftex.def Info: ./figures/Function.pdf used on input line 1704.
 (pdftex.def)             Requested size: 406.516pt x 304.88832pt.
  [128 <./figures/Function.pdf>] [129]
 Chapter 7.
@@ -1596,12 +1591,12 @@ Chapter 7.
 
 Package natbib Warning: There were undefined citations.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1763.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1757.
 [145]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1763.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1757.
  (./diss.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1763.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1763.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1757.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1757.
 
 Package rerunfilecheck Info: File `diss.out' has not changed.
 (rerunfilecheck)             Checksum: 27379E8CE18A2FADCAD647E5F05D35EB;11282.
@@ -1610,7 +1605,7 @@ Package rerunfilecheck Info: File `diss.out' has not changed.
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 4.5pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1763.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1757.
  ) 
 Here is how much of TeX's memory you used:
  14505 strings out of 492995
@@ -1643,7 +1638,7 @@ ts/type1/urw/courier/ucrro8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type
 1/urw/times/utmb8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/time
 s/utmbi8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/utmr8a.
 pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on diss.pdf (169 pages, 10068444 bytes).
+Output written on diss.pdf (169 pages, 10068297 bytes).
 PDF statistics:
  4456 PDF objects out of 5155 (max. 8388607)
  3845 compressed objects within 39 object streams
